@@ -13,15 +13,12 @@
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:template_test</jdbc-url>
-      <user-name>postgres</user-name>
-      <user-password>dfc9dfcbdfd8dfdedfc7dfcfdfc4df9bdf99df98</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails template: production" uuid="311d6479-70af-4c5b-be6e-ce2401a73bb1">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:template_production</jdbc-url>
-      <user-name>template</user-name>
       <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddffedfefdfe7dffadfe6dfebdffedfefdff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
       <libraries />
     </data-source>
