@@ -40,6 +40,9 @@ gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'rails_12factor', group: :production
 
+# Analytics
+
+
 #Allows you to use environment variables
 group :development, :test do
 gem 'foreman'
