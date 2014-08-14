@@ -2,9 +2,10 @@
 <html>
 <head>
   <title>Simple Tronix | Cash for Cell Phones</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 <!--header-->
@@ -14,7 +15,7 @@
     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
       <i class="fa fa-bars"></i></button>
     <div class="logo">
-      <a href="/"><img src="assets/logo.png" alt="" class="animated bounceInDown" /></a>
+      <a href="/"><img src="/assets/logo.png" alt="" class="animated bounceInDown" /></a>
     </div>
     <!--menu-->
     <nav id="main_menu">
@@ -51,13 +52,31 @@
               <li><a href="#">FAQ</a></li>
             </ul>
           </li>
+          <% if user_signed_in? %>
+              <li class="dropdown <%= is_active?(edit_user_registration_path) %>"><a><strong>Your Account</strong></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#"><strong>Track Order</strong></a></li>
+                  <li><a href="<%= edit_user_registration_path %>"><strong>Edit Account</strong></a></li>
+                  <li><a rel="nofollow" href="<%= destroy_user_session_path %>" data-method="delete"><strong>Sign out</strong></a></li>
+                </ul>
+              </li>
+          <% else %>
+          <li class="dropdown"><a href="<%= new_user_session_path%>"><strong>Sign In</strong></a></li>
         </ul>
+
+          <% end %>
       </div>
     </nav>
   </div>
 </div>
 <!--//header-->
 <!-- page -->
+<% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+<% end %>
 <%= yield %>
 
 <!--footer-->
@@ -65,16 +84,11 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <div class="copyright">
+        <div style="color: #ffffff;">
           Simple Tronix Inc.
-          &copy;
-          <script type="text/javascript">
-              //<![CDATA[
-              var d = new Date()
-              document.write(d.getFullYear())
-              //]]>
-          </script>
-          - All Rights Reserved </a>
+          &copy; 2014
+
+          - All Rights Reserved <a href="#"><Strong>Privacy Policy</Strong></a> | <a href="#"><strong>Terms & Conditions</strong></a>
         </div>
       </div>
     </div>
@@ -85,4 +99,5 @@
 <!--//end-->
 
 </body>
+
 </html>

@@ -12,8 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require bootstrap.min
 //= require gmap3.min
 //= require jPages
 //= require jquery.carouFredSel-6.2.1-packed
@@ -30,4 +28,7 @@
 //= require modernizr.custom.63321
 //= require modernizr.custom
 //= require scripts
+//= require bootstrap.min
 //= require_tree .
+
+
