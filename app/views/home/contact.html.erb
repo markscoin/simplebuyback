@@ -1,0 +1,85 @@
+
+<div class="pad10"></div>
+
+<div class="container wrapper">
+  <div class="inner_content">
+    <h1>Get In Touch!</h1>
+    <h1 class="title">Contact Information</h1>
+    <div class="pad10"></div>
+    <div class="row">
+      <div class="span4">
+        <h3>Have a question? Need help? Drop us a note and we will respond as soon as possible! </h3>
+
+        <h5>
+          <span>Address</span><br>
+          Simple Tronix Inc.<br>
+          110 E Houston St<br>
+          San Antonio, TX<br>
+        </h5>
+
+        <h5>
+          E: <a href="mailto:#">support@simpletronix.com</a><br>
+          P: (210) 744-9663
+        </h5>
+      </div>
+
+      <div class="span8 ">
+        <div class="contact_form">
+          <div id="note"></div>
+          <div id="fields">
+            <form id="ajax-contact-form">
+              <p class="form_info">name <span class="required">*</span></p>
+              <input class="span5" type="text" name="name" value="" />
+              <p class="form_info">email <span class="required">*</span></p>
+              <input class="span5" type="text" name="email" value=""  />
+              <p class="form_info">subject</p>
+              <input class="span5" type="text" name="subject" value="" /><br>
+              <p class="form_info">message</p>
+              <textarea name="message" id="message" class="span8" ></textarea>
+              <div class="clear"></div>
+
+              <input type="submit" class="btn  btn-primary btn-form marg-right5" value="submit" />
+              <input type="reset"  class="btn  btn-primary btn-form" value="reset" />
+              <div class="clear pad45 hidden-desktop"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--//page-->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function(){
+        $("#ajax-contact-form").submit(function() {
+            var str = $(this).serialize();
+            $.ajax({
+                type: "POST",
+                url: "contact_form/contact_process.php",
+                data: str,
+                success: function(msg) {
+                    // Message Sent - Show the 'Thank You' message and hide the form
+                    if(msg == 'OK') {
+                        result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+                        $("#fields").hide();
+                    } else {
+                        result = msg;
+                    }
+                    $('#note').html(result);
+                }
+            });
+            return false;
+        });
+    });
+    //]]>
+</script>
+
+<script type="text/javascript" src="js/gmap3.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+
+
