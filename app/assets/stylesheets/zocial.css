@@ -77,8 +77,8 @@ a.zocial {
 .zocial.dropbox:before {content: "d"; }
 .zocial.drupal:before {content: "\00E4"; }
 .zocial.dwolla:before {content: "\00E0";}
-.zocial.email:before {content: "]"; color: }
-.zocial.eventasaurus:before {content: "v"; c}
+.zocial.email:before {content: "]"; color: white; }
+.zocial.eventasaurus:before {content: "v";}
 .zocial.eventbrite:before {content: "|";}
 .zocial.eventful:before {content: "'"; }
 .zocial.evernote:before {content: "E";}
@@ -153,7 +153,7 @@ a.zocial {
 .zocial.yelp:before {content: "y";}
 .zocial.youtube:before {content: "U";}
 
-button:-moz-focus-inner { border: 0; padding: 0; }
+button.-moz-focus-inner { border: 0; padding: 0; }
 
 @font-face {
     font-family: 'zocial';
