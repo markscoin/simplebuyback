@@ -3,6 +3,9 @@
   <component name="CompassSettings">
     <option name="compassSupportEnabled" value="true" />
   </component>
+  <component name="DBNavigator.Module.ConnectionManager">
+    <connections />
+  </component>
   <component name="FacetManager">
     <facet type="RailsFacetType" name="Ruby on Rails">
       <configuration>
