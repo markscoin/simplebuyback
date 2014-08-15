@@ -21,8 +21,8 @@
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:template_production</jdbc-url>
-      <user-name>template</user-name>
-      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfecdfe3dfe4dfebdfe6dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <user-name>postgres</user-name>
+      <user-password>dfc9dfcbdfd8dfdedfc7dfcfdfc4df9bdf99df98</user-password>
       <libraries />
     </data-source>
   </component>
