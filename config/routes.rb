@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users, :controllers => { registrations: 'registration'}
+  devise_for :users, :controllers => { registrations: 'registrations'}
   root to: 'home#index'
   get '/home/contact'
   resources :home
