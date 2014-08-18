@@ -3,4 +3,9 @@ class NotifierPreview < ActionMailer::Preview
     def welcome_email
       Notifier.welcome_email(User.first)
     end
+
+  def reset_password_instructions
+    Notifier.reset_password_instructions(User.first)
+  end
+
 end

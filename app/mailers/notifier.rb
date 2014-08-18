@@ -6,4 +6,13 @@ class Notifier < ActionMailer::Base
     mail(:to => user.email,
          :subject => "Welcome to Simple Tronix")
   end
+
+  def contact_email(name, email, subject, message)
+    @name = name
+    @email = email
+    @subject = subject
+    @message = message
+
+    mail(from: email, to: "mortega@utexas.edu", subject: 'Support Request')
+  end
 end

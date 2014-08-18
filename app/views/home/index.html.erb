@@ -1,2 +1,9 @@
 <h1> Home Page</h1>
 
+<ol>
+  <%= content_tag_for(:li, @emailprocessor) do |emailprocessor| %>
+    <%= emailprocessor.email %>
+    <%= simple_format emailprocessor.body %>
+    by <%=  emailprocessor.email %>
+      <% end %>
+</ol>
