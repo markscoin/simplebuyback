@@ -42,7 +42,6 @@ gem 'rails_12factor', group: :production
 
 
 #Gives you an endpoint for incoming mail and configuration for sendgrid
-gem 'griddler'
 # Analytics
 
 

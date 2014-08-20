@@ -46,7 +46,7 @@ Rails.application.configure do
       domain: 'simpletronix.com',
       authentication: "plain",
       enable_starttls_auto: true,
-      user_name: 'mortega@utexas.edu',
-      password: 'oliver132'
+      user_name: 'support@simpletronix.com',
+      password: 'cartmen132'
   }
 end

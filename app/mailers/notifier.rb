@@ -13,6 +13,6 @@ class Notifier < ActionMailer::Base
     @subject = subject
     @message = message
 
-    mail(from: email, to: "mortega@utexas.edu", subject: 'Support Request')
+    mail(from: email, to: "support@simpletronix.com", subject: 'Support Request')
   end
 end

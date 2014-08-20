@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/home/contact'
   resources :home
   match '/send_mail', to: 'home#send_mail', via: 'post'
-  mount_griddler
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
