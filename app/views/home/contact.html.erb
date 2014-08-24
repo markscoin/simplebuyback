@@ -1,13 +1,13 @@
-
-<div class="pad10"></div>
-
-<div class="container wrapper">
+<div class="container">
+<div class="row pad10"></div>
+<div class="container intro_wrapper">
   <div class="inner_content">
     <h1>Get In Touch!</h1>
     <h1 class="title">Contact Information</h1>
-    <div class="pad10"></div>
-    <div class="row">
-      <div class="span4">
+  </div>
+</div>
+    <div class="row pad10">
+      <div class="col-xs-4">
         <h3>Have a question? Need help? Drop us a note and we will respond as soon as possible! </h3>
 
         <h5>
@@ -23,29 +23,29 @@
         </h5>
       </div>
 
-      <div class="span8 ">
+      <div class="col-xs-8 ">
         <% if notice %>
             <p class="alert alert-success"><%= notice %></p>
         <% end %>
         <div class="contact_form">
           <div id="note"></div>
           <div id="fields">
-            <%= form_tag send_mail_path , :id => 'ajax-contact-form' do %>
+            <%= form_tag send_mail_path , :id => 'ajax-contact-form', :role => 'form' do %>
                 <div>
                 <%= label_tag 'name', 'Name*', :class => "form_info" %>
-                <%= text_field_tag 'name', nil, class: 'span5', placeholder: 'Your Name' %>
+                <%= text_field_tag 'name', nil, class: 'col-xs-8', placeholder: 'Your Name' %>
                 </div>
                 <div>
                   <%= label_tag 'email', 'Email*', :class => "form_info" %>
-                  <%= email_field_tag 'email', nil, class: 'span5', placeholder: 'Your Email Address' %>
+                  <%= email_field_tag 'email', nil, class: 'col-xs-8', placeholder: 'Your Email Address' %>
                 </div>
                 <div>
                   <%= label_tag 'subject', 'Subject', :class => "form_info"%>
-                  <%= text_field_tag 'subject', nil, class: 'span5', placeholder: 'Subject' %>
+                  <%= text_field_tag 'subject', nil, class: 'col-xs-8', placeholder: 'Subject' %>
                 </div>
                 <div>
                   <%= label_tag 'message', 'Message', :class => "form_info" %>
-                  <%= text_area_tag 'message', nil, class: 'span8', rows: 4, placeholder: 'Message...' %>
+                  <%= text_area_tag 'message', nil, class: 'col-xs-8', rows: 4, placeholder: 'Message...' %>
                 </div>
                 <%= submit_tag 'Submit', class: 'btn btn-primary btn-form marg-right5' %>
                 <%= submit_tag 'Reset', :type => 'reset', class: 'btn btn-primary btn-form' %>
@@ -54,8 +54,7 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
+   </div>
 
 
 

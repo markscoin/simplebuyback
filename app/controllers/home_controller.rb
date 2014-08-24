@@ -3,6 +3,14 @@ class HomeController < ApplicationController
   def index
   end
 
+  def show
+
+  end
+
+  def random
+    render 'home/random'
+  end
+
   def contact
     render 'home/contact', layout: "contactlayout"
   end

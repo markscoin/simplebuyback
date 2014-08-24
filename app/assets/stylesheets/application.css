@@ -10,17 +10,18 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
  *= require alt_footer
- *= require bootstrap
+ *= require bootstrap.min
+ *= require colour
  *= require docs
+ *= require font-awesome.min
+ *= require green
  *= require nerveslider
  *= require prettyPhoto
- *= require settings
  *= require slider
  *= require theme
  *= require timeline
  *= require zocial
- *= require font-awesome.min
+ *= require_tree .
  */

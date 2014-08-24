@@ -29,7 +29,6 @@
 	top: 0;
 	bottom: 0;
 	width: 10px;
-	background: #1ABC9C;
 	left: 20%;
 	margin-left: -10px;
 }
@@ -42,14 +41,11 @@
 	position: absolute;
 }
 .cbp_tmtimeline > li .cbp_tmtime span { display: block; text-align: left; }
-.cbp_tmtimeline > li .cbp_tmtime span:last-child { font-size: 2.4em; color: #16A085; }
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child { color: #1ABC9C; }
+.cbp_tmtimeline > li .cbp_tmtime span:last-child { font-size: 2.4em; }
 
 /* Right content */
 .cbp_tmtimeline > li .cbp_tmlabel {
 	margin: 0 0 15px 25%;
-	background: #16A085;
-	color: #fff;
 	padding: 2em;
 	position: relative;
 	border-radius: 5px;
@@ -59,7 +55,7 @@
 	font-weight: 400;
 	line-height: 1.6em;
 }
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel { background: #1ABC9C; }
+
 .cbp_tmtimeline > li .cbp_tmlabel h2 { 
 	margin-top: 0px;
 	padding: 0 0 10px 0;
@@ -75,12 +71,10 @@
 	width: 0;
 	position: absolute;
 	pointer-events: none;
-	border-right-color: #16A085;
 	border-width: 10px;
 	top: 10px;
 }
 
-.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after { border-right-color: #1ABC9C; }
 
 /* The icons */
 .cbp_tmtimeline > li .cbp_tmicon {
@@ -96,10 +90,7 @@
 	line-height: 40px;
 	-webkit-font-smoothing: antialiased;
 	position: absolute;
-	color: #fff;
-	background: #16A085;
 	border-radius: 50%;
-	box-shadow: 0 0 0 8px #2ECC71;
 	text-align: center;
 	left: 20%;
 	margin-left: -25px;
@@ -109,9 +100,8 @@
 .cbp_tmicon-mail:before { content: "\e002"; }
 .cbp_tmicon-earth:before { content: "\e003"; }
 
-/* Example Media Queries */
+/* Media Queries */
 @media screen and (max-width: 65.375em) {
-
 	.cbp_tmtimeline > li .cbp_tmtime span:last-child {
 		font-size: 1.5em;
 	}
@@ -143,13 +133,11 @@
 		right: auto;
 		left: 20px;
 		border-right-color: transparent;
-		border-bottom-color: #16A085;
 		top: -20px;
 	}
 
 	.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
 		border-right-color: transparent;
-		border-bottom-color:#1ABC9C;
 	}
 
 	.cbp_tmtimeline > li .cbp_tmicon {
@@ -159,3 +147,4 @@
 		margin: -55px 5px 0 0px;
 	}	
 }
+

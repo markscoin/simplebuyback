@@ -1,9 +1,58 @@
-<h1> Home Page</h1>
-
-<ol>
-  <%= content_tag_for(:li, @emailprocessor) do |emailprocessor| %>
-    <%= emailprocessor.email %>
-    <%= simple_format emailprocessor.body %>
-    by <%=  emailprocessor.email %>
-      <% end %>
-</ol>
+<div class="container">
+  <div class="row" id="accordion">
+    <div class="col-xs-3">
+      <h2 style="color: #31c3a6;"><strong>Why Sell To Us?</strong></h2>
+      <div class="maketable">
+        <img src="/assets/icons/Retina-Ready.png" class="reasons"/>
+        <p class="reasons"><strong>  Competitive Prices</strong></p>
+      </div>
+      <div class="maketable">
+        <img src="/assets/icons/Mail.png" class="reasons" />
+        <p class="reasons"><strong>  Free Shipping</strong></p>
+      </div>
+      <div class="maketable">
+        <img src="/assets/icons/Watches.png" class="reasons"/>
+        <p class="reasons"><strong>  Fast Payment</strong></p>
+      </div>
+      </div>
+      <div class="col-xs-3 growimages">
+      <img src="/assets/devices/iPhone5swithlogo.png" class="center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPhone"/><br>
+      <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPhone"> Sell Your iPhone</button>
+      </div>
+      <div class="col-xs-3 growimages">
+      <img src="/assets/devices/galaxywithlogo.png" class="center-block" data-toggle="collapse" data-parent="#accordion" data-target="#anyphone"/><br>
+      <button type="button" class="btn btn-success btn-lg btn-rounded center-block"  data-toggle="collapse" data-parent="#accordion" data-target="#anyphone"> Sell Any Phone</button>
+      </div>
+      <div class="col-xs-3 growimages">
+      <img src="/assets/devices/iPadairwithlogo.png" class="center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPad" /><br>
+      <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPad"> Sell Your iPad</button>
+      </div>
+      <div class="col-xs-9 col-xs-offset-3">
+      <div id="iPhone" class="collapse">
+        <table class="table">
+          <tr>
+            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone5S.png", alt: "iPhone 5S") %><br><span class="label label-success">iPhone 5S</span></th>
+            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone5.png", alt: "iPhone 5") %><br><span class="label label-success">iPhone 5</span></th>
+            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone4S.png", alt: "iPhone 4S")%><br><span class="label label-success">iPhone 4S</span></th>
+            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone4S.png", alt: "iPhone 4")%><br><span class="label label-success">iPhone 4</span></th>
+          </tr>
+        </table>
+      </div>
+      <div id="anyphone" class="collapse">
+        <table class="table">
+          <tr>
+            <th class="growimages"><%= image_tag("/assets/manufacturers/110apple.png", alt: "Apple") %></th>
+            <th class="growimages"><%= image_tag("/assets/manufacturers/110blackberry.png", alt: "BlackBerry") %></th>
+            <th class="growimages"><%= image_tag("/assets/manufacturers/110samsung.png", alt: "Samsung") %></th>
+            <th class="growimages"><%= image_tag("/assets/manufacturers/110motorola.png", alt: "Motorola") %></th>
+          </tr>
+          <tr>
+            <th class="notopborder growimages"><%= image_tag("/assets/manufacturers/110htc.png", alt: "HTC") %></th>
+            <th class="notopborder growimages"><%= image_tag("/assets/manufacturers/110nokia.png", alt: "Nokia") %></th>
+          </tr>
+        </table>
+      </div>
+      <div id="iPad" class="collapse"> Something about selling iPad</div>
+      </div>
+  </div>
+</div>
