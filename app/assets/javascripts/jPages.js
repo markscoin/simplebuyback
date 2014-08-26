@@ -596,7 +596,7 @@ function buildCodeBlocks() {
 function getHtml() {
     var clone, ul, li, code;
 
-    clone = $("<div />").append($("div#content").contents().not("h2, p").clone());
+    clone = $("<div/>").append($("div#content").contents().not("h2, p").clone());
     ul = clone.find("ul");
     li = ul.find("li");
 

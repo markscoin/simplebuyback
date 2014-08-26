@@ -12,6 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require modernizr.custom.63321
+//= require modernizr.custom
 //= require cbpGridGallery
 //= require classie
 //= require gmap3.min
@@ -26,8 +28,6 @@
 //= require jquery.prettyPhoto
 //= require jquery.touchSwipe.min
 //= require jquery-ui.min
-//= require modernizr.custom.63321
-//= require modernizr.custom
 //= require retina
 //= require scripts
 //= require bootstrap
