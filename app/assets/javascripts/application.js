@@ -12,7 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
-
 //= require cbpGridGallery
 //= require classie
 //= require gmap3.min
@@ -20,7 +19,6 @@
 //= require jPages
 //= require jquery.carouFredSel-6.2.1-packed
 //= require jquery.catslider
-//= require jquery-dropdown
 //= require jquery.isotope.min
 //= require jquery.mousewheel.min
 //= require jquery.nerveSlider.min
@@ -28,13 +26,10 @@
 //= require jquery.prettyPhoto
 //= require jquery.touchSwipe.min
 //= require jquery-ui.min
-//= require masonry.pkgd.min
 //= require modernizr.custom.63321
 //= require modernizr.custom
 //= require retina
 //= require scripts
 //= require bootstrap
-
-//= require_tree .
 
 

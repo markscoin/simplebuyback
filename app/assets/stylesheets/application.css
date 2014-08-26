@@ -15,7 +15,7 @@
  *= require bootstrap.min
  *= require colour
  *= require docs
- *= require font-awesome.min
+ *= require font-awesome.min.css.scss.erb
  *= require green
  *= require nerveslider
  *= require prettyPhoto

@@ -1,6 +1,6 @@
 <div class="container">
   <div class="row" id="accordion">
-    <div class="col-xs-3">
+      <div class="col-xs-3">
       <h2 style="color: #31c3a6;"><strong>Why Sell To Us?</strong></h2>
       <div class="maketable">
         <img src="/assets/icons/Retina-Ready.png" class="reasons"/>
@@ -29,30 +29,548 @@
       </div>
       <div class="col-xs-9 col-xs-offset-3">
       <div id="iPhone" class="collapse">
+        <div id="iphonepanel">
         <table class="table">
           <tr>
-            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone5S.png", alt: "iPhone 5S") %><br><span class="label label-success">iPhone 5S</span></th>
-            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone5.png", alt: "iPhone 5") %><br><span class="label label-success">iPhone 5</span></th>
-            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone4S.png", alt: "iPhone 4S")%><br><span class="label label-success">iPhone 4S</span></th>
-            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone4S.png", alt: "iPhone 4")%><br><span class="label label-success">iPhone 4</span></th>
+            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone5S.png", alt: "iPhone 5S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5scarrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5S</button></th>
+            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone5.png", alt: "iPhone 5", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5carrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5</button></th>
+            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone4S.png", alt: "iPhone 4S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4scarrier"})%><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4S</button></th>
+            <th class="growimages"><%= image_tag("/assets/phones/apple/75x150iPhone4S.png", alt: "iPhone 4", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4carrier"})%><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4</button></th>
           </tr>
         </table>
+          <div class="collapse" id="iphone5scarrier">
+            <div id="iphone5smemory">
+            <table class="table">
+              <tr>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryatt"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemorytmobile"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryverizon"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemorysprint"}) %></th>
+              </tr>
+            </table>
+              <div id="iphone5smemoryatt" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5smemorytmobile" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5smemoryverizon" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5smemorysprint" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="iphone5carrier">
+            <div id="iphone5memory">
+            <table class="table">
+              <tr>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryatt"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memorytmobile"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryverizon"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memorysprint"}) %></th>
+              </tr>
+            </table>
+              <div id="iphone5memoryatt" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5memorytmobile" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5memoryverizon" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5memorysprint" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="iphone4scarrier">
+            <div id="iphone4smemory">
+            <table class="table">
+              <tr>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryatt"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemorytmobile"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryverizon"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemorysprint"}) %></th>
+              </tr>
+            </table>
+              <div id="iphone4smemoryatt" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone4smemorytmobile" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone4smemoryverizon" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone4smemorysprint" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="iphone4carrier">
+            <div id="iphone4memory">
+            <table class="table">
+              <tr>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryatt"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorytmobile"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryverizon"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorysprint"}) %></th>
+              </tr>
+            </table>
+              <div id="iphone4memoryatt" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone4memorytmobile" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone4memoryverizon" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone4memorysprint" class="collapse">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
       <div id="anyphone" class="collapse">
+        <!-- The panels that results from clicking on "any phone" -M.O. -->
+        <div id="anypanel">
         <table class="table">
           <tr>
-            <th class="growimages"><%= image_tag("/assets/manufacturers/110apple.png", alt: "Apple") %></th>
-            <th class="growimages"><%= image_tag("/assets/manufacturers/110blackberry.png", alt: "BlackBerry") %></th>
-            <th class="growimages"><%= image_tag("/assets/manufacturers/110samsung.png", alt: "Samsung") %></th>
-            <th class="growimages"><%= image_tag("/assets/manufacturers/110motorola.png", alt: "Motorola") %></th>
+            <th class="growimages"><%= image_tag("/assets/manufacturers/110apple.png", alt: "Apple", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#applecarriers"}) %></th>
+            <th class="growimages"><%= image_tag("/assets/manufacturers/110blackberry.png", alt: "BlackBerry", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#blackberrycarriers"}) %></th>
+            <th class="growimages"><%= image_tag("/assets/manufacturers/110samsung.png", alt: "Samsung", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#samsungcarriers"}) %></th>
+            <th class="growimages"><%= image_tag("/assets/manufacturers/110motorola.png", alt: "Motorola", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#motorolacarriers"}) %></th>
           </tr>
           <tr>
-            <th class="notopborder growimages"><%= image_tag("/assets/manufacturers/110htc.png", alt: "HTC") %></th>
-            <th class="notopborder growimages"><%= image_tag("/assets/manufacturers/110nokia.png", alt: "Nokia") %></th>
+            <th class="notopborder growimages"><%= image_tag("/assets/manufacturers/110htc.png", alt: "HTC", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#htccarriers"}) %></th>
+            <th class="notopborder growimages"><%= image_tag("/assets/manufacturers/110nokia.png", alt: "Nokia", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#nokiacarriers"}) %></th>
           </tr>
         </table>
+        <!-- divs that result from clicking on one of the phones from the anyphone category -->
+        <div id="applecarriers" class="collapse">
+          <table class="table">
+            <tr>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint") %></th>
+            </tr>
+          </table>
+        </div>
+        <div id="blackberrycarriers" class="collapse">
+          <table class="table">
+            <tr>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint") %></th>
+            </tr>
+          </table>
+        </div>
+        <div id="samsungcarriers" class="collapse">
+          <table class="table">
+            <tr>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint") %></th>
+            </tr>
+          </table></div>
+        <div id="motorolacarriers" class="collapse">
+          <table class="table">
+            <tr>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint") %></th>
+            </tr>
+          </table></div>
+        <div id="htccarriers" class="collapse">
+          <table class="table">
+            <tr>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint") %></th>
+            </tr>
+          </table>
+        </div>
+        <div id="nokiacarriers" class="collapse">
+          <table class="table">
+            <tr>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
+              <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon") %></th>
+            </tr>
+          </table>
+        </div>
+        </div>
       </div>
-      <div id="iPad" class="collapse"> Something about selling iPad</div>
+      <div id="iPad" class="collapse">
+        <div id="ipadpanel">
+         <!-- The panel with the clickable images of the iPads -M.O. -->
+        <table class="table">
+          <tr>
+            <th class="growimages"><%= image_tag("/assets/ipads/150ipad2.png", alt: "iPad 2", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipad"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad</button></th>
+            <th class="growimages"><%= image_tag("/assets/ipads/150ipadair.png", alt: "iPad Air", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadair"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Air</button></th>
+            <th class="growimages"><%= image_tag("/assets/ipads/150ipadmini.png", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadmini"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini</button></th>
+          </tr>
+        </table>
+          <!-- The panels that result from clicking on an iPad -M.O. -->
+          <div id="ipad" class="collapse">
+            <div id="ipadcarrier">
+            <table class="table">
+              <tr>
+                <th class="growimages"><%= image_tag("/assets/ipads/150ipad2.png", alt: "iPad 2", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad2carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 2 </button></th>
+                <th class="growimages"><%= image_tag("/assets/ipads/150ipad2.png", alt: "iPad 3", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad3carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 3</button></th>
+                <th class="growimages"><%= image_tag("/assets/ipads/150ipad2.png", alt: "iPad 4", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad4carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 4</button></th>
+              </tr>
+            </table>
+            <div id="ipad2carrier" class="collapse">
+                <div id="ipad2memory">
+                <table class="table">
+                  <tr>
+                    <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipadairattmemory"}) %></th>
+                    <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipadairverizonmemory"}) %></th>
+                  </tr>
+                </table>
+                  <div id="ipad2memoryatt" class="collapse">
+                    <table class="table">
+                      <tr>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="ipad2memoryverizon" class="collapse">
+                    <table class="table">
+                      <tr>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+            </div>
+            <div id="ipad3carrier" class="collapse">
+                <div id="ipad3memory">
+                <table class="table">
+                  <tr>
+                    <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryatt"}) %></th>
+                    <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryverizon"}) %></th>
+                  </tr>
+                </table>
+                  <div id="ipad3memoryatt" class="collapse">
+                    <table class="table">
+                      <tr>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="ipad3memoryverizon" class="collapse">
+                    <table class="table">
+                      <tr>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div id="ipad4carrier" class="collapse">
+                <div id="ipad4memory">
+                <table class="table">
+                  <tr>
+                    <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memoryatt"}) %></th>
+                    <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memoryverizon"}) %></th>
+                    <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memorysprint"}) %></th>
+                  </tr>
+                </table>
+                  <div id="ipad4memoryatt" class="collapse">
+                    <table class="table">
+                      <tr>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="ipad4memoryverizon" class="collapse">
+                    <table class="table">
+                      <tr>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="ipad4memorysprint" class="collapse">
+                    <table class="table">
+                      <tr>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                        <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      </tr>
+                    </table>
+                  </div>
+              </div>
+             </div>
+            </div>
+          </div>
+          <div id="ipadair" class="collapse">
+            <div id="ipadairmemory">
+            <table class="table">
+              <tr>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairattmemory"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairverizonmemory"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairsprintmemory"}) %></th>
+                <th class="growimages"><%= image_tag("/assets/carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairtmobilememory"}) %></th>
+              </tr>
+            </table>
+            <div class="collapse" id="ipadairattmemory">
+              <table class="table">
+                <tr>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                </tr>
+              </table>
+            </div>
+            <div class="collapse" id="ipadairverizonmemory">
+              <table class="table">
+                <tr>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                </tr>
+              </table>
+            </div>
+            <div class="collapse" id="ipadairsprintmemory">
+              <table class="table">
+                <tr>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                  <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                </tr>
+              </table>
+            </div>
+            <div class="collapse" id="ipadairtmobilememory">
+                <table class="table">
+                  <tr>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                  </tr>
+                </table>
+            </div>
+            </div>
+          </div>
+          <div id="ipadmini" class="collapse">
+            <div id="ipadminimemory">
+            <table class="table">
+              <tr>
+                <th class="growimages"><%= image_tag("/assets/ipads/150ipadmini.png", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadminimemory", :target => "#minicarriers"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini</button></th>
+                <th class="growimages"><%= image_tag("/assets/ipads/150ipadmini.png", alt: "iPad Mini with Retina Display", :data => {:toggle => "collapse", :parent => "#ipadminimemory", :target => "#miniretinacarriers"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini with Retina Display</button></th>
+              </tr>
+            </table>
+            <div id="minicarriers" class="collapse">
+              <div id="originalminimemory">
+              <table class="table">
+                <tr>
+                  <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryatt"}) %></th>
+                  <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryverizon"}) %></th>
+                  <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemorysprint"}) %></th>
+                </tr>
+              </table>
+                <div id="originalminimemoryatt" class="collapse">
+                  <table class="table">
+                    <tr>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                    </tr>
+                  </table>
+                </div>
+                <div id="originalminimemoryverizon" class="collapse">
+                  <table class="table">
+                    <tr>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                    </tr>
+                  </table>
+                </div>
+                <div id="originalminimemorysprint" class="collapse">
+                  <table class="table">
+                    <tr>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div id="miniretinacarriers" class="collapse">
+              <div id="minimemory">
+              <table class="table">
+                <tr>
+                  <th class="growimages"><%= image_tag("/assets/carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#attminimemory"}) %></th>
+                  <th class="growimages"><%= image_tag("/assets/carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#verizonminimemory"}) %></th>
+                  <th class="growimages"><%= image_tag("/assets/carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#sprintminimemory"}) %></th>
+                </tr>
+              </table>
+                <div id="verizonminimemory" class="collapse">
+                  <table class="table">
+                    <tr>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                    </tr>
+                  </table>
+                </div>
+                <div id="attminimemory" class="collapse">
+                  <table class="table">
+                    <tr>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                    </tr>
+                  </table>
+                </div>
+                <div id="sprintminimemory" class="collapse">
+                  <table class="table">
+                    <tr>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
   </div>
 </div>
