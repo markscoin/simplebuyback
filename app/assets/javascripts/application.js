@@ -31,5 +31,6 @@
 //= require retina
 //= require scripts
 //= require bootstrap
+//= require googleanalytics
 
 
