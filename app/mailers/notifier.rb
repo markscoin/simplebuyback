@@ -15,4 +15,5 @@ class Notifier < ActionMailer::Base
 
     mail(from: email, to: "support@simpletronix.com", subject: 'Support Request')
   end
+
 end
