@@ -1,0 +1,97 @@
+<%= form_for :order, :url => populate_orders_path do |f| %>
+  <div class="row" id="inside-product-cart-form" data-hook="inside_product_cart_form" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+
+    <% if @product.variants_and_option_values(current_currency).any? %>
+        <h3 class="product-section-title">Select Device Condition:</h3>
+        <div class="container">
+        <div class="row" id="conditionaccordion">
+            <% @product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
+              <div class="col-xs-3">
+                <button type="button" class="btn btn-success btn-lg btn-rounded center-block trigger" data-toggle="collapse" data-parent="#conditionaccordion" data-target="#<%=variant_options variant %>" data-rel="<%= variant.id %>"> <%= variant_options variant %></button>
+              </div>
+            <% end %>
+            <% @product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
+              <% @condition = variant_options variant %>
+              <div id="<%= @condition %>" class="collapse col-xs-12">
+                <% if @condition == "Broken" %>
+                  <div class="col-xs-4">
+                    <h5>Device is broken if <strong><span style="font-size: 1.2em; color: red;">ANY</span></strong> of the following is true:</h5>
+                    <ul>
+                      <li><strong>Device is not fully functional</strong></li>
+                      <li><strong>Has water damage</strong></li>
+                      <li><strong>Cracked screen</strong></li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-4 offerwell">
+                        <h4><strong>Our Offer:</strong></h4>
+                        <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s, 'data-rel' => index, :style => "display: none;"  %>
+                        <%= label_tag "variant_id", :class => "offerprice" do %>
+                        <span class="price diff" style="color: #5cb85c;"><%= variant_price variant %></span>
+                        <% end %>
+                      <br/>
+                      <p><%= accurate_title %> &nbsp; (<%= variant_options variant %> Condition)</p>
+                      <div class="text-center">
+                        <%= number_field_tag :quantity, 1, :class => 'title form-control', :min => 1, :style => "display: none;" %>
+                        <%= button_tag :class => 'btn btn-success btn-lg btn-rounded', :id => 'add-to-cart-button', :type => :submit do %>
+                        <%= content_tag(:strong, 'Accept Offer') %>
+                      <% end %>
+                      </div>
+                  </div>
+                <% elsif @condition == "Good" %>
+                    <div class="col-xs-4">
+                      <h5>Device is in Good Condition if...</h5>
+                      <ul>
+                        <li><strong>Device is fully functional</strong></li>
+                        <li><strong>Has minor wear</strong></li>
+                        <li><strong>Not missing any buttons</strong></li>
+                      </ul>
+                    </div>
+                    <div class="col-xs-4 offerwell">
+                      <h4><strong>Your Offer:</strong></h4>
+                      <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s, 'data-rel' => index, :style => "display: none;"  %>
+                      <%= label_tag "variant_id", :class => "offerprice" do %>
+                          <span class="price diff" style="color: #5cb85c;"><%= variant_price variant %></span>
+                      <% end %>
+                      <br/>
+                      <p><%= accurate_title %> &nbsp; (<%= variant_options variant %> Condition)</p>
+                      <div class="text-center">
+                        <%= number_field_tag :quantity, 1, :class => 'title form-control', :min => 1, :style => "display: none;" %>
+                        <%= button_tag :class => 'btn btn-success btn-lg btn-rounded', :id => 'add-to-cart-button', :type => :submit do %>
+                            <%= content_tag(:strong, 'Accept Offer') %>
+                        <% end %>
+                      </div>
+                    </div>
+                <% else %>
+                  <div class="col-xs-4">
+                    <h5>Device is Flawless if..</h5>
+                      <ul>
+                        <li><strong>Device is completely functional</strong></li>
+                        <li><strong>No scratches/dents</strong></li>
+                        <li><strong>Looks new (almost no wear)</strong></li>
+                      </ul>
+                  </div>
+                    <div class="col-xs-4 offerwell">
+                      <h4><strong>Our Offer:</strong></h4>
+                      <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s, 'data-rel' => index, :style => "display: none;"  %>
+                      <%= label_tag "variant_id", :class => "offerprice" do %>
+                          <span class="price diff" style="color: #5cb85c;"><%= variant_price variant %></span>
+                      <% end %>
+                      <br/>
+                      <p><%= accurate_title %> &nbsp; (<%= variant_options variant %> Condition)</p>
+                      <div class="text-center">
+                        <%= number_field_tag :quantity, 1, :class => 'title form-control', :min => 1, :style => "display: none;" %>
+                        <%= button_tag :class => 'btn btn-success btn-lg btn-rounded', :id => 'add-to-cart-button', :type => :submit do %>
+                            <%= content_tag(:strong, 'Accept Offer') %>
+                        <% end %>
+                      </div>
+                    </div>
+                <% end %>
+
+              </div>
+            <% end %>
+        </div>
+      </div>
+    <% end %>
+
+  </div>
+<% end %>

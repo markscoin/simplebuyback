@@ -30,6 +30,7 @@
 //= require jquery-ui.min
 //= require retina
 //= require scripts
+//= require custom
 //= require bootstrap
 //= require googleanalytics
 

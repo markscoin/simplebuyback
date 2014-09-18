@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+
+  mount Spree::Core::Engine, :at => '/store'
   devise_for :users, :controllers => { registrations: 'registrations'}
   root to: 'home#index'
   get '/home/contact'
@@ -7,6 +9,12 @@ Rails.application.routes.draw do
   resources :home
   resources :quote
   match '/send_mail', to: 'home#send_mail', via: 'post'
+
+  devise_scope :user do
+    get '/login', :to => "devise/sessions#new"
+    get '/signup', :to => "devise/registrations#new"
+    delete '/logout', :to => "devise/sessions#destroy"
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -140,3 +140,22 @@ th {
     -webkit-transform:scale(1.03);
     -o-transform:scale(1.03);
 }
+
+/* products show page */
+.offerwell {
+    background-color: #e9e6e1;
+    border: 0 none;
+    box-shadow: none;
+    margin-top: 10px;
+    border-radius: 7px;
+
+}
+
+.offerprice {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding-left: 0px;
+    vertical-align: middle;
+}
