@@ -11,7 +11,7 @@ GIT
 
 GIT
   remote: git://github.com/spree/spree.git
-  revision: 813ab5ecf6d0f06e047a8ce3f80584ad9dddc40c
+  revision: e07116958e5b8c4a417bff00b28f980c96c77dde
   branch: 2-3-stable
   specs:
     spree (2.3.3.beta)
@@ -34,7 +34,7 @@ GIT
     spree_cmd (2.3.3.beta)
       thor (~> 0.14)
     spree_core (2.3.3.beta)
-      activemerchant (~> 1.43.1)
+      activemerchant (~> 1.44.1)
       acts_as_list (= 0.3.0)
       awesome_nested_set (~> 3.0.0.rc.3)
       aws-sdk (= 1.27.0)
@@ -84,14 +84,14 @@ GEM
     active_utils (2.2.3)
       activesupport (>= 2.3.11)
       i18n
-    activemerchant (1.43.3)
-      active_utils (~> 2.0, >= 2.0.1)
-      activesupport (>= 2.3.14, < 5.0.0)
+    activemerchant (1.44.1)
+      active_utils (~> 2.2.0)
+      activesupport (>= 3.2.14, < 5.0.0)
       builder (>= 2.1.2, < 4.0.0)
-      i18n (~> 0.5)
+      i18n (>= 0.6.9)
       json (~> 1.7)
-      money (< 7.0.0)
       nokogiri (~> 1.4)
+      offsite_payments (~> 2.0.0)
     activemodel (4.1.4)
       activesupport (= 4.1.4)
       builder (~> 3.1)
@@ -114,6 +114,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
       uuidtools (~> 2.1)
+    bcrypt (3.1.7)
     bcrypt (3.1.7-x86-mingw32)
     bootstrap-kaminari-views (0.0.5)
       kaminari (>= 0.13)
@@ -190,8 +191,18 @@ GEM
       i18n (>= 0.6.4, <= 0.7.0.dev)
     multi_json (1.10.1)
     multi_xml (0.5.5)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     nokogiri (1.6.3.1-x86-mingw32)
       mini_portile (= 0.6.0)
+    offsite_payments (2.0.1)
+      active_utils (~> 2.2.0)
+      activesupport (>= 3.2.14, < 5.0.0)
+      builder (>= 2.1.2, < 4.0.0)
+      i18n (~> 0.5)
+      json (~> 1.7)
+      money (< 7.0.0)
+      nokogiri (~> 1.4)
     orm_adapter (0.5.0)
     paperclip (4.2.0)
       activemodel (>= 3.0.0)
@@ -200,6 +211,7 @@ GEM
       mime-types
     paranoia (2.0.2)
       activerecord (~> 4.0)
+    pg (0.17.1)
     pg (0.17.1-x86-mingw32)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
@@ -284,6 +296,7 @@ GEM
       rack (>= 1.0)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
