@@ -16,7 +16,7 @@
       <div class="navbar-header">
         <!--logo-->
         <div class="logo">
-          <a href="/"><img src="/assets/logo.png" alt="" class="animated bounceInDown" /></a>
+          <a href="/"><img src="/assets/logo.png" alt="" class="animated bounceInDown main-logo" /></a>
         </div>
       </div>
 
@@ -42,7 +42,6 @@
               <li><a href="#">Nokia</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><strong>About Us</strong></a></li>
           <li class="dropdown"><a><strong>Support</strong></a>
             <ul class="dropdown-menu">
               <li><a href="#">Track Order</a></li>
@@ -61,6 +60,7 @@
           <% else %>
               <li class="dropdown"><a href="<%= main_app.new_user_session_path%>"><strong>Sign In / Sign Up</strong></a></li>
           <% end %>
+          <li id="link-to-cart" data-hook><%= link_to_cart %></li>
         </ul>
       </div>
     </div>

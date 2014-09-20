@@ -28,10 +28,10 @@
 //= require jquery.prettyPhoto
 //= require jquery.touchSwipe.min
 //= require jquery-ui.min
-//= require retina
 //= require scripts
 //= require custom
 //= require bootstrap
+//= require retina
 //= require googleanalytics
 
 

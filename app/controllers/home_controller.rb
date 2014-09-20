@@ -1,5 +1,10 @@
 class HomeController < ApplicationController
 
+  include Spree::Core::ControllerHelpers::Order
+  include Spree::Core::ControllerHelpers::Auth
+  helper Spree::BaseHelper
+  helper Spree::StoreHelper
+
   def index
   end
 
