@@ -1331,7 +1331,6 @@ span.nav-close:before { content: "\f00d"; }
 .pricing-header-row-1 small { color: #fff; }
 .pricing-table ul { margin: 0; padding: 0; list-style: none; }
 .price {
-	font: 40px 'Lato', sans serif;
 	font-weight: 700;
 	margin: 13px 0 5px;
 	text-align: center;

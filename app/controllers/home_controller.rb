@@ -1,7 +1,6 @@
 class HomeController < ApplicationController
 
-  include Spree::Core::ControllerHelpers::Order
-  include Spree::Core::ControllerHelpers::Auth
+  include Spree::Core::ControllerHelpers
   helper Spree::BaseHelper
   helper Spree::StoreHelper
 

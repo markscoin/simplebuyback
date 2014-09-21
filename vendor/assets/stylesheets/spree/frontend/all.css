@@ -3,9 +3,19 @@
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *
-
- *= require spree/frontend
-
  *= require_self
+ *= require alt_footer
+ *= require bootstrap
+ *= require colour
+ *= require docs
+ *= require font-awesome.min.css.scss.erb
+ *= require green
+ *= require nerveslider
+ *= require prettyPhoto
+ *= require slider
+ *= require theme
+ *= require timeline
+ *= require zocial
+ *= require custom
  *= require_tree .
 */

@@ -21,8 +21,8 @@
     <%= render "spree/orders/adjustments" %>
   <% end %>
   <tr class="warning cart-total">
-    <td colspan="4" align='right'><h5><%= Spree.t(:total) %></h5></th>
-    <td class="lead" colspan><%= order_form.object.display_total %></td>
+    <td colspan="4" align='right'><h5>Offer Total</h5></th>
+    <td class="lead" style="vertical-align: middle;" colspan><%= order_form.object.display_total %></td>
     <td></td>
   </tr>
 </table>

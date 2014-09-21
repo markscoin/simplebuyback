@@ -1,4 +1,7 @@
 class RegistrationsController < Devise::RegistrationsController
+  include Spree::Core::ControllerHelpers
+  helper Spree::BaseHelper
+  helper Spree::StoreHelper
 
   def create
     build_resource(sign_up_params)
