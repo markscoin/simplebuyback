@@ -23,5 +23,6 @@
  *= require theme
  *= require timeline
  *= require zocial
+ *= require custom
  *= require_tree .
  */

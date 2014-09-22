@@ -45,7 +45,6 @@
           <li class="dropdown"><a href="#"><strong>About Us</strong></a></li>
           <li class="dropdown"><a><strong>Support</strong></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Track Order</a></li>
               <li><a href="/home/contact">Contact Us</a></li>
               <li><a href="#">FAQ</a></li>
             </ul>
@@ -53,7 +52,7 @@
           <% if user_signed_in? %>
               <li class="dropdown <%= is_active?(edit_user_registration_path) %>"><a><strong>Your Account</strong></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#"><strong>Track Order</strong></a></li>
+                  <li><a href="<%= home_order_path %>"><strong>Your Orders</strong></a></li>
                   <li><a href="<%= edit_user_registration_path %>"><strong>Edit Account</strong></a></li>
                   <li><a rel="nofollow" href="<%= destroy_user_session_path %>" data-method="delete"><strong>Sign out</strong></a></li>
                 </ul>

@@ -196,3 +196,7 @@ th {
     width: 70px;
     margin: auto;
 }
+
+.order_history_header {
+    border-bottom: 1px solid black;
+}

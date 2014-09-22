@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
 
-
   mount Spree::Core::Engine, :at => '/store'
-  devise_for :users, :controllers => { registrations: 'registrations'}
+  devise_for :users, :controllers => { registrations: 'registrations', sessions: 'sessions'}
   root to: 'home#index'
   get '/home/contact'
-  get '/home/random'
+  get '/home/order'
   resources :home
   resources :quote
   match '/send_mail', to: 'home#send_mail', via: 'post'

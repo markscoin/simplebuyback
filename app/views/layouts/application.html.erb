@@ -41,7 +41,6 @@
           </li>
           <li class="dropdown"><a><strong>Support</strong></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Track Order</a></li>
               <li><a href="/home/contact">Contact Us</a></li>
               <li><a href="#">FAQ</a></li>
             </ul>
@@ -49,7 +48,7 @@
           <% if user_signed_in? %>
               <li class="dropdown <%= is_active?(main_app.edit_user_registration_path) %>"><a><strong>Your Account</strong></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#"><strong>Track Order</strong></a></li>
+                  <li><a href="<%= home_order_path %>"><strong>Your Orders</strong></a></li>
                   <li><a href="<%= main_app.edit_user_registration_path %>"><strong>Edit Account</strong></a></li>
                   <li><a rel="nofollow" href="<%= main_app.destroy_user_session_path %>" data-method="delete"><strong>Sign out</strong></a></li>
                 </ul>
@@ -70,42 +69,7 @@
 <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-<div class="alert alert-danger" role="alert" style="text-align: center"><strong>Site Under Construction! Please Report Any Bugs Using This Form   <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#myModal" style="margin: 0 0 0 15px"><i class="fa fa-bug"></i>  Report Bug</button></strong></div>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Report a Bug <i class="fa fa-bug"></i> </h4>
-      </div>
-      <div class="modal-body">
-        <% if notice %>
-            <p class="alert alert-success"><%= notice %></p>
-        <% end %>
-        <div class="contact_form">
-          <div id="note"></div>
-          <div id="fields">
-            <%= form_tag main_app.send_mail_path , :id => 'ajax-contact-form', :role => 'form' do %>
-                <div>
-                  <%= label_tag 'name', 'Name*', :class => "form_info" %>
-                  <%= text_field_tag 'name', nil, class: 'col-xs-8', placeholder: 'Your Name' %>
-                </div>
-                <div>
-                  <%= label_tag 'message', 'Describe the bug', :class => "form_info" %>
-                  <%= text_area_tag 'message', nil, class: 'col-xs-8', rows: 4, placeholder: 'Please describe the issue you are experiencing ...' %>
-                </div>
-                </div>
-                <div class="clear pad45"></div>
-                </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-dismiss="modal" style="margin-bottom: 0px">Close</button>
-                  <%= submit_tag 'Submit', class: 'btn btn-primary btn-form marg-right5' %>
-            <% end %>
-            </div>
-            </div>
-  </div>
-</div>
+<div class="clear pad45"></div>
 <%= yield %>
 <div class="clear pad45"></div>
 <!--footer-->
