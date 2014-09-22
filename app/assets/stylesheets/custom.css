@@ -200,3 +200,31 @@ th {
 .order_history_header {
     border-bottom: 1px solid black;
 }
+
+/* Home Page Navigation */
+
+.homepanel {
+    border-top: 1px solid darkgray;
+    padding-top: 20px;
+}
+
+.carrier_image {
+    max-width: 160px;
+}
+
+.brand_image {
+    max-height: 110px !important;
+
+}
+
+.device_image {
+    max-height: 190px;
+}
+
+.apple_phone {
+    max-width: 75px;
+}
+
+.ipad_image {
+    max-height: 150px;
+}

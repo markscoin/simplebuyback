@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   root to: 'home#index'
   get '/home/contact'
   get '/home/order'
+  get '/home/faq'
   resources :home
   resources :quote
   match '/send_mail', to: 'home#send_mail', via: 'post'

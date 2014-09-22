@@ -10,8 +10,8 @@ class HomeController < ApplicationController
 
   end
 
-  def random
-    render 'home/random'
+  def faq
+    render 'home/faq'
   end
 
   def contact
