@@ -3,29 +3,29 @@
       <div class="col-xs-3">
       <h2 style="color: #31c3a6;"><strong>Why Sell To Us?</strong></h2>
       <div class="maketable">
-        <img src="/assets/icons/checkmark.png" class="reasons icon-img"/>
+        <%= image_tag("icons/checkmark.png", class: "reasons icon-img") %>
         <p class="reasons"><strong>  Competitive Prices</strong></p>
       </div>
       <div class="maketable">
-        <img src="/assets/icons/Mail.png" class="reasons icon-img" />
+        <%= image_tag("icons/Mail.png", class: "reasons icon-img") %>
         <p class="reasons"><strong>  Free Shipping</strong></p>
       </div>
       <div class="maketable">
-        <img src="/assets/icons/Watches.png" class="reasons icon-img"/>
+        <%= image_tag("icons/Watches.png", class: "reasons icon-img") %>
         <p class="reasons"><strong>  Fast Payment</strong></p>
       </div>
       </div>
       <div class="col-xs-3 growimages">
-      <img src="/assets/devices/iPhone5swithlogo.png" class="center-block device_image" data-toggle="collapse" data-parent="#accordion" data-target="#iPhone"/><br>
-      <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPhone"> Sell Your iPhone</button>
+        <%= image_tag("devices/iPhone5swithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPhone"}) %><br>
+        <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPhone"> Sell Your iPhone</button>
       </div>
       <div class="col-xs-3 growimages">
-      <img src="/assets/devices/galaxywithlogo.png" class="center-block device_image" data-toggle="collapse" data-parent="#accordion" data-target="#anyphone"/><br>
-      <button type="button" class="btn btn-success btn-lg btn-rounded center-block"  data-toggle="collapse" data-parent="#accordion" data-target="#anyphone"> Sell Any Phone</button>
+        <%= image_tag("devices/galaxywithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#anyphone"}) %><br>
+        <button type="button" class="btn btn-success btn-lg btn-rounded center-block"  data-toggle="collapse" data-parent="#accordion" data-target="#anyphone"> Sell Any Phone</button>
       </div>
       <div class="col-xs-3 growimages">
-      <img src="/assets/devices/iPadairwithlogo.png" class="center-block device_image" data-toggle="collapse" data-parent="#accordion" data-target="#iPad" /><br>
-      <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPad"> Sell Your iPad</button>
+        <%= image_tag("devices/iPadairwithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPad"}) %><br>
+        <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPad"> Sell Your iPad</button>
       </div>
       <div class="col-xs-9 col-xs-offset-3">
       <div id="iPhone" class="collapse">
@@ -44,10 +44,10 @@
             <span>Select Your Carrier:</span>
             <table class="table">
               <tr>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryatt"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemorytmobile"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryverizon"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemorysprint"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryatt"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemorytmobile"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryverizon"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemorysprint"}) %></th>
               </tr>
             </table>
               <div id="iphone5smemoryatt" class="collapse homepanel">
@@ -97,10 +97,10 @@
               <span>Select Your Carrier:</span>
               <table class="table">
               <tr>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryatt"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memorytmobile"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryverizon"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memorysprint"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryatt"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memorytmobile"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryverizon"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memorysprint"}) %></th>
               </tr>
             </table>
               <div id="iphone5memoryatt" class="collapse homepanel">
@@ -150,10 +150,10 @@
               <span>Select Your Carrier:</span>
               <table class="table">
               <tr>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryatt"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemorytmobile"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryverizon"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemorysprint"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryatt"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemorytmobile"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryverizon"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemorysprint"}) %></th>
               </tr>
             </table>
               <div id="iphone4smemoryatt" class="collapse homepanel">
@@ -205,10 +205,10 @@
               <span>Select Your Carrier:</span>
               <table class="table">
               <tr>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryatt"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorytmobile"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryverizon"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorysprint"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryatt"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorytmobile"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryverizon"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorysprint"}) %></th>
               </tr>
             </table>
               <div id="iphone4memoryatt" class="collapse homepanel">
@@ -273,10 +273,10 @@
           <span>Select Phone Carrier:</span>
           <table class="table">
             <tr>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
             </tr>
           </table>
         </div>
@@ -284,10 +284,10 @@
           <span>Select Phone Carrier:</span>
           <table class="table">
             <tr>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
             </tr>
           </table>
         </div>
@@ -295,30 +295,30 @@
           <span>Select Phone Carrier:</span>
           <table class="table">
             <tr>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
             </tr>
           </table></div>
         <div id="motorolacarriers" class="collapse homepanel">
           <span>Select Phone Carrier:</span>
           <table class="table">
             <tr>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
             </tr>
           </table></div>
         <div id="htccarriers" class="collapse homepanel">
           <span>Select Phone Carrier:</span>
           <table class="table">
             <tr>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
             </tr>
           </table>
         </div>
@@ -326,9 +326,9 @@
           <span>Select Phone Carrier:</span>
           <table class="table">
             <tr>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile") %></th>
-              <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
+              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
             </tr>
           </table>
         </div>
@@ -361,8 +361,8 @@
                 <span>Select Carrier (if any) :</span>
                 <table class="table">
                   <tr>
-                    <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipad2attmemory"}) %></th>
-                    <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipad2verizonmemory"}) %></th>
+                    <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipad2attmemory"}) %></th>
+                    <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipad2verizonmemory"}) %></th>
                   </tr>
                 </table>
                   <div id="ipad2attmemory" class="collapse homepanel">
@@ -392,8 +392,8 @@
                   <span>Select Carrier (if any):</span>
                 <table class="table">
                   <tr>
-                    <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryatt"}) %></th>
-                    <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryverizon"}) %></th>
+                    <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryatt"}) %></th>
+                    <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryverizon"}) %></th>
                   </tr>
                 </table>
                   <div id="ipad3memoryatt" class="collapse homepanel">
@@ -423,9 +423,9 @@
                 <div id="ipad4memory">
                 <table class="table">
                   <tr>
-                    <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memoryatt"}) %></th>
-                    <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memoryverizon"}) %></th>
-                    <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memorysprint"}) %></th>
+                    <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memoryatt"}) %></th>
+                    <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memoryverizon"}) %></th>
+                    <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memorysprint"}) %></th>
                   </tr>
                 </table>
                   <div id="ipad4memoryatt" class="collapse homepanel">
@@ -470,10 +470,10 @@
             <div id="ipadairmemory">
             <table class="table">
               <tr>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairattmemory"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairverizonmemory"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairsprintmemory"}) %></th>
-                <th class="growimages carrier_image"><%= image_tag("carriers/160x80tmobile.png", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairtmobilememory"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairattmemory"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairverizonmemory"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairsprintmemory"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairtmobilememory"}) %></th>
               </tr>
             </table>
             <div class="collapse homepanel" id="ipadairattmemory">
@@ -536,9 +536,9 @@
               <span>Select Carrier (if any):</span>
               <table class="table">
                 <tr>
-                  <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryatt"}) %></th>
-                  <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryverizon"}) %></th>
-                  <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemorysprint"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryatt"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryverizon"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemorysprint"}) %></th>
                 </tr>
               </table>
                 <div id="originalminimemoryatt" class="collapse homepanel">
@@ -581,9 +581,9 @@
               <span>Select Carrier (if any):</span>
               <table class="table">
                 <tr>
-                  <th class="growimages carrier_image"><%= image_tag("carriers/160x80att.png", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#attminimemory"}) %></th>
-                  <th class="growimages carrier_image"><%= image_tag("carriers/160x80verizon.png", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#verizonminimemory"}) %></th>
-                  <th class="growimages carrier_image"><%= image_tag("carriers/160x80sprint.png", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#sprintminimemory"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#attminimemory"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#verizonminimemory"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#sprintminimemory"}) %></th>
                 </tr>
               </table>
                 <div id="verizonminimemory" class="collapse homepanel">

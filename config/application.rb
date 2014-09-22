@@ -6,6 +6,7 @@ Dir.glob("#{Rails.root}/app/assets/images/phones/apple").each do |path|
   config.assets.paths << path
 end
 
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
