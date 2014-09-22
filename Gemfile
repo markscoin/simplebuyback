@@ -52,3 +52,6 @@ gem 'aws-sdk'
 group :development, :test do
 gem 'foreman'
 end
+
+# To properly display retina images when they are cached
+gem 'retina_tag'

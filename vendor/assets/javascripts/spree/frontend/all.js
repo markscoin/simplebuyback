@@ -27,5 +27,6 @@
 //= require custom
 //= require bootstrap
 //= require spree/frontend
+//= require retina_tag
 //= require googleanalytics
 //= require_tree .
