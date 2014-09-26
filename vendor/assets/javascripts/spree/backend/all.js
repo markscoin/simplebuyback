@@ -9,7 +9,6 @@
 //= require spree/backend
 //= require jquery
 //= require jquery_ujs
-//= require retina
 //= require modernizr.custom.63321
 //= require modernizr.custom
 //= require cbpGridGallery
