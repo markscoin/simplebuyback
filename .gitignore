@@ -18,3 +18,5 @@
 # Ignore the environment variables file and procfile
 /.env
 /Procfile
+
+/config/local_env.yml
