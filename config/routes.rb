@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/home/contact'
   get '/home/order'
   get '/home/faq'
+  get '/home/notifications'
   resources :home
   resources :quote
   match '/send_mail', to: 'home#send_mail', via: 'post'

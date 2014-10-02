@@ -55,3 +55,10 @@ end
 
 # To properly display retina images when they are cached
 gem 'retina_tag'
+
+# Gems that allow importing of products though excel spreadsheets
+gem 'datashift'
+gem 'datashift_spree'
+
+#crawler
+gem 'nokogiri'

@@ -33,6 +33,19 @@ class HomeController < ApplicationController
     @search = Spree::Order.ransack(params[:q].merge(user_id_eq: @user.id))
     @orders = @search.result
     render 'home/order'
+  end
+
+  def notifications
+    @products = Spree::Product.all
+    @variants = Spree::Variant.all
+    @prices = Spree::Price.all
+    @productlist = @products.map { |x| {id: x.id, name: x.name}}
+    @variantslist = @variants.map { |y| {variant_id: y.id, condition: y.position, id: y.product_id }}
+    @prices = @prices.map {|z| {variant_id: z.variant_id, price: z.amount}}
+    @almost = @variantslist.map { |x| x.merge (@productlist.find { |h| h[:id] == x[:id] } || {} ) }
+    @complete = @almost.map { |x| x.merge (@prices.find { |h| h[:variant_id] == x[:variant_id] } || {} ) }
+    @completesorted = @complete.sort_by { |x| x[:variant_id] }
+    @completefinal = @completesorted.delete_if { |x| x[:condition] == 1}
 
   end
 

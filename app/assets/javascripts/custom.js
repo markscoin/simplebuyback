@@ -4,5 +4,6 @@ $(document).ready(function() {
         $("#variant_id_" + random).prop("checked", true);
 
     });
+
 });
 
