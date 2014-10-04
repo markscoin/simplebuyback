@@ -24,7 +24,7 @@ class HomeController < ApplicationController
     subject = params[:subject]
     message = params[:message]
     Notifier.contact_email(name, email, subject, message).deliver
-    redirect_to home_contact_path, notice: 'Message Sent. We get back to you ASAP!'
+    redirect_to home_contact_path, notice: "Message Sent. We'll get back to you ASAP!"
   end
 
   def order

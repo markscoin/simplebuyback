@@ -51,6 +51,9 @@ gem 'aws-sdk'
 #Allows you to use environment variables
 group :development, :test do
 gem 'foreman'
+gem 'rspec-rails'
+gem 'capybara'
+gem 'factory_girl_rails'
 end
 
 # To properly display retina images when they are cached
@@ -62,3 +65,5 @@ gem 'datashift_spree'
 
 #crawler
 gem 'nokogiri'
+
+

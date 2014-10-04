@@ -12,7 +12,6 @@ class Notifier < ActionMailer::Base
     @email = email
     @subject = subject
     @message = message
-
     mail(from: email, to: "support@simplebuyback.com", subject: 'Support Request')
   end
 
