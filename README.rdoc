@@ -1,28 +1,12 @@
-== README
+== SimpleBuyBack (Under Construction 10/2/14)  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+SimpleBuyBack is a website that allows users to recieve quotes for their used electronics.  
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The website utilizes the Spree Ecommerce gem for managing products.  
+The homepage provides custom navigation making it easier to navigate the "store" (select device).  
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Under Development:  
+Crawler - Crawls competitor's site to gather prices and products and automatically updating simplebuyback accordingly.
+
+
