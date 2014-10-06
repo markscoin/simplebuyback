@@ -53,7 +53,7 @@ group :development, :test do
 gem 'foreman'
 gem 'rspec-rails'
 gem 'capybara'
-gem 'factory_girl_rails'
+gem 'factory_girl_rails', :require => false
 end
 
 # To properly display retina images when they are cached

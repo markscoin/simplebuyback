@@ -39,7 +39,7 @@ describe "Notifier Mailer" do
     specify { expect ActionMailer::Base.deliveries.first.subject eq("Support Request")} # Subject Line
     specify { expect ActionMailer::Base.deliveries.first.to eq(["support@simplebuyback.com"])} #TO
     specify { expect ActionMailer::Base.deliveries.first.from eq(["#{@email}"])} # FROM
-    specify { expect(ActionMailer::Base.deliveries.first.body.raw_source).to include("Test Name")}
-    specify { expect(ActionMailer::Base.deliveries.first.body.raw_source).to include("Test Message")}
+    specify { expect(ActionMailer::Base.deliveries.first.body.raw_source).to include("Test Name")} #Name
+    specify { expect(ActionMailer::Base.deliveries.first.body.raw_source).to include("Test Message")} #Message Content
   end
 end
