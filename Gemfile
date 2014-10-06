@@ -54,6 +54,7 @@ gem 'foreman'
 gem 'rspec-rails'
 gem 'capybara'
 gem 'factory_girl_rails', :require => false
+gem 'database_cleaner'
 end
 
 # To properly display retina images when they are cached

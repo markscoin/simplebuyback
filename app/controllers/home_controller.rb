@@ -46,7 +46,5 @@ class HomeController < ApplicationController
     @complete = @almost.map { |x| x.merge (@prices.find { |h| h[:variant_id] == x[:variant_id] } || {} ) }
     @completesorted = @complete.sort_by { |x| x[:variant_id] }
     @completefinal = @completesorted.delete_if { |x| x[:condition] == 1}
-
   end
-
 end

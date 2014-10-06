@@ -12,6 +12,7 @@ describe "Notifier Mailer" do
     end
     after(:each) do
       ActionMailer::Base.deliveries.clear
+      DatabaseCleaner.clean
     end
     specify { expect ActionMailer::Base.deliveries.count eq(1)} #Email Sent
     specify { expect ActionMailer::Base.deliveries.first.subject eq("Welcome to SimpleBuyBack")} #Subject Line

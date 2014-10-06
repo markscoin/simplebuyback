@@ -1,7 +1,7 @@
 require 'capybara/rspec'
 require 'rails_helper'
 
-describe "contact form", :type => :feature do
+describe "Contact Form", :type => :feature do
 
   it "Alert Success When Submitting" do
     visit '/home/contact'

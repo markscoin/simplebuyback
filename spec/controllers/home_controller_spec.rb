@@ -1,9 +1,13 @@
-require "rails_helper"
-require "spec_helper"
+require 'rails_helper'
+require 'spec_helper'
 
 RSpec.describe HomeController, :type => :controller do
   render_views
   instance_variable_get("@completefinal")
+  instance_variable_get("@orders")
+  after(:each) do
+    DatabaseCleaner.clean
+  end
   describe "GET #Contact" do
     it "should return 200 code" do
       get :contact
@@ -43,5 +47,22 @@ RSpec.describe HomeController, :type => :controller do
       expect(response).to have_http_status(200)
     end
   end
-
+  
+  describe "GET Orders" do
+      before(:each) do
+        DatabaseCleaner.start
+        @orders = FactoryGirl.create(:order)
+      end
+      after(:each) do
+        DatabaseCleaner.clean
+      end
+    it "should return 200 code" do
+      get :order
+      expect(response).to be_success
+      expect(response).to have_http_status(200)
+      expect(response.body).to have_selector('td', text: "9.99")
+      expect(response.body).to have_selector('td', text: "Qty: 1")
+      expect(response.body).to have_selector('td', text: "2014-01-01")
+    end   
+  end
 end
