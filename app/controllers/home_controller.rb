@@ -3,7 +3,10 @@ class HomeController < ApplicationController
   helper Spree::BaseHelper
   helper Spree::StoreHelper
 
+ 
+  
   def index
+    
   end
 
   def show
@@ -48,3 +51,4 @@ class HomeController < ApplicationController
     @completefinal = @completesorted.delete_if { |x| x[:condition] == 1}
   end
 end
+

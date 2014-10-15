@@ -1,0 +1,103 @@
+<span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#iphone_models" >Which iPhone do I have?</button></span>
+<div class="modal fade" id="iphone_models" tabindex="-1" role="dialog" aria-labelledby="iphone_models" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="iphone_models">Identifying iPhone Model</h4>
+      </div>
+      <div class="modal-body">
+        <p><strong>Find the Model Number on the Back for your iPhone:</strong></p>
+        <%= image_tag("iPhone_Model.png", alt: "", class: "center-block") %>
+        <div class="pad10"></div>
+        <table class="table modaltable">
+          <tr>
+            <th>Model</th>
+            <th>Model Number</th>
+            <th>Carrier</th>
+          </tr>
+          <tr>
+            <td><strong>iPhone 6 Plus</strong></td>
+            <td>A1522</td>
+            <td>AT&T, T-Mobile, Sprint, Verizon</td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 6</strong></td>
+            <td>A1549</td>
+            <td>AT&T, T-Mobile, Sprint, Verizon</td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 5S</strong></td>
+            <td colspan="2" >
+              <table>
+                <tr>
+                  <td class="col_1">A1533</td>
+                  <td class="col_2">AT&T, Verizon, T-Mobile</td>
+                </tr>
+                <tr>
+                  <td>A1453</td>
+                  <td>Sprint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 5C</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_1">A1532</td>
+                  <td class="col_2">AT&T, Verizon, T-Mobile</td>
+                </tr>
+                <tr>
+                  <td>A1456</td>
+                  <td>Sprint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 5</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_1">A1428</td>
+                  <td class="col_2">AT&T, T-Mobile, Unlocked</td>
+                </tr>
+                <tr>
+                  <td>A1429</td>
+                  <td>Verizon, Sprint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 4S</strong></td>
+            <td>A1387</td>
+            <td>AT&T, Verizon, T-Mobile, Sprint</td>
+          </tr>
+          <tr>
+            <td><strong>iPhone 4</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_1">A1332</td>
+                  <td class="col_2">AT&T, T-Mobile</td>
+                </tr>
+                <tr>
+                  <td>A1349</td>
+                  <td>Verizon, Sprint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

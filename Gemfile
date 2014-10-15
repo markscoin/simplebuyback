@@ -61,8 +61,8 @@ end
 gem 'retina_tag'
 
 # Gems that allow importing of products though excel spreadsheets
-gem 'datashift'
-gem 'datashift_spree'
+gem 'datashift', :git => 'http://github.com/autotelik/datashift'
+gem 'datashift_spree', :git => 'http://github.com/markscoin/datashift_spree'
 
 #crawler
 gem 'nokogiri'

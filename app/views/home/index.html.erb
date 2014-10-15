@@ -1,3 +1,5 @@
+<!-- Modal must be at the top to render properly when click links in the panels -->
+<%= render partial: "memory_modal" %> 
 <div class="container">
   <div class="row" id="accordion">
       <div class="col-xs-3">
@@ -31,10 +33,11 @@
       <div id="iPhone" class="collapse">
         <div id="iphonepanel" class="homepanel">
         <span>Select Your iPhone:</span>
+        <%= render partial: "iphone_modal" %>  
         <table class="table">
           <tr>
             <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5scarrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5S</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone", alt: "iPhone 5", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5carrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone", alt: "iPhone 5", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5carrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5</button></th>            
             <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone", alt: "iPhone 4S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4scarrier"})%><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4S</button></th>
             <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone", alt: "iPhone 4", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4carrier"})%><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4</button></th>
           </tr>
@@ -52,16 +55,23 @@
             </table>
               <div id="iphone5smemoryatt" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block ">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 5S 16GB - AT&T</td>
+                    <td class="center">iPhone 5S 32GB - AT&T</td>
+                    <td class="center">iPhone 5S 64GB - AT&T</td>
+                  </tr>
+                  <tr>
+                    <th><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S") %><button type="button" class="btn btn-success btn-rounded center-block ">16GB</button></th>
+                    <th><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S") %><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <th><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S") %><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone5smemorytmobile" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
                     <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -72,6 +82,7 @@
               </div>
               <div id="iphone5smemoryverizon" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
                     <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -82,6 +93,7 @@
               </div>
               <div id="iphone5smemorysprint" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
                     <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -105,6 +117,7 @@
             </table>
               <div id="iphone5memoryatt" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memory_size">Whats the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
                     <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -115,6 +128,7 @@
               </div>
               <div id="iphone5memorytmobile" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memory_size" >Whats the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
                     <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -337,6 +351,7 @@
       <div id="iPad" class="collapse ">
         <div id="ipadpanel" class="homepanel">
         <span>Select Your iPad:</span>
+        <%= render "ipad_modal" %>
          <!-- The panel with the clickable images of the ipads -M.O. -->
         <table class="table">
           <tr>

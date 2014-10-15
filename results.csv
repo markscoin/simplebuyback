@@ -1,283 +1,1 @@
-13769,Samsung Galaxy S III SGH-I747 (AT&T),$19.50,$95.04,$94.92
-13769,Samsung Galaxy S III SGH-I747 (AT&T),$19.50,$95.04,$94.92
-13770,Samsung Galaxy S III SGH-T999 (T-Mobile),$22.04,$87.87,$87.20
-13771,Samsung Galaxy S III SPH-L710  (Sprint),$12.15,$50.70,$53.30
-13778,Samsung Showcase SCH-i500 (Other Carrier),$1.60,$6.40,$6.40
-13779,Samsung Showcase SCH-i500 (Verizon),$1.62,$9.36,$9.84
-13786,Sony-Ericsson Xperia Play (AT&T),$5.60,$7.20,$7.20
-13792,Apple iPhone 5 64GB (AT&T),$75.48,$173.40,$173.40
-13790,Apple iPhone 5 16GB (AT&T),$99.60,$162,$174
-13793,Apple iPhone 5 16GB (Verizon),$94.50,$232,$185.60
-13791,Apple iPhone 5 32GB (AT&T),$87.32,$170,$170
-13794,Apple iPhone 5 32GB (Verizon),$90,$197.20,$208.80
-13797,Apple iPhone 5 32GB (Sprint),$41.40,$137.78,$137.78
-13795,Apple iPhone 5 64GB (Verizon),$75.60,$197.20,$208.80
-13798,Apple iPhone 5 64GB (Sprint),$55.20,$128.65,$128.65
-13796,Apple iPhone 5 16GB (Sprint),$56,$124,$124
-13799,LG Escape P870,[],$16.25,$19.71
-13802,HTC Droid Incredible 4G AGR6410,$6.16,$23.70,$25.80
-13800,Motorola Droid RAZR M XT907,$8.10,$28.80,$34.03
-13803,Samsung Galaxy S III GT-i9300,$16.20,$71.76,$82.82
-13801,Samsung Galaxy Victory SPH-L300,[],$4.50,$5.25
-13807,LG Intuition VS950,$7.30,$13,$14.60
-13805,Samsung Galaxy Stellar 4G SCH-i200,$0.80,$3.20,$3.20
-13808,BlackBerry Bold 9780 (AT&T),$4.40,$11.34,$16.53
-13806,Samsung Galaxy S Relay 4G SGH-T699,[],$21.84,$22.96
-13809,BlackBerry Bold 9700 (T-Mobile),$3.52,$11.34,$12.18
-13810,HTC Evo 4G LTE APX325CKT,$1.76,$15.80,$17.20
-13811,Motorola Photon Q 4G LTE,$1.74,$10.92,$13.05
-13822,LG G2X,$2.19,$15.60,$17.52
-13820,Samsung Galaxy S II SCH-R760 (U.S. Cellular),$3.24,$13.26,$13.94
-13823,Motorola Droid RAZR MAXX HD,$11.18,$78.30,$83.60
-13821,LG Spectrum 2 LG-VS930,$1.46,$22.10,$26.28
-13824,Samsung Galaxy Note II SGH-i317,$25.20,$115.34,$127.82
-13827,Nokia Lumia 920,$4.45,$35.70,$35.70
-13825,Samsung Galaxy Note II SCH-i605,$22.36,$100,$129.05
-13828,Nokia Lumia 822,$5.34,$18.70,$19.55
-13826,Samsung Galaxy Note II SGH-T889,$25.20,$133.45,$142.80
-13833,Nintendo Wii U 8GB Basic Set,$12,$56,$56
-13834,Nintendo Wii U 32GB Deluxe Set,$12,$56,$56
-13837,Nintendo Gameboy Advance Micro,$0.80,$2.40,$2.40
-13840,Nintendo Gameboy Color,[],$4,$4
-13843,HTC Windows Phone 8x (AT&T),$8.80,$22.91,$25.80
-13841,Nintendo 3DS XL,$16,$44,$45.60
-13844,HTC One VX,$0.88,$37.92,$43.86
-13847,LG Optimus G E970 ,$3.65,$52,$59.86
-13845,HTC Windows Phone 8x (T-Mobile),$6.16,$29.23,$31.82
-13846,HTC Windows Phone 8x (Verizon),$5.28,$22.12,$25.80
-13849,LG Nexus 4 E960,$15.33,$68.90,$78.84
-13852,LG Optimus L9,$0.87,$22.50,$26.40
-13850,LG Optimus G LS970,$0.73,$20.80,$31.39
-13853,Nokia Lumia 810,[],$25.50,$25.50
-13854,Pantech Flex,[],$14.40,$14.40
-13857,Samsung Galaxy Express SGH-i437,$2.43,$31.20,$32.80
-13858,Samsung Galaxy Note II SPH-R950 (U.S. Cellular),$13.77,$42.12,$49.20
-13859,Samsung Galaxy Note II SPH-L900 (Sprint),$22.10,$71.71,$77.77
-13862,Apple iPod Touch 5th Generation 64GB ,$28.80,$98,$98
-13860,Apple iPod Touch 5th Generation 32GB ,$31.32,$61.20,$64.80
-13863,BlackBerry Curve  9320,[],$3.20,$3.20
-13861,Apple iPod Nano 7th Generation 16GB ,[],$26,$26
-13867,HTC Droid DNA,$23.76,$75.05,$85.14
-13871,LG Optimus 4X HD P880,[],$6.50,$7.30
-13872,LG Optimus 3D Max P720,[],$4,$4
-13870,LG Optimus L9 P760,[],$14.30,$18.25
-13884,Samsung Galaxy Rugby Pro SGH-i547,$8.10,$31.98,$36.08
-13885,Samsung Galaxy Note SGH-T879,$4.05,$58.50,$63.14
-13893,Samsung Galaxy Nexus SPH-L700,$1.62,$14.04,$14.76
-13896,Apple iPad 4th Generation 32GB WiFi + 4G (AT&T),$36,$175.20,$175.20
-13897,Apple iPad 4th Generation 64GB WiFi + 4G (AT&T),$37.60,$196.80,$196.80
-13895,Apple iPad 4th Generation 16GB WiFi + 4G (AT&T),$38.40,$154.50,$154.50
-13898,Apple iPad 4th Generation 128GB WiFi + 4G (AT&T),$40.80,$217.60,$217.60
-13901,Apple iPad 4th Generation 64GB WiFi + 4G (Sprint),$37.60,$185.60,$185.60
-13899,Apple iPad 4th Generation 16GB WiFi + 4G (Sprint),$37.60,$124,$124
-13902,Apple iPad 4th Generation 128GB WiFi + 4G (Sprint),$39.95,$133.45,$133.45
-13900,Apple iPad 4th Generation 32GB WiFi + 4G (Sprint),$37.60,$126.40,$126.40
-13903,Apple iPad 4th Generation 16GB WiFi + 4G (Verizon),$37.60,$164.80,$164.80
-13906,Apple iPad 4th Generation 128GB WiFi + 4G (Verizon),$39.95,$151.30,$151.30
-13904,Apple iPad 4th Generation 32GB WiFi + 4G (Verizon),$37.60,$175.20,$175.20
-13907,Apple iPad 4th Generation 16GB WiFi ,$36,$157.50,$157.50
-13905,Apple iPad 4th Generation 64GB WiFi + 4G (Verizon),$42.50,$148.75,$148.75
-13908,Apple iPad 4th Generation 32GB WiFi ,$37.60,$180.80,$180.80
-13911,Apple iPad Mini  16GB WiFi + 4G (AT&T),$22.40,$96,$92
-13909,Apple iPad 4th Generation 64GB WiFi ,$36,$212,$212
-13912,Apple iPad Mini  32GB WiFi + 4G (AT&T),$36,$83.20,$83.20
-13910,Apple iPad 4th Generation 128GB WiFi ,$35,$238,$238
-13913,Apple iPad Mini  64GB WiFi + 4G (AT&T),$36,$86.40,$86.40
-13916,Apple iPad Mini  64GB WiFi + 4G (Sprint),$36,$86.40,$86.40
-13914,Apple iPad Mini  16GB WiFi + 4G (Sprint),$36,$76,$76
-13917,Apple iPad Mini  16GB WiFi + 4G (Verizon),$20,$124,$124
-13915,Apple iPad Mini  32GB WiFi + 4G (Sprint),$36,$74.40,$74.40
-13918,Apple iPad Mini  32GB WiFi + 4G (Verizon),$36,$82.40,$82.40
-13921,Apple iPad Mini  32GB WiFi,$12,$124,$124
-13919,Apple iPad Mini  64GB WiFi + 4G (Verizon),$33.75,$77.25,$77.25
-13922,Apple iPad Mini  64GB WiFi,$19.20,$116,$116
-13920,Apple iPad Mini  16GB WiFi,$16.80,$88,$88
-13923,Apple iPhone 4S 16GB (Other Carrier),$17.50,$71.28,$72.90
-13926,Apple iPhone 4 8GB (Other Carrier),$10.80,$32.93,$32.93
-13924,Apple iPhone 4S 32GB (Other Carrier),$22,$69.72,$69.72
-13927,Apple iPhone 5 16GB (Other Carrier),$40.88,$89.10,$104.40
-13925,Apple iPhone 4S 64GB (Other Carrier),$24.64,$63.84,$63.84
-13928,Apple iPhone 5 32GB (Other Carrier),$38.16,$101.25,$107.50
-13931,Microsoft Surface RT 64GB,$8,$53.60,$61.60
-13929,Apple iPhone 5 64GB (Other Carrier),$38.16,$97.20,$103.20
-13932,Microsoft Surface Pro 64GB,$8,$80,$80
-13930,Microsoft Surface RT 32GB,$8,$65.60,$65.60
-13933,Microsoft Surface Pro 128GB,$8,$101.60,$101.60
-13937,Google Nexus 7  8 GB  WiFi,[],$20,$28
-13938,Google Nexus 7 16 GB WiFi,[],$20,$28
-13939,Google Nexus 7 32 GB - WiFi,[],$20,$28
-13940,Google Nexus 7 32 GB WiFi +  4G  (AT&T),[],$20,$28
-13951,Samsung Series 7 Slate PC - 128 GB - Wi-Fi + 3G,[],$120,$120
-13950,Samsung Series 7 Slate PC 128 GB Wi-Fi,[],$144.80,$144.80
-13953,Samsung Series 7 Slate PC - 64 GB - Wi-Fi,[],$117.60,$117.60
-13961,Apple iPhone 5 16GB (T-Mobile),$69.30,$136.50,$184.90
-13959,Apple iPhone 4 8GB (T-Mobile),$18.27,$46.80,$49.80
-13962,Apple iPhone 5 32GB (T-Mobile),$54.75,$147,$187
-13960,Apple iPhone 4S 16GB (T-Mobile),$42,$113.10,$118.90
-13963,Apple iPhone 5 64GB (T-Mobile),$54.75,$147,$187
-13966,BlackBerry Z10 4G (AT&T),$14.08,$67.23,$80.91
-13964,BlackBerry Curve 9315 (T-Mobile),[],$5.60,$5.60
-13967,BlackBerry Z10 4G (Verizon),$18.48,$77.76,$83.52
-13965,BlackBerry Z10 4G (T-Mobile),$14.08,$67.23,$87.87
-13971,HTC One (Sprint),$18,$70.20,$88.20
-13969,HTC First (AT&T),$2.64,$34.76,$39.56
-13972,HTC One (T-Mobile),$38.25,$124.50,$156.60
-13970,HTC One (AT&T),$26.04,$132.72,$138.51
-13974,HTC One X+,$16.72,$71.89,$82.56
-13991,LG Lucid2 VS870,[],$12.35,$15.33
-13992,LG Nexus 4 (T-Mobile),$13.87,$62.40,$70.08
-13998,LG Spirit 4G MS870,[],$6.50,$7.30
-14001,Motorola Electrify M XT901,[],$6.30,$6.30
-14002,Motorola RAZR HD XT926,$11.31,$54.60,$56.55
-14000,Motorola Electrify 2 XT881,[],$10.08,$13.92
-14003,Nokia Lumia 820,$1.78,$18.70,$22.10
-14004,Pantech Discover 4G,[],$24.80,$24.80
-14012,Samsung ATIV Odyssey SCH-I930,[],$4,$4
-14018,Samsung Galaxy S II 4G GT-I9210T (Virgin Mobile),[],$7.80,$8.20
-14021,Samsung Galaxy S4 SGH-I337 (AT&T),$44.84,$117.30,$162.54
-14019,Samsung Galaxy S4 SCH-I545 (Verizon),$44.64,$139.40,$151.20
-14022,Samsung Galaxy S4 SGH-M919 (T-Mobile),$56.96,$136.80,$159.60
-14020,Samsung Galaxy S4 SCH-R970 (Other Carrier),$15.30,$71.25,$71.25
-14023,Samsung Galaxy S4 SPH-L720 (Sprint),$53.10,$142.40,$150.30
-14028,Samsung Rugby III SGH-A997,[],$2.40,$2.40
-14031,Sony Xperia TL 4G LT30AT,$8,$25.20,$25.20
-14029,Samsung Stratosphere II SCH-I415,[],$9.36,$11.48
-14041,Apple iPhone 5c 16GB (Sprint),$54,$67.67,$70.70
-14042,Apple iPhone 5c 16GB (T-Mobile),$54,$149.85,$149.85
-14043,Apple iPhone 5c 16GB (AT&T),$61.20,$147.44,$162.96
-14046,Apple iPhone 5c 32GB (T-Mobile),$72,$148.23,$148.23
-14044,Apple iPhone 5c 16GB (Verizon),$112.50,$189.60,$206.40
-14047,Apple iPhone 5c 32GB (AT&T),$76,$144.30,$144.30
-14045,Apple iPhone 5c 32GB (Sprint),$54,$96.52,$114.30
-14048,Apple iPhone 5c 32GB (Verizon),$86.40,$205.04,$209.70
-14051,Apple iPhone 5s 16GB (T-Mobile),$77,$187.50,$207.50
-14049,Apple iPhone 5s 16GB (AT&T),$90,$227.14,$232.68
-14052,Apple iPhone 5s 16GB (Verizon),$145.07,$277.83,$288.12
-14050,Apple iPhone 5s 16GB (Sprint),$73.04,$170.52,$170.52
-14053,Apple iPhone 5s 32GB (AT&T),$95.76,$229.91,$249.30
-14056,Apple iPhone 5s 32GB (Verizon),$84.48,$264.11,$294.98
-14054,Apple iPhone 5s 32GB (Sprint),$70.04,$175.50,$175.50
-14057,Apple iPhone 5s 64GB (AT&T),$104.40,$224.10,$243
-14055,Apple iPhone 5s 32GB (T-Mobile),$88.90,$201,$222.44
-14058,Apple iPhone 5s 64GB (Sprint),$92.48,$193.44,$193.44
-14061,Motorola Droid MAXX  XT1080M,$27.84,$113.40,$121.80
-14059,Apple iPhone 5s 64GB (T-Mobile),$101.50,$223.50,$247.34
-14062,Motorola Droid Mini  XT1030,$8.70,$50.40,$67.86
-14060,Apple iPhone 5s 64GB (Verizon),$86.40,$261.80,$292.40
-14063,Motorola Droid Ultra XT1080,$21.06,$53.94,$90
-14066,Motorola Moto X XT 1060,$15.66,$63,$69.60
-14064,Motorola Moto X (16GB) XT 1058,$10.44,$83.16,$95.70
-14065,Motorola Moto X (32GB) XT 1058,$13.05,$100.80,$104.40
-14068,Nokia Lumia 521,[],$11.05,$11.05
-14071,Nokia Lumia 928,$4.45,$59.50,$63.75
-14069,Nokia Lumia 925 (AT&T),$4.45,$46.75,$46.75
-14072,Samsung Galaxy Mega SGH-i9205,$28.35,$105.30,$123
-14070,Nokia Lumia 925 (T-Mobile),$4.45,$72.25,$78.20
-14076,BlackBerry Q10 (AT&T),$24.64,$93.15,$100.05
-14074,BlackBerry Q10 (Sprint),$22,$83.43,$89.61
-14077,BlackBerry Q10 (T-Mobile),$32.56,$93.15,$100.05
-14075,BlackBerry Q10 (Verizon),$29.04,$109.35,$117.45
-14078,LG Optimus G Pro ,$18.98,$83.85,$100.01
-14081,HTC 8XT,[],$15.80,$17.20
-14082,Samsung Galaxy Note III (AT&T),$64.38,$153.11,$229.50
-14085,Samsung Galaxy Note III (Sprint),$60.90,$129.58,$188.10
-14083,Samsung Galaxy Note III (T-Mobile),$94.50,$200.80,$221.20
-14086,Samsung Galaxy Note III (US Cellular),$36.45,$97.50,$102.50
-14084,Samsung Galaxy Note III (Verizon),$82.14,$198.29,$240.30
-14087,Samsung Galaxy Mega i527 (AT&T),$31.20,$127.10,$136
-14090,Samsung ATIV S Neo (Sprint),$0.81,$11.70,$12.30
-14088,Samsung Galaxy SIII Mini (AT&T),$6.48,$37.44,$45.10
-14091,Samsung Galaxy S4 Active (AT&T),$29.75,$87.23,$96
-14089,Samsung ATIV S Neo (AT&T),$1.62,$24.18,$25.42
-14095,LG G2 (AT&T),$31.92,$105.60,$108.50
-14096,LG G2 (T-Mobile),$23.40,$79.05,$123.58
-14100,Apple iPhone 4S 8GB (Verizon),$23.10,$69.92,$77.28
-14098,Apple iPhone 4S 8GB (AT&T),$27.36,$96.20,$111.80
-14101,Apple iPhone 4S 8GB (T-Mobile),$31.16,$90,$103.20
-14099,Apple iPhone 4S 8GB (Sprint),$23.40,$73.60,$80.96
-14102,Apple iPhone 4S 8GB (Unlocked),$20.50,$112.50,$129
-14105,Apple iPod Touch 5th Generation 16GB (No iSight),$28.80,$76,$76
-14106,Samsung Galaxy Tab 3 8GB 7.0,[],$11.25,$15
-14109,Samsung Galaxy Tab 3 32GB 10.1 WiFi,[],$40,$40
-14107,Samsung Galaxy Tab 3 16GB 7.0,[],$12,$16
-14108,Samsung Galaxy Tab 3 16GB 10.1 WiFi,[],$40,$40
-14116,Microsoft Surface 2 32GB,[],$101.60,$101.60
-14119,Microsoft Surface Pro 2 128GB,[],$241.60,$241.60
-14117,Microsoft Surface 2 64GB,[],$113.60,$113.60
-14120,Microsoft Surface Pro 2 256GB,[],$320,$320
-14118,Microsoft Surface Pro 2 64GB,[],$177.60,$177.60
-14121,Microsoft Surface Pro 2 512GB,[],$360,$360
-14132,"Asus VivoTab 11.6""",[],$64,$64
-14135,Google Nexus 10 32GB,[],$32,$32
-14163,Lenovo ThinkPad Tablet 2 64GB,[],$70.40,$70.40
-14166,LG Optimus Pad LTE,[],$24,$32
-14169,Sony Xperia Tablet Z 32GB,[],$112,$128
-14167,LG Optimus Pad,[],$16,$16
-14168,Sony Xperia Tablet Z 16GB,[],$80,$88
-14174,Nintendo 2DS,$9.60,$28,$28
-14179,Apple iPhone 3GS 32GB (Unlocked),$0.80,$2.40,$2.40
-14177,Apple iPhone 3GS 8GB (Unlocked),$0.80,$2.40,$2.40
-14180,Apple iPhone 4 8GB (Unlocked),$27,$65.61,$68.85
-14178,Apple iPhone 3GS 16GB (Unlocked),$0.80,$2.40,$2.40
-14181,Apple iPhone 4 16GB (Unlocked),$33.58,$64.80,$79.20
-14184,Apple iPhone 4S 32GB (Unlocked),$44.50,$92.40,$103.60
-14182,Apple iPhone 4 32GB (Unlocked),$36.50,$60.75,$67.50
-14185,Apple iPhone 4S 64GB (Unlocked),$35.60,$93.72,$105.08
-14183,Apple iPhone 4S 16GB (Unlocked),$44.50,$99,$111
-14186,Apple iPhone 5 16GB (Unlocked),$74.46,$181.44,$194.88
-14189,Apple iPhone 5c 16GB (Unlocked),$58.40,$149.04,$156.40
-14187,Apple iPhone 5 32GB (Unlocked),$68.40,$179.82,$190.92
-14190,Apple iPhone 5c 32GB (Unlocked),$59.20,$157.14,$164.90
-14188,Apple iPhone 5 64GB (Unlocked),$64.80,$171.72,$182.32
-14191,Apple iPhone 5s 16GB (Unlocked),$85,$234.08,$273
-14194,LG Nexus 5 (T-Mobile),$36.50,$124.80,$137.24
-14192,Apple iPhone 5s 32GB (Unlocked),$89.70,$195,$268.80
-14195,LG Nexus 5 (Sprint),$26.28,$89.70,$108.04
-14193,Apple iPhone 5s 64GB (Unlocked),$82.80,$258.96,$278.88
-14196,HTC One Max (Sprint),$24.64,$98.75,$111.80
-14199,"Kindle Fire HDX 7"" 16GB Wi-Fi",[],$4,$12
-14197,HTC One Max (Verizon),$52.80,$188.02,$210.70
-14200,"Kindle Fire HDX 7"" 32GB Wi-Fi",[],$8,$12
-14198,BlackBerry Z30,$52.80,$163.62,$178.35
-14202,"Kindle Fire HDX 8.9"" 16GB Wi-Fi",[],$8,$12
-14205,Apple iPad Air 16GB WiFi,$36,$232,$232
-14203,"Kindle Fire HDX 8.9"" 32GB Wi-Fi",[],$8,$12
-14206,Apple iPad Air  32GB WiFi,$36,$244,$244
-14209,Apple iPad Air 16GB WiFi + 4G (AT&T),$37.60,$230.40,$230.40
-14207,Apple iPad Air 64GB WiFi,$36,$260,$260
-14210,Apple iPad Air 32GB WiFi + 4G (AT&T),$53.60,$268.80,$272
-14208,Apple iPad Air 128GB WiFi,$37.60,$260,$260
-14211,Apple iPad Air 64GB WiFi + 4G (AT&T),$62.40,$312.80,$312.80
-14214,Apple iPad Air 32GB WiFi + 4G (T-Mobile),$37.60,$230.40,$230.40
-14212,Apple iPad Air 128GB WiFi + 4G (AT&T),$76.80,$385.60,$385.60
-14215,Apple iPad Air 64GB WiFi + 4G (T-Mobile),$37.60,$230.40,$230.40
-14213,Apple iPad Air 16GB WiFi + 4G (T-Mobile),$37.60,$230.40,$230.40
-14216,Apple iPad Air 128GB WiFi + 4G (T-Mobile),$56,$242.40,$242.40
-14219,Apple iPad Air 64GB WiFi + 4G (Verizon),$37.60,$236.80,$236.80
-14217,Apple iPad Air 16GB WiFi + 4G (Verizon),$37.60,$230.40,$230.40
-14220,Apple iPad Air 128GB WiFi + 4G (Verizon),$60,$244,$244
-14218,Apple iPad Air 32GB WiFi + 4G (Verizon),$37.60,$236.80,$236.80
-14221,Apple iPad Air 16GB WiFi + 4G (Sprint),$37.60,$230.40,$230.40
-14224,Apple iPad Air 128GB WiFi + 4G (Sprint),$37.60,$214.40,$214.40
-14222,Apple iPad Air 32GB WiFi + 4G (Sprint),$37.60,$230.40,$230.40
-14225,Apple iPad Mini with Retina Display 16GB (AT&T),[],$88,$88
-14223,Apple iPad Air 64GB WiFi + 4G (Sprint),$37.60,$230.40,$230.40
-14226,Apple iPad Mini with Retina Display 16GB (Sprint),[],$80,$80
-14229,Apple iPad Mini with Retina Display 16GB WiFi,[],$116,$116
-14227,Apple iPad Mini with Retina Display 16GB (T-Mobile),[],$88,$88
-14230,Apple iPad Mini with Retina Display 32GB (AT&T),[],$92,$92
-14228,Apple iPad Mini with Retina Display 16GB (Verizon),[],$88,$88
-14231,Apple iPad Mini with Retina Display 32GB (Sprint),[],$80,$80
-14234,Apple iPad Mini with Retina Display 32GB WiFi,[],$128,$128
-14232,Apple iPad Mini with Retina Display 32GB (T-Mobile),[],$92,$92
-14235,Apple iPad Mini with Retina Display 64GB (AT&T),[],$96,$96
-14233,Apple iPad Mini with Retina Display 32GB (Verizon),[],$92,$92
-14236,Apple iPad Mini with Retina Display 64GB (Sprint),[],$80,$80
-14239,Apple iPad Mini with Retina Display 64GB WiFi,[],$136,$136
-14237,Apple iPad Mini with Retina Display 64GB (T-Mobile),[],$96,$96
-14240,Apple iPad Mini with Retina Display 128GB (AT&T),[],$104,$104
-14238,Apple iPad Mini with Retina Display 64GB (Verizon),[],$96,$96
-14241,Apple iPad Mini with Retina Display 128GB (Sprint),[],$80,$80
-14244,Apple iPad Mini with Retina Display 128GB WiFi,[],$144,$144
-14242,Apple iPad Mini with Retina Display 128GB (T-Mobile),[],$100,$100
-14243,Apple iPad Mini with Retina Display 128GB (Verizon),[],$100,$100
+13769,Samsung Galaxy S III SGH-I747 (AT&T),$19.50,$95.04,$94.9213770,Samsung Galaxy S III SGH-T999 (T-Mobile),$22.04,$87.87,$87.2013771,Samsung Galaxy S III SPH-L710  (Sprint),$12.15,$50.70,$53.3013778,Samsung Showcase SCH-i500 (Other Carrier),$1.60,$6.40,$6.4013779,Samsung Showcase SCH-i500 (Verizon),$1.62,$9.36,$9.8413786,Sony-Ericsson Xperia Play (AT&T),$5.60,$7.20,$7.2013792,Apple iPhone 5 64GB (AT&T),$75.48,$173.40,$173.4013790,Apple iPhone 5 16GB (AT&T),$99.60,$162,$17413793,Apple iPhone 5 16GB (Verizon),$94.50,$232,$185.6013791,Apple iPhone 5 32GB (AT&T),$87.32,$170,$17013794,Apple iPhone 5 32GB (Verizon),$90,$197.20,$208.8013797,Apple iPhone 5 32GB (Sprint),$41.40,$137.78,$137.7813795,Apple iPhone 5 64GB (Verizon),$75.60,$197.20,$208.8013798,Apple iPhone 5 64GB (Sprint),$55.20,$128.65,$128.6513796,Apple iPhone 5 16GB (Sprint),$56,$124,$12413799,LG Escape P870,[],$16.25,$19.7113802,HTC Droid Incredible 4G AGR6410,$6.16,$23.70,$25.8013800,Motorola Droid RAZR M XT907,$8.10,$28.80,$34.0313803,Samsung Galaxy S III GT-i9300,$16.20,$71.76,$82.8213801,Samsung Galaxy Victory SPH-L300,[],$4.50,$5.2513807,LG Intuition VS950,$7.30,$13,$14.6013805,Samsung Galaxy Stellar 4G SCH-i200,$0.80,$3.20,$3.2013808,BlackBerry Bold 9780 (AT&T),$4.40,$11.34,$16.5313806,Samsung Galaxy S Relay 4G SGH-T699,[],$21.84,$22.9613809,BlackBerry Bold 9700 (T-Mobile),$3.52,$11.34,$12.1813810,HTC Evo 4G LTE APX325CKT,$1.76,$15.80,$17.2013811,Motorola Photon Q 4G LTE,$1.74,$10.92,$13.0513822,LG G2X,$2.19,$15.60,$17.5213820,Samsung Galaxy S II SCH-R760 (U.S. Cellular),$3.24,$13.26,$13.9413823,Motorola Droid RAZR MAXX HD,$11.18,$78.30,$83.6013821,LG Spectrum 2 LG-VS930,$1.46,$22.10,$26.2813824,Samsung Galaxy Note II SGH-i317,$25.20,$115.34,$127.8213827,Nokia Lumia 920,$4.45,$35.70,$35.7013825,Samsung Galaxy Note II SCH-i605,$22.36,$100,$129.0513828,Nokia Lumia 822,$5.34,$18.70,$19.5513826,Samsung Galaxy Note II SGH-T889,$25.20,$133.45,$142.8013833,Nintendo Wii U 8GB Basic Set,$12,$56,$5613834,Nintendo Wii U 32GB Deluxe Set,$12,$56,$5613837,Nintendo Gameboy Advance Micro,$0.80,$2.40,$2.4013840,Nintendo Gameboy Color,[],$4,$413843,HTC Windows Phone 8x (AT&T),$8.80,$22.91,$25.8013841,Nintendo 3DS XL,$16,$44,$45.6013844,HTC One VX,$0.88,$37.92,$43.8613847,LG Optimus G E970 ,$3.65,$52,$59.8613845,HTC Windows Phone 8x (T-Mobile),$6.16,$29.23,$31.8213846,HTC Windows Phone 8x (Verizon),$5.28,$22.12,$25.8013849,LG Nexus 4 E960,$15.33,$68.90,$78.8413852,LG Optimus L9,$0.87,$22.50,$26.4013850,LG Optimus G LS970,$0.73,$20.80,$31.3913853,Nokia Lumia 810,[],$25.50,$25.5013854,Pantech Flex,[],$14.40,$14.4013857,Samsung Galaxy Express SGH-i437,$2.43,$31.20,$32.8013858,Samsung Galaxy Note II SPH-R950 (U.S. Cellular),$13.77,$42.12,$49.2013859,Samsung Galaxy Note II SPH-L900 (Sprint),$22.10,$71.71,$77.7713862,Apple iPod Touch 5th Generation 64GB ,$28.80,$98,$9813860,Apple iPod Touch 5th Generation 32GB ,$31.32,$61.20,$64.8013863,BlackBerry Curve  9320,[],$3.20,$3.2013861,Apple iPod Nano 7th Generation 16GB ,[],$26,$2613867,HTC Droid DNA,$23.76,$75.05,$85.1413871,LG Optimus 4X HD P880,[],$6.50,$7.3013872,LG Optimus 3D Max P720,[],$4,$413870,LG Optimus L9 P760,[],$14.30,$18.2513884,Samsung Galaxy Rugby Pro SGH-i547,$8.10,$31.98,$36.0813885,Samsung Galaxy Note SGH-T879,$4.05,$58.50,$63.1413893,Samsung Galaxy Nexus SPH-L700,$1.62,$14.04,$14.7613896,Apple iPad 4th Generation 32GB WiFi + 4G (AT&T),$36,$175.20,$175.2013897,Apple iPad 4th Generation 64GB WiFi + 4G (AT&T),$37.60,$196.80,$196.8013895,Apple iPad 4th Generation 16GB WiFi + 4G (AT&T),$38.40,$154.50,$154.5013898,Apple iPad 4th Generation 128GB WiFi + 4G (AT&T),$40.80,$217.60,$217.6013901,Apple iPad 4th Generation 64GB WiFi + 4G (Sprint),$37.60,$185.60,$185.6013899,Apple iPad 4th Generation 16GB WiFi + 4G (Sprint),$37.60,$124,$12413902,Apple iPad 4th Generation 128GB WiFi + 4G (Sprint),$39.95,$133.45,$133.4513900,Apple iPad 4th Generation 32GB WiFi + 4G (Sprint),$37.60,$126.40,$126.4013903,Apple iPad 4th Generation 16GB WiFi + 4G (Verizon),$37.60,$164.80,$164.8013906,Apple iPad 4th Generation 128GB WiFi + 4G (Verizon),$39.95,$151.30,$151.3013904,Apple iPad 4th Generation 32GB WiFi + 4G (Verizon),$37.60,$175.20,$175.2013907,Apple iPad 4th Generation 16GB WiFi ,$36,$157.50,$157.5013905,Apple iPad 4th Generation 64GB WiFi + 4G (Verizon),$42.50,$148.75,$148.7513908,Apple iPad 4th Generation 32GB WiFi ,$37.60,$180.80,$180.8013911,Apple iPad Mini  16GB WiFi + 4G (AT&T),$22.40,$96,$9213909,Apple iPad 4th Generation 64GB WiFi ,$36,$212,$21213912,Apple iPad Mini  32GB WiFi + 4G (AT&T),$36,$83.20,$83.2013910,Apple iPad 4th Generation 128GB WiFi ,$35,$238,$23813913,Apple iPad Mini  64GB WiFi + 4G (AT&T),$36,$86.40,$86.4013916,Apple iPad Mini  64GB WiFi + 4G (Sprint),$36,$86.40,$86.4013914,Apple iPad Mini  16GB WiFi + 4G (Sprint),$36,$76,$7613917,Apple iPad Mini  16GB WiFi + 4G (Verizon),$20,$124,$12413915,Apple iPad Mini  32GB WiFi + 4G (Sprint),$36,$74.40,$74.4013918,Apple iPad Mini  32GB WiFi + 4G (Verizon),$36,$82.40,$82.4013921,Apple iPad Mini  32GB WiFi,$12,$124,$12413919,Apple iPad Mini  64GB WiFi + 4G (Verizon),$33.75,$77.25,$77.2513922,Apple iPad Mini  64GB WiFi,$19.20,$116,$11613920,Apple iPad Mini  16GB WiFi,$16.80,$88,$8813923,Apple iPhone 4S 16GB (Other Carrier),$17.50,$71.28,$72.9013926,Apple iPhone 4 8GB (Other Carrier),$10.80,$32.93,$32.9313924,Apple iPhone 4S 32GB (Other Carrier),$22,$69.72,$69.7213927,Apple iPhone 5 16GB (Other Carrier),$40.88,$89.10,$104.4013925,Apple iPhone 4S 64GB (Other Carrier),$24.64,$63.84,$63.8413928,Apple iPhone 5 32GB (Other Carrier),$38.16,$101.25,$107.5013931,Microsoft Surface RT 64GB,$8,$53.60,$61.6013929,Apple iPhone 5 64GB (Other Carrier),$38.16,$97.20,$103.2013932,Microsoft Surface Pro 64GB,$8,$80,$8013930,Microsoft Surface RT 32GB,$8,$65.60,$65.6013933,Microsoft Surface Pro 128GB,$8,$101.60,$101.6013937,Google Nexus 7  8 GB  WiFi,[],$20,$2813938,Google Nexus 7 16 GB WiFi,[],$20,$2813939,Google Nexus 7 32 GB - WiFi,[],$20,$2813940,Google Nexus 7 32 GB WiFi +  4G  (AT&T),[],$20,$2813951,Samsung Series 7 Slate PC - 128 GB - Wi-Fi + 3G,[],$120,$12013950,Samsung Series 7 Slate PC 128 GB Wi-Fi,[],$144.80,$144.8013953,Samsung Series 7 Slate PC - 64 GB - Wi-Fi,[],$117.60,$117.6013961,Apple iPhone 5 16GB (T-Mobile),$69.30,$136.50,$184.9013959,Apple iPhone 4 8GB (T-Mobile),$18.27,$46.80,$49.8013962,Apple iPhone 5 32GB (T-Mobile),$54.75,$147,$18713960,Apple iPhone 4S 16GB (T-Mobile),$42,$113.10,$118.9013963,Apple iPhone 5 64GB (T-Mobile),$54.75,$147,$18713966,BlackBerry Z10 4G (AT&T),$14.08,$67.23,$80.9113964,BlackBerry Curve 9315 (T-Mobile),[],$5.60,$5.6013967,BlackBerry Z10 4G (Verizon),$18.48,$77.76,$83.5213965,BlackBerry Z10 4G (T-Mobile),$14.08,$67.23,$87.8713971,HTC One (Sprint),$18,$70.20,$88.2013969,HTC First (AT&T),$2.64,$34.76,$39.5613972,HTC One (T-Mobile),$38.25,$124.50,$156.6013970,HTC One (AT&T),$26.04,$132.72,$138.5113974,HTC One X+,$16.72,$71.89,$82.5613991,LG Lucid2 VS870,[],$12.35,$15.3313992,LG Nexus 4 (T-Mobile),$13.87,$62.40,$70.0813998,LG Spirit 4G MS870,[],$6.50,$7.3014001,Motorola Electrify M XT901,[],$6.30,$6.3014002,Motorola RAZR HD XT926,$11.31,$54.60,$56.5514000,Motorola Electrify 2 XT881,[],$10.08,$13.9214003,Nokia Lumia 820,$1.78,$18.70,$22.1014004,Pantech Discover 4G,[],$24.80,$24.8014012,Samsung ATIV Odyssey SCH-I930,[],$4,$414018,Samsung Galaxy S II 4G GT-I9210T (Virgin Mobile),[],$7.80,$8.2014021,Samsung Galaxy S4 SGH-I337 (AT&T),$44.84,$117.30,$162.5414019,Samsung Galaxy S4 SCH-I545 (Verizon),$44.64,$139.40,$151.2014022,Samsung Galaxy S4 SGH-M919 (T-Mobile),$56.96,$136.80,$159.6014020,Samsung Galaxy S4 SCH-R970 (Other Carrier),$15.30,$71.25,$71.2514023,Samsung Galaxy S4 SPH-L720 (Sprint),$53.10,$142.40,$150.3014028,Samsung Rugby III SGH-A997,[],$2.40,$2.4014031,Sony Xperia TL 4G LT30AT,$8,$25.20,$25.2014029,Samsung Stratosphere II SCH-I415,[],$9.36,$11.4814041,Apple iPhone 5c 16GB (Sprint),$54,$67.67,$70.7014042,Apple iPhone 5c 16GB (T-Mobile),$54,$149.85,$149.8514043,Apple iPhone 5c 16GB (AT&T),$61.20,$147.44,$162.9614046,Apple iPhone 5c 32GB (T-Mobile),$72,$148.23,$148.2314044,Apple iPhone 5c 16GB (Verizon),$112.50,$189.60,$206.4014047,Apple iPhone 5c 32GB (AT&T),$76,$144.30,$144.3014045,Apple iPhone 5c 32GB (Sprint),$54,$96.52,$114.3014048,Apple iPhone 5c 32GB (Verizon),$86.40,$205.04,$209.7014051,Apple iPhone 5s 16GB (T-Mobile),$77,$187.50,$207.5014049,Apple iPhone 5s 16GB (AT&T),$90,$227.14,$232.6814052,Apple iPhone 5s 16GB (Verizon),$145.07,$277.83,$288.1214050,Apple iPhone 5s 16GB (Sprint),$73.04,$170.52,$170.5214053,Apple iPhone 5s 32GB (AT&T),$95.76,$229.91,$249.3014056,Apple iPhone 5s 32GB (Verizon),$84.48,$264.11,$294.9814054,Apple iPhone 5s 32GB (Sprint),$70.04,$175.50,$175.5014057,Apple iPhone 5s 64GB (AT&T),$104.40,$224.10,$24314055,Apple iPhone 5s 32GB (T-Mobile),$88.90,$201,$222.4414058,Apple iPhone 5s 64GB (Sprint),$92.48,$193.44,$193.4414061,Motorola Droid MAXX  XT1080M,$27.84,$113.40,$121.8014059,Apple iPhone 5s 64GB (T-Mobile),$101.50,$223.50,$247.3414062,Motorola Droid Mini  XT1030,$8.70,$50.40,$67.8614060,Apple iPhone 5s 64GB (Verizon),$86.40,$261.80,$292.4014063,Motorola Droid Ultra XT1080,$21.06,$53.94,$9014066,Motorola Moto X XT 1060,$15.66,$63,$69.6014064,Motorola Moto X (16GB) XT 1058,$10.44,$83.16,$95.7014065,Motorola Moto X (32GB) XT 1058,$13.05,$100.80,$104.4014068,Nokia Lumia 521,[],$11.05,$11.0514071,Nokia Lumia 928,$4.45,$59.50,$63.7514069,Nokia Lumia 925 (AT&T),$4.45,$46.75,$46.7514072,Samsung Galaxy Mega SGH-i9205,$28.35,$105.30,$12314070,Nokia Lumia 925 (T-Mobile),$4.45,$72.25,$78.2014076,BlackBerry Q10 (AT&T),$24.64,$93.15,$100.0514074,BlackBerry Q10 (Sprint),$22,$83.43,$89.6114077,BlackBerry Q10 (T-Mobile),$32.56,$93.15,$100.0514075,BlackBerry Q10 (Verizon),$29.04,$109.35,$117.4514078,LG Optimus G Pro ,$18.98,$83.85,$100.0114081,HTC 8XT,[],$15.80,$17.2014082,Samsung Galaxy Note III (AT&T),$64.38,$153.11,$229.5014085,Samsung Galaxy Note III (Sprint),$60.90,$129.58,$188.1014083,Samsung Galaxy Note III (T-Mobile),$94.50,$200.80,$221.2014086,Samsung Galaxy Note III (US Cellular),$36.45,$97.50,$102.5014084,Samsung Galaxy Note III (Verizon),$82.14,$198.29,$240.3014087,Samsung Galaxy Mega i527 (AT&T),$31.20,$127.10,$13614090,Samsung ATIV S Neo (Sprint),$0.81,$11.70,$12.3014088,Samsung Galaxy SIII Mini (AT&T),$6.48,$37.44,$45.1014091,Samsung Galaxy S4 Active (AT&T),$29.75,$87.23,$9614089,Samsung ATIV S Neo (AT&T),$1.62,$24.18,$25.4214095,LG G2 (AT&T),$31.92,$105.60,$108.5014096,LG G2 (T-Mobile),$23.40,$79.05,$123.5814100,Apple iPhone 4S 8GB (Verizon),$23.10,$69.92,$77.2814098,Apple iPhone 4S 8GB (AT&T),$27.36,$96.20,$111.8014101,Apple iPhone 4S 8GB (T-Mobile),$31.16,$90,$103.2014099,Apple iPhone 4S 8GB (Sprint),$23.40,$73.60,$80.9614102,Apple iPhone 4S 8GB (Unlocked),$20.50,$112.50,$12914105,Apple iPod Touch 5th Generation 16GB (No iSight),$28.80,$76,$7614106,Samsung Galaxy Tab 3 8GB 7.0,[],$11.25,$1514109,Samsung Galaxy Tab 3 32GB 10.1 WiFi,[],$40,$4014107,Samsung Galaxy Tab 3 16GB 7.0,[],$12,$1614108,Samsung Galaxy Tab 3 16GB 10.1 WiFi,[],$40,$4014116,Microsoft Surface 2 32GB,[],$101.60,$101.6014119,Microsoft Surface Pro 2 128GB,[],$241.60,$241.6014117,Microsoft Surface 2 64GB,[],$113.60,$113.6014120,Microsoft Surface Pro 2 256GB,[],$320,$32014118,Microsoft Surface Pro 2 64GB,[],$177.60,$177.6014121,Microsoft Surface Pro 2 512GB,[],$360,$36014132,"Asus VivoTab 11.6""",[],$64,$6414135,Google Nexus 10 32GB,[],$32,$3214163,Lenovo ThinkPad Tablet 2 64GB,[],$70.40,$70.4014166,LG Optimus Pad LTE,[],$24,$3214169,Sony Xperia Tablet Z 32GB,[],$112,$12814167,LG Optimus Pad,[],$16,$1614168,Sony Xperia Tablet Z 16GB,[],$80,$8814174,Nintendo 2DS,$9.60,$28,$2814179,Apple iPhone 3GS 32GB (Unlocked),$0.80,$2.40,$2.4014177,Apple iPhone 3GS 8GB (Unlocked),$0.80,$2.40,$2.4014180,Apple iPhone 4 8GB (Unlocked),$27,$65.61,$68.8514178,Apple iPhone 3GS 16GB (Unlocked),$0.80,$2.40,$2.4014181,Apple iPhone 4 16GB (Unlocked),$33.58,$64.80,$79.2014184,Apple iPhone 4S 32GB (Unlocked),$44.50,$92.40,$103.6014182,Apple iPhone 4 32GB (Unlocked),$36.50,$60.75,$67.5014185,Apple iPhone 4S 64GB (Unlocked),$35.60,$93.72,$105.0814183,Apple iPhone 4S 16GB (Unlocked),$44.50,$99,$11114186,Apple iPhone 5 16GB (Unlocked),$74.46,$181.44,$194.8814189,Apple iPhone 5c 16GB (Unlocked),$58.40,$149.04,$156.4014187,Apple iPhone 5 32GB (Unlocked),$68.40,$179.82,$190.9214190,Apple iPhone 5c 32GB (Unlocked),$59.20,$157.14,$164.9014188,Apple iPhone 5 64GB (Unlocked),$64.80,$171.72,$182.3214191,Apple iPhone 5s 16GB (Unlocked),$85,$234.08,$27314194,LG Nexus 5 (T-Mobile),$36.50,$124.80,$137.2414192,Apple iPhone 5s 32GB (Unlocked),$89.70,$195,$268.8014195,LG Nexus 5 (Sprint),$26.28,$89.70,$108.0414193,Apple iPhone 5s 64GB (Unlocked),$82.80,$258.96,$278.8814196,HTC One Max (Sprint),$24.64,$98.75,$111.8014199,"Kindle Fire HDX 7"" 16GB Wi-Fi",[],$4,$1214197,HTC One Max (Verizon),$52.80,$188.02,$210.7014200,"Kindle Fire HDX 7"" 32GB Wi-Fi",[],$8,$1214198,BlackBerry Z30,$52.80,$163.62,$178.3514202,"Kindle Fire HDX 8.9"" 16GB Wi-Fi",[],$8,$1214205,Apple iPad Air 16GB WiFi,$36,$232,$23214203,"Kindle Fire HDX 8.9"" 32GB Wi-Fi",[],$8,$1214206,Apple iPad Air  32GB WiFi,$36,$244,$24414209,Apple iPad Air 16GB WiFi + 4G (AT&T),$37.60,$230.40,$230.4014207,Apple iPad Air 64GB WiFi,$36,$260,$26014210,Apple iPad Air 32GB WiFi + 4G (AT&T),$53.60,$268.80,$27214208,Apple iPad Air 128GB WiFi,$37.60,$260,$26014211,Apple iPad Air 64GB WiFi + 4G (AT&T),$62.40,$312.80,$312.8014214,Apple iPad Air 32GB WiFi + 4G (T-Mobile),$37.60,$230.40,$230.4014212,Apple iPad Air 128GB WiFi + 4G (AT&T),$76.80,$385.60,$385.6014215,Apple iPad Air 64GB WiFi + 4G (T-Mobile),$37.60,$230.40,$230.4014213,Apple iPad Air 16GB WiFi + 4G (T-Mobile),$37.60,$230.40,$230.4014216,Apple iPad Air 128GB WiFi + 4G (T-Mobile),$56,$242.40,$242.4014219,Apple iPad Air 64GB WiFi + 4G (Verizon),$37.60,$236.80,$236.8014217,Apple iPad Air 16GB WiFi + 4G (Verizon),$37.60,$230.40,$230.4014220,Apple iPad Air 128GB WiFi + 4G (Verizon),$60,$244,$24414218,Apple iPad Air 32GB WiFi + 4G (Verizon),$37.60,$236.80,$236.8014221,Apple iPad Air 16GB WiFi + 4G (Sprint),$37.60,$230.40,$230.4014224,Apple iPad Air 128GB WiFi + 4G (Sprint),$37.60,$214.40,$214.4014222,Apple iPad Air 32GB WiFi + 4G (Sprint),$37.60,$230.40,$230.4014225,Apple iPad Mini with Retina Display 16GB (AT&T),[],$88,$8814223,Apple iPad Air 64GB WiFi + 4G (Sprint),$37.60,$230.40,$230.4014226,Apple iPad Mini with Retina Display 16GB (Sprint),[],$80,$8014229,Apple iPad Mini with Retina Display 16GB WiFi,[],$116,$11614227,Apple iPad Mini with Retina Display 16GB (T-Mobile),[],$88,$8814230,Apple iPad Mini with Retina Display 32GB (AT&T),[],$92,$9214228,Apple iPad Mini with Retina Display 16GB (Verizon),[],$88,$8814231,Apple iPad Mini with Retina Display 32GB (Sprint),[],$80,$8014234,Apple iPad Mini with Retina Display 32GB WiFi,[],$128,$12814232,Apple iPad Mini with Retina Display 32GB (T-Mobile),[],$92,$9214235,Apple iPad Mini with Retina Display 64GB (AT&T),[],$96,$9614233,Apple iPad Mini with Retina Display 32GB (Verizon),[],$92,$9214236,Apple iPad Mini with Retina Display 64GB (Sprint),[],$80,$8014239,Apple iPad Mini with Retina Display 64GB WiFi,[],$136,$13614237,Apple iPad Mini with Retina Display 64GB (T-Mobile),[],$96,$9614240,Apple iPad Mini with Retina Display 128GB (AT&T),[],$104,$10414238,Apple iPad Mini with Retina Display 64GB (Verizon),[],$96,$9614241,Apple iPad Mini with Retina Display 128GB (Sprint),[],$80,$8014244,Apple iPad Mini with Retina Display 128GB WiFi,[],$144,$14414242,Apple iPad Mini with Retina Display 128GB (T-Mobile),[],$100,$10014243,Apple iPad Mini with Retina Display 128GB (Verizon),[],$100,$100

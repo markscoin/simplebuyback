@@ -1,0 +1,23 @@
+<span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad do I have?</button></span>
+<div class="modal fade" id="ipad_modal" tabindex="-1" role="dialog" aria-labelledby="ipad_modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="ipad_modal">Identifying Memory Capacity</h4>
+      </div>
+      <div class="modal-body">
+        <%= image_tag("settingsIcon.png", alt: "settings", class: "center-block")%> 
+        <p>
+          <ol>
+            <li>Click <strong>Settings</strong></li>
+            <li></li>
+          </ol>
+        </p>
+      </div>  
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

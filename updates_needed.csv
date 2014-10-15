@@ -1,0 +1,180 @@
+id,SKU,price,name,description,available_on,shipping_category_id,option_types,variant_price
+13769,"",0,Samsung Galaxy S III SGH-I747 (AT&T),"","",1,"Condition:Broken,Good,Flawless",18|92|92
+13770,"",0,Samsung Galaxy S III SGH-T999 (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",22|86|84
+13771,"",0,Samsung Galaxy S III SPH-L710  (Sprint),"","",1,"Condition:Broken,Good,Flawless",12|50|52
+13792,"",0,Apple iPhone 5 64GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",74|168|168
+13790,"",0,Apple iPhone 5 16GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",96|158|168
+13793,"",0,Apple iPhone 5 16GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",92|226|180
+13791,"",0,Apple iPhone 5 32GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",84|164|164
+13794,"",0,Apple iPhone 5 32GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",88|192|202
+13797,"",0,Apple iPhone 5 32GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",40|134|134
+13795,"",0,Apple iPhone 5 64GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",74|192|202
+13798,"",0,Apple iPhone 5 64GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",54|124|124
+13796,"",0,Apple iPhone 5 16GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",54|120|120
+13803,"",0,Samsung Galaxy S III GT-i9300,"","",1,"Condition:Broken,Good,Flawless",16|70|80
+13823,"",0,Motorola Droid RAZR MAXX HD,"","",1,"Condition:Broken,Good,Flawless",10|76|82
+13824,"",0,Samsung Galaxy Note II SGH-i317,"","",1,"Condition:Broken,Good,Flawless",24|112|124
+13825,"",0,Samsung Galaxy Note II SCH-i605,"","",1,"Condition:Broken,Good,Flawless",22|98|126
+13826,"",0,Samsung Galaxy Note II SGH-T889,"","",1,"Condition:Broken,Good,Flawless",24|130|138
+13859,"",0,Samsung Galaxy Note II SPH-L900 (Sprint),"","",1,"Condition:Broken,Good,Flawless",22|70|76
+13862,"",0,Apple iPod Touch 5th Generation 64GB ,"","",1,"Condition:Broken,Good,Flawless",28|96|96
+13860,"",0,Apple iPod Touch 5th Generation 32GB ,"","",1,"Condition:Broken,Good,Flawless",30|60|62
+13867,"",0,HTC Droid DNA,"","",1,"Condition:Broken,Good,Flawless",24|72|82
+13885,"",0,Samsung Galaxy Note SGH-T879,"","",1,"Condition:Broken,Good,Flawless",4|56|62
+13896,"",0,Apple iPad 4th Generation 32GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",34|170|170
+13897,"",0,Apple iPad 4th Generation 64GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",36|190|190
+13895,"",0,Apple iPad 4th Generation 16GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",38|150|150
+13898,"",0,Apple iPad 4th Generation 128GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",40|212|212
+13901,"",0,Apple iPad 4th Generation 64GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",36|180|180
+13899,"",0,Apple iPad 4th Generation 16GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",36|120|120
+13902,"",0,Apple iPad 4th Generation 128GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",38|130|130
+13900,"",0,Apple iPad 4th Generation 32GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",36|122|122
+13903,"",0,Apple iPad 4th Generation 16GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",36|160|160
+13906,"",0,Apple iPad 4th Generation 128GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",38|146|146
+13904,"",0,Apple iPad 4th Generation 32GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",36|170|170
+13907,"",0,Apple iPad 4th Generation 16GB WiFi ,"","",1,"Condition:Broken,Good,Flawless",34|152|152
+13905,"",0,Apple iPad 4th Generation 64GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",42|144|144
+13908,"",0,Apple iPad 4th Generation 32GB WiFi ,"","",1,"Condition:Broken,Good,Flawless",36|176|176
+13911,"",0,Apple iPad Mini  16GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",22|94|90
+13909,"",0,Apple iPad 4th Generation 64GB WiFi ,"","",1,"Condition:Broken,Good,Flawless",34|206|206
+13912,"",0,Apple iPad Mini  32GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",34|80|80
+13910,"",0,Apple iPad 4th Generation 128GB WiFi ,"","",1,"Condition:Broken,Good,Flawless",34|230|230
+13913,"",0,Apple iPad Mini  64GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",34|84|84
+13916,"",0,Apple iPad Mini  64GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",34|84|84
+13914,"",0,Apple iPad Mini  16GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",34|74|74
+13917,"",0,Apple iPad Mini  16GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",20|120|120
+13915,"",0,Apple iPad Mini  32GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",34|72|72
+13918,"",0,Apple iPad Mini  32GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",34|80|80
+13921,"",0,Apple iPad Mini  32GB WiFi,"","",1,"Condition:Broken,Good,Flawless",12|120|120
+13919,"",0,Apple iPad Mini  64GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",32|74|74
+13922,"",0,Apple iPad Mini  64GB WiFi,"","",1,"Condition:Broken,Good,Flawless",18|112|112
+13920,"",0,Apple iPad Mini  16GB WiFi,"","",1,"Condition:Broken,Good,Flawless",16|86|86
+13923,"",0,Apple iPhone 4S 16GB (Other Carrier),"","",1,"Condition:Broken,Good,Flawless",16|70|70
+13924,"",0,Apple iPhone 4S 32GB (Other Carrier),"","",1,"Condition:Broken,Good,Flawless",22|68|68
+13927,"",0,Apple iPhone 5 16GB (Other Carrier),"","",1,"Condition:Broken,Good,Flawless",40|86|102
+13925,"",0,Apple iPhone 4S 64GB (Other Carrier),"","",1,"Condition:Broken,Good,Flawless",24|62|62
+13928,"",0,Apple iPhone 5 32GB (Other Carrier),"","",1,"Condition:Broken,Good,Flawless",38|98|104
+13929,"",0,Apple iPhone 5 64GB (Other Carrier),"","",1,"Condition:Broken,Good,Flawless",38|94|100
+13951,"",0,Samsung Series 7 Slate PC - 128 GB - Wi-Fi + 3G,"","",1,"Condition:Broken,Good,Flawless",0|116|116
+13950,"",0,Samsung Series 7 Slate PC 128 GB Wi-Fi,"","",1,"Condition:Broken,Good,Flawless",0|140|140
+13953,"",0,Samsung Series 7 Slate PC - 64 GB - Wi-Fi,"","",1,"Condition:Broken,Good,Flawless",0|114|114
+13961,"",0,Apple iPhone 5 16GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",68|132|180
+13962,"",0,Apple iPhone 5 32GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",54|142|182
+13960,"",0,Apple iPhone 4S 16GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",40|110|116
+13963,"",0,Apple iPhone 5 64GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",54|142|182
+13966,"",0,BlackBerry Z10 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",14|66|78
+13967,"",0,BlackBerry Z10 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",18|76|82
+13965,"",0,BlackBerry Z10 4G (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",14|66|86
+13971,"",0,HTC One (Sprint),"","",1,"Condition:Broken,Good,Flawless",18|68|86
+13972,"",0,HTC One (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",38|120|152
+13970,"",0,HTC One (AT&T),"","",1,"Condition:Broken,Good,Flawless",26|128|134
+13974,"",0,HTC One X+,"","",1,"Condition:Broken,Good,Flawless",16|70|80
+14002,"",0,Motorola RAZR HD XT926,"","",1,"Condition:Broken,Good,Flawless",10|52|54
+14021,"",0,Samsung Galaxy S4 SGH-I337 (AT&T),"","",1,"Condition:Broken,Good,Flawless",44|114|158
+14019,"",0,Samsung Galaxy S4 SCH-I545 (Verizon),"","",1,"Condition:Broken,Good,Flawless",44|136|146
+14022,"",0,Samsung Galaxy S4 SGH-M919 (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",56|132|154
+14020,"",0,Samsung Galaxy S4 SCH-R970 (Other Carrier),"","",1,"Condition:Broken,Good,Flawless",14|70|70
+14023,"",0,Samsung Galaxy S4 SPH-L720 (Sprint),"","",1,"Condition:Broken,Good,Flawless",52|138|146
+14041,"",0,Apple iPhone 5c 16GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",52|66|68
+14042,"",0,Apple iPhone 5c 16GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",52|146|146
+14043,"",0,Apple iPhone 5c 16GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",60|144|158
+14046,"",0,Apple iPhone 5c 32GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",70|144|144
+14044,"",0,Apple iPhone 5c 16GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",110|184|200
+14047,"",0,Apple iPhone 5c 32GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",74|140|140
+14045,"",0,Apple iPhone 5c 32GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",52|94|110
+14048,"",0,Apple iPhone 5c 32GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",84|198|204
+14051,"",0,Apple iPhone 5s 16GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",74|182|202
+14049,"",0,Apple iPhone 5s 16GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",88|220|226
+14052,"",0,Apple iPhone 5s 16GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",140|270|280
+14050,"",0,Apple iPhone 5s 16GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",70|166|166
+14053,"",0,Apple iPhone 5s 32GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",92|224|242
+14056,"",0,Apple iPhone 5s 32GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",82|256|286
+14054,"",0,Apple iPhone 5s 32GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",68|170|170
+14057,"",0,Apple iPhone 5s 64GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",102|218|236
+14055,"",0,Apple iPhone 5s 32GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",86|194|216
+14058,"",0,Apple iPhone 5s 64GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",90|188|188
+14061,"",0,Motorola Droid MAXX  XT1080M,"","",1,"Condition:Broken,Good,Flawless",28|110|118
+14059,"",0,Apple iPhone 5s 64GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",98|216|240
+14062,"",0,Motorola Droid Mini  XT1030,"","",1,"Condition:Broken,Good,Flawless",8|48|66
+14060,"",0,Apple iPhone 5s 64GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",84|254|284
+14063,"",0,Motorola Droid Ultra XT1080,"","",1,"Condition:Broken,Good,Flawless",20|52|88
+14066,"",0,Motorola Moto X XT 1060,"","",1,"Condition:Broken,Good,Flawless",16|62|68
+14064,"",0,Motorola Moto X (16GB) XT 1058,"","",1,"Condition:Broken,Good,Flawless",10|80|92
+14065,"",0,Motorola Moto X (32GB) XT 1058,"","",1,"Condition:Broken,Good,Flawless",12|98|102
+14071,"",0,Nokia Lumia 928,"","",1,"Condition:Broken,Good,Flawless",4|58|62
+14072,"",0,Samsung Galaxy Mega SGH-i9205,"","",1,"Condition:Broken,Good,Flawless",28|102|120
+14070,"",0,Nokia Lumia 925 (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",4|70|76
+14076,"",0,BlackBerry Q10 (AT&T),"","",1,"Condition:Broken,Good,Flawless",24|90|98
+14074,"",0,BlackBerry Q10 (Sprint),"","",1,"Condition:Broken,Good,Flawless",22|80|86
+14077,"",0,BlackBerry Q10 (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",32|90|98
+14075,"",0,BlackBerry Q10 (Verizon),"","",1,"Condition:Broken,Good,Flawless",28|106|114
+14082,"",0,Samsung Galaxy Note III (AT&T),"","",1,"Condition:Broken,Good,Flawless",62|148|222
+14085,"",0,Samsung Galaxy Note III (Sprint),"","",1,"Condition:Broken,Good,Flawless",60|126|182
+14083,"",0,Samsung Galaxy Note III (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",92|194|214
+14086,"",0,Samsung Galaxy Note III (US Cellular),"","",1,"Condition:Broken,Good,Flawless",36|94|100
+14084,"",0,Samsung Galaxy Note III (Verizon),"","",1,"Condition:Broken,Good,Flawless",80|192|234
+14087,"",0,Samsung Galaxy Mega i527 (AT&T),"","",1,"Condition:Broken,Good,Flawless",30|124|132
+14091,"",0,Samsung Galaxy S4 Active (AT&T),"","",1,"Condition:Broken,Good,Flawless",28|84|94
+14100,"",0,Apple iPhone 4S 8GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",22|68|74
+14098,"",0,Apple iPhone 4S 8GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",26|94|108
+14101,"",0,Apple iPhone 4S 8GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",30|88|100
+14099,"",0,Apple iPhone 4S 8GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",22|72|78
+14102,"",0,Apple iPhone 4S 8GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",20|110|126
+14105,"",0,Apple iPod Touch 5th Generation 16GB (No iSight),"","",1,"Condition:Broken,Good,Flawless",28|74|74
+14180,"",0,Apple iPhone 4 8GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",26|64|66
+14181,"",0,Apple iPhone 4 16GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",32|62|76
+14184,"",0,Apple iPhone 4S 32GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",44|90|100
+14182,"",0,Apple iPhone 4 32GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",36|58|66
+14185,"",0,Apple iPhone 4S 64GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",34|90|102
+14183,"",0,Apple iPhone 4S 16GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",44|96|108
+14186,"",0,Apple iPhone 5 16GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",72|176|190
+14189,"",0,Apple iPhone 5c 16GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",56|144|152
+14187,"",0,Apple iPhone 5 32GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",66|174|186
+14190,"",0,Apple iPhone 5c 32GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",58|152|160
+14188,"",0,Apple iPhone 5 64GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",62|166|176
+14191,"",0,Apple iPhone 5s 16GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",82|228|264
+14192,"",0,Apple iPhone 5s 32GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",88|190|260
+14193,"",0,Apple iPhone 5s 64GB (Unlocked),"","",1,"Condition:Broken,Good,Flawless",80|252|270
+14196,"",0,HTC One Max (Sprint),"","",1,"Condition:Broken,Good,Flawless",24|96|108
+14197,"",0,HTC One Max (Verizon),"","",1,"Condition:Broken,Good,Flawless",52|182|204
+14198,"",0,BlackBerry Z30,"","",1,"Condition:Broken,Good,Flawless",52|158|172
+14205,"",0,Apple iPad Air 16GB WiFi,"","",1,"Condition:Broken,Good,Flawless",34|226|226
+14206,"",0,Apple iPad Air  32GB WiFi,"","",1,"Condition:Broken,Good,Flawless",34|236|236
+14209,"",0,Apple iPad Air 16GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",36|224|224
+14207,"",0,Apple iPad Air 64GB WiFi,"","",1,"Condition:Broken,Good,Flawless",34|252|252
+14210,"",0,Apple iPad Air 32GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",52|260|264
+14208,"",0,Apple iPad Air 128GB WiFi,"","",1,"Condition:Broken,Good,Flawless",36|252|252
+14211,"",0,Apple iPad Air 64GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",60|304|304
+14214,"",0,Apple iPad Air 32GB WiFi + 4G (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",36|224|224
+14212,"",0,Apple iPad Air 128GB WiFi + 4G (AT&T),"","",1,"Condition:Broken,Good,Flawless",74|374|374
+14215,"",0,Apple iPad Air 64GB WiFi + 4G (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",36|224|224
+14213,"",0,Apple iPad Air 16GB WiFi + 4G (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",36|224|224
+14216,"",0,Apple iPad Air 128GB WiFi + 4G (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",54|236|236
+14219,"",0,Apple iPad Air 64GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",36|230|230
+14217,"",0,Apple iPad Air 16GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",36|224|224
+14220,"",0,Apple iPad Air 128GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",58|236|236
+14218,"",0,Apple iPad Air 32GB WiFi + 4G (Verizon),"","",1,"Condition:Broken,Good,Flawless",36|230|230
+14221,"",0,Apple iPad Air 16GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",36|224|224
+14224,"",0,Apple iPad Air 128GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",36|208|208
+14222,"",0,Apple iPad Air 32GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",36|224|224
+14225,"",0,Apple iPad Mini with Retina Display 16GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",0|86|86
+14223,"",0,Apple iPad Air 64GB WiFi + 4G (Sprint),"","",1,"Condition:Broken,Good,Flawless",36|224|224
+14226,"",0,Apple iPad Mini with Retina Display 16GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",0|78|78
+14229,"",0,Apple iPad Mini with Retina Display 16GB WiFi,"","",1,"Condition:Broken,Good,Flawless",0|112|112
+14227,"",0,Apple iPad Mini with Retina Display 16GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",0|86|86
+14230,"",0,Apple iPad Mini with Retina Display 32GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",0|90|90
+14228,"",0,Apple iPad Mini with Retina Display 16GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",0|86|86
+14231,"",0,Apple iPad Mini with Retina Display 32GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",0|78|78
+14234,"",0,Apple iPad Mini with Retina Display 32GB WiFi,"","",1,"Condition:Broken,Good,Flawless",0|124|124
+14232,"",0,Apple iPad Mini with Retina Display 32GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",0|90|90
+14235,"",0,Apple iPad Mini with Retina Display 64GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",0|94|94
+14233,"",0,Apple iPad Mini with Retina Display 32GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",0|90|90
+14236,"",0,Apple iPad Mini with Retina Display 64GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",0|78|78
+14239,"",0,Apple iPad Mini with Retina Display 64GB WiFi,"","",1,"Condition:Broken,Good,Flawless",0|132|132
+14237,"",0,Apple iPad Mini with Retina Display 64GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",0|94|94
+14240,"",0,Apple iPad Mini with Retina Display 128GB (AT&T),"","",1,"Condition:Broken,Good,Flawless",0|100|100
+14238,"",0,Apple iPad Mini with Retina Display 64GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",0|94|94
+14241,"",0,Apple iPad Mini with Retina Display 128GB (Sprint),"","",1,"Condition:Broken,Good,Flawless",0|78|78
+14244,"",0,Apple iPad Mini with Retina Display 128GB WiFi,"","",1,"Condition:Broken,Good,Flawless",0|140|140
+14242,"",0,Apple iPad Mini with Retina Display 128GB (T-Mobile),"","",1,"Condition:Broken,Good,Flawless",0|98|98
+14243,"",0,Apple iPad Mini with Retina Display 128GB (Verizon),"","",1,"Condition:Broken,Good,Flawless",0|98|98

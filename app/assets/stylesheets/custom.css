@@ -23,15 +23,6 @@ label {
 
 /* Disabling responsiveness in bootstrap */
 
-.container {
-    width: 1060px !important;
-}
-
-.container .navbar-header,
-.container .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-}
 
 /* Always float the navbar header */
 .navbar-header {
@@ -227,4 +218,32 @@ th {
 
 .ipad_image {
     max-height: 150px;
+}
+
+
+/* iPhone Modal Table */
+.col_1 {
+    width:28%;
+    border-bottom: 1px solid darkgray;
+}
+.col_2 {
+    width:50%;
+    border-bottom: 1px solid darkgray;
+
+}
+
+
+.modaltable > tbody > tr > td {
+    vertical-align: middle !important;
+    
+}
+
+.modaltable > tbody > tr > th {
+    text-align: left;
+}
+.modaltable > tbody > tr > td > table {
+    width: 100%;
+}
+.modaltable > tbody > tr > td {
+    border-top: 1px solid black;
 }
