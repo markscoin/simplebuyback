@@ -50,5 +50,7 @@ class HomeController < ApplicationController
     @completesorted = @complete.sort_by { |x| x[:variant_id] }
     @completefinal = @completesorted.delete_if { |x| x[:condition] == 1}
   end
+  
+
 end
 

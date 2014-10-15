@@ -1,19 +1,143 @@
-<span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad do I have?</button></span>
 <div class="modal fade" id="ipad_modal" tabindex="-1" role="dialog" aria-labelledby="ipad_modal" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="ipad_modal">Identifying Memory Capacity</h4>
+        <h4 class="modal-title" id="ipad_modal">Identifying iPad Models</h4>
       </div>
       <div class="modal-body">
-        <%= image_tag("settingsIcon.png", alt: "settings", class: "center-block")%> 
-        <p>
-          <ol>
-            <li>Click <strong>Settings</strong></li>
-            <li></li>
-          </ol>
-        </p>
+        <p><strong>Find the Model Number on the Back for your iPad:</strong></p>
+        <%= image_tag("iPad_Model.png", alt: "iPad", class: "center-block", style: "border-radius: 30px;")%> 
+        <div class="pad10"></div>
+        <table class="table modaltable">
+          <tr>
+            <th>Model</th>
+            <th>Model Number</th> 
+            <th>Carrier</th>
+          </tr>
+          <tr>
+            <td><strong>iPad Air</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_3">A1474 | MD785LL/A</td>
+                  <td class="col_2">Wi-Fi Only</td>
+                </tr>
+                <tr>
+                  <td>A1475 | ME991LL/A</td>
+                  <td>AT&T, Verizon, T-Mobile, Sprint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPad Mini w/ Retina</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_3">A1489 | ME276LL/A</td>
+                  <td class="col_2">Wi-Fi Only</td>
+                </tr>
+                <tr>
+                  <td>A1490 | MF066LL/A</td>
+                  <td>AT&T, Verizon, T-Mobile, Sprint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPad Mini</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_3">A1432 | MD528LL/A</td>
+                  <td class="col_2">Wi-Fi Only</td>
+                </tr>
+                <tr>
+                  <td class="col_3">A1454 | MD534LL/A</td>
+                  <td class="col_2">AT&T</td>
+                </tr>
+                <tr>
+                  <td>A1455 | MD540LL/A</td>
+                  <td>Verizon, Sprint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPad 4</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_3">A1458 | MD510LL/A</td>
+                  <td class="col_2">Wi-Fi Only</td>
+                </tr>
+                <tr>
+                  <td class="col_3">A1459 | MD516LL/A</td>
+                  <td class="col_2">AT&T</td>
+                </tr>
+                <tr>
+                  <td>A1460 | MD522LL/A</td>
+                  <td>Verizon, Sprint</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPad 3</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_3">A1416 | MC705/A</td>
+                  <td class="col_2">Wi-Fi Only</td>
+                </tr>
+                <tr>
+                  <td class="col_3">A1430 | MD366LL/A</td>
+                  <td class="col_2">AT&T</td>
+                </tr>
+                <tr>
+                  <td>A1403 | MD733LL/A</td>
+                  <td>Verizon</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPad 2</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_3">A1395 | MC769LL/A</td>
+                  <td class="col_2">Wi-Fi Only</td>
+                </tr>
+                <tr>
+                  <td class="col_3">A1396 | MC773LL/A</td>
+                  <td class="col_2">AT&T</td>
+                </tr>
+                <tr>
+                  <td>A1397 | MC755LL/A</td>
+                  <td>Verizon</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td><strong>iPad</strong></td>
+            <td colspan="2">
+              <table>
+                <tr>
+                  <td class="col_3">A1219 | MB292LL/A</td>
+                  <td class="col_2">Wi-Fi Only</td>
+                </tr>
+                <tr>
+                  <td>A1337 | MC349LL/A</td>
+                  <td>AT&T</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
       </div>  
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>

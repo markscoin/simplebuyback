@@ -229,7 +229,10 @@ th {
 .col_2 {
     width:50%;
     border-bottom: 1px solid darkgray;
-
+}
+.col_3 {
+    width:45%;
+    border-bottom: 1px solid darkgray;
 }
 
 

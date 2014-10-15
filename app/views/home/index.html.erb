@@ -1,5 +1,6 @@
 <!-- Modal must be at the top to render properly when click links in the panels -->
 <%= render partial: "memory_modal" %> 
+<%= render partial: "ipad_modal" %>
 <div class="container">
   <div class="row" id="accordion">
       <div class="col-xs-3">
@@ -351,7 +352,7 @@
       <div id="iPad" class="collapse ">
         <div id="ipadpanel" class="homepanel">
         <span>Select Your iPad:</span>
-        <%= render "ipad_modal" %>
+        <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad do I have?</button></span>
          <!-- The panel with the clickable images of the ipads -M.O. -->
         <table class="table">
           <tr>
@@ -364,7 +365,8 @@
           <div id="ipad" class="collapse">
             <div id="ipadcarrier" class="homepanel">
             <span>Select Generation:</span>
-            <table class="table">
+            <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad do I have?</button></span>
+              <table class="table">
               <tr>
                 <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image", alt: "iPad 2",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad2carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 2 </button></th>
                 <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image", alt: "iPad 3",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad3carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 3</button></th>
@@ -382,6 +384,7 @@
                 </table>
                   <div id="ipad2attmemory" class="collapse homepanel">
                     <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
                         <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -392,6 +395,7 @@
                   </div>
                   <div id="ipad2verizonmemory" class="collapse homepanel">
                     <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
                         <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -413,6 +417,7 @@
                 </table>
                   <div id="ipad3memoryatt" class="collapse homepanel">
                     <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
                         <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -423,6 +428,7 @@
                   </div>
                   <div id="ipad3memoryverizon" class="collapse homepanel">
                     <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
                         <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -445,6 +451,7 @@
                 </table>
                   <div id="ipad4memoryatt" class="collapse homepanel">
                     <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
                         <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -456,6 +463,7 @@
                   </div>
                   <div id="ipad4memoryverizon" class="collapse homepanel">
                     <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
                         <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -467,6 +475,7 @@
                   </div>
                   <div id="ipad4memorysprint" class="collapse homepanel">
                     <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
                         <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -493,6 +502,7 @@
             </table>
             <div class="collapse homepanel" id="ipadairattmemory">
               <span>Select Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
                 <tr>
                   <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -504,6 +514,7 @@
             </div>
             <div class="collapse homepanel" id="ipadairverizonmemory">
               <span>Select Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
                 <tr>
                   <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -515,6 +526,7 @@
             </div>
             <div class="collapse homepanel" id="ipadairsprintmemory">
               <span>Select Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
                 <tr>
                   <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -526,6 +538,7 @@
             </div>
             <div class="collapse homepanel" id="ipadairtmobilememory">
               <span>Select Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
                   <tr>
                     <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -540,7 +553,8 @@
           <div id="ipadmini" class="collapse">
             <div id="ipadminimemory" class="homepanel">
             <span>Select iPad Type:</span>
-            <table class="table">
+            <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad Mini do I have?</button></span>
+              <table class="table">
               <tr>
                 <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadminimemory", :target => "#minicarriers"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini</button></th>
                 <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image", alt: "iPad Mini with Retina Display", :data => {:toggle => "collapse", :parent => "#ipadminimemory", :target => "#miniretinacarriers"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini with Retina Display</button></th>
@@ -558,6 +572,7 @@
               </table>
                 <div id="originalminimemoryatt" class="collapse homepanel">
                   <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
                       <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -569,6 +584,7 @@
                 </div>
                 <div id="originalminimemoryverizon" class="collapse homepanel">
                   <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
                       <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -580,6 +596,7 @@
                 </div>
                 <div id="originalminimemorysprint" class="collapse homepanel">
                   <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
                       <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -603,6 +620,7 @@
               </table>
                 <div id="verizonminimemory" class="collapse homepanel">
                   <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
                       <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -614,6 +632,7 @@
                 </div>
                 <div id="attminimemory" class="collapse homepanel">
                   <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
                       <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
@@ -625,6 +644,7 @@
                 </div>
                 <div id="sprintminimemory" class="collapse homepanel">
                   <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
                       <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
