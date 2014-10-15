@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '~> 4.1.6'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -61,8 +61,8 @@ end
 gem 'retina_tag'
 
 # Gems that allow importing of products though excel spreadsheets
-gem 'datashift', :git => 'http://github.com/autotelik/datashift'
-gem 'datashift_spree', :git => 'http://github.com/markscoin/datashift_spree'
+gem 'datashift', :github => 'autotelik/datashift'
+gem 'datashift_spree', :github => 'markscoin/datashift_spree'
 
 #crawler
 gem 'nokogiri'
