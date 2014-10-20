@@ -250,3 +250,72 @@ th {
 .modaltable > tbody > tr > td {
     border-top: 1px solid black;
 }
+
+/* Sign Up */
+.signup {
+    box-shadow: 3px 3px 3px 3px lightgray;
+    background-color: #f6f6f6;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.signin_btn {
+    margin: 0 0 0 20px;
+}
+
+.devise_icons {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.right_border {
+    border-right: 1px solid darkgray;
+}
+
+.about_banner {
+    margin-top: -45px;
+    padding-top: 15px;
+}
+
+.team_pic {
+    border-radius: 110px;
+    box-shadow: 3px 3px 3px 3px gray;
+    margin: 0 auto 10px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+
+}
+h1.intro {
+    margin: 0 0 0 0;
+}
+
+h1.title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    margin: 0;
+    text-align: left;
+}
+
+.input_field {
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #cccccc;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    padding: 2px;
+}
+
+.input_field:focus {
+    border-color: #66afe9;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6);
+    outline: 0 none;
+}
+
+.bottom_margin_10{
+    margin-bottom: 10px;
+}
+
+.process_icon {
+    font-size: 17px;
+}

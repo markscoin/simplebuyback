@@ -37,6 +37,10 @@ class HomeController < ApplicationController
     @orders = @search.result
     render 'home/order'
   end
+  
+  def about
+    render 'home/about'
+  end
 
   def notifications
     @products = Spree::Product.all

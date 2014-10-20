@@ -1,21 +1,32 @@
-<div class="container">
-
+<div class="container signup">
+<div class="col-md-5 right_border">
 <h2>Sign in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, autofocus: true %></div>
+  <div class="input-group bottom_margin_10">  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+  <%= f.email_field :email, autofocus: true, placeholder: "email@example.com", class: "input_field" %></div>
 
-  <div><%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "off" %></div>
+  <div class="input-group bottom_margin_10"><span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "input_field" %></div>
 
   <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+    <div><%= f.check_box :remember_me %> &nbsp; <span><strong>Remember Me</strong></span>
   <% end -%>
 
-  <div><%= f.submit "Sign in" %></div>
+<%= f.submit "Sign in", class: "btn btn-success signin_btn" %>
 <% end %>
+  </div>
+</div>  
+<div class="col-md-6 col-md-offset-1">
+   <h3>Not Registered?</h3>
+  <p><%= link_to "Sign up", new_registration_path(resource_name) %> now to track orders and view your order history! </p>
+  <div style="padding-top: 10px;" class="center">
+  <p class="center-block"><%= link_to "Sign Up", new_registration_path(resource_name),style: "font-size: 25px;" %></p>
+  </div>
+  <h3>Forgot Your Password?</h3>
+ <div class="center">
+  <%= link_to "Reset Your Password", new_password_path(resource_name), style: "font-size: 20px;" %>
+ </div>
 
-<%= render "devise/shared/links" %>
-
+</div>
 </div>

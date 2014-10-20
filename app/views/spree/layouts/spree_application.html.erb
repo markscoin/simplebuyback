@@ -48,12 +48,8 @@
               <li><a href="#">Nokia</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a><strong>Support</strong></a>
-            <ul class="dropdown-menu">
-              <li><a href="/home/contact">Contact Us</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </li>
+          <li class="dropdown"><%= link_to "About", "#", style: "font-weight: bold;" %></li>
+          <li class="dropdown"><a href="/home/contact"><strong>Contact</strong></a></li>
           <% if user_signed_in? %>
               <li class="dropdown <%= is_active?(main_app.edit_user_registration_path) %>"><a><strong>Your Account</strong></a>
                 <ul class="dropdown-menu">
@@ -63,7 +59,7 @@
                 </ul>
               </li>
           <% else %>
-              <li class="dropdown"><a href="<%= main_app.new_user_session_path%>"><strong>Sign In / Sign Up</strong></a></li>
+              <li class="dropdown"><a href="<%= main_app.new_user_session_path%>"><strong>Sign In</strong></a></li>
           <% end %>
           <li id="link-to-cart" data-hook><%= link_to_cart %></li>
         </ul>
