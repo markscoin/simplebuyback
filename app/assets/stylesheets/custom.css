@@ -275,7 +275,6 @@ th {
 }
 
 .about_banner {
-    margin-top: -45px;
     padding-top: 15px;
 }
 
@@ -319,3 +318,65 @@ h1.title {
 .process_icon {
     font-size: 17px;
 }
+
+/* Home page banner */
+
+#how_does_it_work {
+    background: none repeat scroll 0 0 #e9e6e1;
+    border-radius: 10px;
+}
+
+.panels {
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px 1px gray;
+    overflow: auto;
+    padding: 20px;
+}
+
+.width75 {
+    max-width: 75px;
+}
+
+
+.top_divider {
+    padding-top: 20px;
+    border-top: 1px solid lightgray;
+}
+
+.assurance_row {
+    vertical-align: middle; border-bottom:1px solid lightgray
+}
+
+.works_table > tbody > tr > td {
+    margin: 0 20px 0 20px;
+    text-align: center;
+    padding: 20px 25px;
+    width: 33%;
+}
+
+.works_table > tbody > tr > td > h2 {
+    margin-top: 8px;
+}
+
+.works_table {
+    border-radius: 10px;
+    overflow: auto;
+    background-color: #e9e6e1;
+}
+
+/* Bottom Trademark/Copyright */
+
+.trademark > tbody > tr > td { 
+    padding-bottom: 0; 
+    font-size: 11px; 
+    width: 33%;
+}
+
+.trademark > tbody > tr > td > p {
+    margin-bottom: 0;
+}
+
+.trademark {
+    margin-bottom: 15px;
+}
+

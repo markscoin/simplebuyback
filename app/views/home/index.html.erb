@@ -2,9 +2,14 @@
 <%= render partial: "memory_modal" %> 
 <%= render partial: "ipad_modal" %>
 <div class="container">
+  <div class="row">
+    <div class="col-md-9 col-md-offset-3">
+      <h1>Sell Your Smartphone and Electronics</h1>
+    </div>
+  </div>
   <div class="row" id="accordion">
       <div class="col-xs-3">
-      <h2 style="color: #31c3a6;"><strong>Why Sell To Us?</strong></h2>
+      <h2 class="colour"><strong>Why Sell To Us?</strong></h2>
       <div class="maketable">
         <%= image_tag("icons/checkmark.png", class: "reasons icon-img") %>
         <p class="reasons"><strong>  Competitive Prices</strong></p>
@@ -16,6 +21,10 @@
       <div class="maketable">
         <%= image_tag("icons/Watches.png", class: "reasons icon-img") %>
         <p class="reasons"><strong>  Fast Payment</strong></p>
+      </div>
+      <div class="maketable">
+        <%= image_tag("icons/green_infinity.png", class: "reasons icon-img") %>
+        <p class="reasons"><strong>  No Risk</strong></p>
       </div>
       </div>
       <div class="col-xs-3 growimages">
@@ -661,5 +670,45 @@
         </div>
       </div>
       </div>
+  </div>
+  <div class="row">
+    <div class="col-md-9 col-md-offset-3 top_divider">
+    </div>
+    <div class="col-md-12">
+      <div class="col-md-12" style="margin-top: 15px;">
+        <h2 class="colour" style="margin-top:0px;"><strong> How Does it Work? </strong></h2>
+        <table class="works_table">
+          <tr>
+            <td style="padding-right: 5px;">
+              <%= image_tag "icons/handshake.png", class: "width75" %> <h2> Receive a Free Quote</h2>
+              <p style="text-align: left;"> Get a free quote in a few simple steps. <br>Price quotes are good for 30 days.</p>
+            </td>
+            <td style="padding: 0 10px;">
+              <%= image_tag "icons/free_shipping.png", class: "width75"  %> <h2>Ship Your Device for Free</h2>
+              <p style="text-align: left;">Shipping is free. We provide the prepaid shipping label you provide the box.</p>
+            </td>
+            <td style="padding-right: 50px;">
+              <%= image_tag "icons/money_icon.png", class: "width75" %> <h2> Get Paid</h2>
+              <p>Get paid via Check or Paypal. Payment in as little as 4 days.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-md-6 col-md-offset-1 ">
+        <table>
+          <tr>
+            <td class="assurance_row"><%= image_tag "icons/lock.png", class: "width75" %><h2 style="float:right; margin-right: 40px;"><strong>30 Day Price Lock</strong> </h2>
+            <p> Your quote is good for 30 days after being issued. </p>
+            </td>
+          </tr>
+          <tr>
+            <td class="assurance_row"><%= image_tag "icons/odometer.png", class: "width75" %><h2>Fast Payment (as little as 4 days)</h2> </td>
+          </tr>
+          <tr>
+            <td class="assurance_row"> hey</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </div>
 </div>

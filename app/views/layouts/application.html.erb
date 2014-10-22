@@ -39,22 +39,18 @@
               <li><a href="#">Nokia</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a><strong>Support</strong></a>
-            <ul class="dropdown-menu">
-              <li><a href="/home/contact">Contact Us</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </li>
+          <li class="dropdown"><%= link_to "About", main_app.home_about_path, style: "font-weight: bold;" %></li>
+          <li class="dropdown"><a href="/home/contact"><strong>Contact</strong></a></li>
           <% if user_signed_in? %>
               <li class="dropdown <%= is_active?(main_app.edit_user_registration_path) %>"><a><strong>Your Account</strong></a>
                 <ul class="dropdown-menu">
-                  <li><a href="<%= home_order_path %>"><strong>Your Orders</strong></a></li>
+                  <li><a href="<%= main_app.home_order_path %>"><strong>Your Orders</strong></a></li>
                   <li><a href="<%= main_app.edit_user_registration_path %>"><strong>Edit Account</strong></a></li>
                   <li><a rel="nofollow" href="<%= main_app.destroy_user_session_path %>" data-method="delete"><strong>Sign out</strong></a></li>
                 </ul>
               </li>
           <% else %>
-              <li class="dropdown"><a href="<%= main_app.new_user_session_path%>"><strong>Sign In / Sign Up</strong></a></li>
+              <li class="dropdown"><a href="<%= main_app.new_user_session_path%>"><strong>Sign In</strong></a></li>
           <% end %>
           <li id="link-to-cart" data-hook><%= link_to_cart %></li>
         </ul>
@@ -69,7 +65,6 @@
 <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-<div class="clear pad45"></div>
 <%= yield %>
 <div class="clear pad45"></div>
 <!--footer-->
@@ -122,6 +117,8 @@
         &copy; 2014 <br>All Rights Reserved <br><a href="#"><Strong>Privacy Policy</Strong></a> | <a href="#"><strong>Terms & Conditions</strong></a>
       </div>
     </div>
+    <p class="trademark">SimpleBuyBack Trademark is a registered trademark of SimpleBuyBack Inc.
+      All other trademarks and logos are the property of their respective owners.</p>
   </div>
   </div>
 </div>

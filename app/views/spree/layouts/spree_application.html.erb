@@ -48,7 +48,7 @@
               <li><a href="#">Nokia</a></li>
             </ul>
           </li>
-          <li class="dropdown"><%= link_to "About", "#", style: "font-weight: bold;" %></li>
+          <li class="dropdown"><%= link_to "About", main_app.home_about_path, style: "font-weight: bold;" %></li>
           <li class="dropdown"><a href="/home/contact"><strong>Contact</strong></a></li>
           <% if user_signed_in? %>
               <li class="dropdown <%= is_active?(main_app.edit_user_registration_path) %>"><a><strong>Your Account</strong></a>
@@ -74,7 +74,6 @@
 <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
 <% end %>
-<div class="clear pad45"></div>
 <%= yield %>
 <div class="clear pad45"></div>
 <!--footer-->
@@ -85,9 +84,11 @@
       <h6>get in touch</h6>
       <ul>
         <li>
-          <p> I'll fill in this later </p>
+          <p style="color: #888;"> If you have any questions feel free to give us a ring or email us.
+            We're here on weekdays from 9am - 5pm CST. We're friendly we promise <i class="fa fa-thumbs-o-up"></i>
+          </p>
 
-          <p style="color: #ffffff;"><i class="fa fa-envelope-o hue"></i>
+          <p style="color: #ffffff;"><i class="fa fa-envelope-o hue" style="margin-right: 4px;"></i>
             <a href="mailto:name@example.com">support@simplebuyback.com</a><br/>
             <i class="fa fa-phone hue"></i>(210) 960-7222
           </p>
@@ -118,16 +119,32 @@
     </div>
     <!--column 4-->
     <div class="col-xs-3">
-      <h6>Connect With Us!</h6>
+      <h6>Connect With Us</h6>
       <a href="http://www.twitter.com/simpletronix" class="zocial icon twitter"></a>
       <a href="http://www.facebook.com/simpletronix" class="zocial icon facebook"></a>
       <a href="https://plus.google.com/100741076038418268673" class="zocial icon googleplus"></a>
       <div style="color: #ffffff;">
-        Simple Buy Back Inc.
-        &copy; 2014 <br>All Rights Reserved <br><a href="#"><Strong>Privacy Policy</Strong></a> | <a href="#"><strong>Terms & Conditions</strong></a>
       </div>
     </div>
   </div>
+  </div>
+  <div class="container">
+  <div class="row">
+    <table class="trademark">
+      <tr>
+        <td style="vertical-align: bottom;">
+          <p style="color: #ffffff;">SimpleBuyBack Inc. &copy; 2014. All Rights Reserved.</p>
+        </td>
+        <td style="text-align: center; vertical-align: bottom;">
+          <a href="#"><Strong>Privacy Policy</Strong></a> | <a href="#"><strong>Terms & Conditions</strong></a>
+        </td>
+        <td>
+          <p style="text-align:right;">SimpleBuyBack Trademark is a registered trademark of SimpleBuyBack Inc.
+            All other trademarks and logos are the property of their respective owners.</p>
+        </td>
+      </tr>
+    </table>
+    </div>
   </div>
 </div>
 <!--//footer-->
