@@ -380,3 +380,10 @@ h1.title {
     margin-bottom: 15px;
 }
 
+.oliver {
+    max-width: 100px !important;
+}
+
+#footer_alt li {
+    border-bottom: 0px;
+}

@@ -97,34 +97,36 @@
     </div>
     <!--column 2-->
     <div class="col-xs-3">
-      <h6>popular links</h6>
-      <ul class="media-list">
-        <li class="media">
+      <h6>Helpful links</h6>
+      <ul>
+        <li>
           <div class="media-body">
-            <a href="#">A link i'll fill in later</a></div>
+            <%= link_to "About Us", main_app.home_about_path %></div>
         </li>
-        <li class="media">
+        <li>
           <div class="media-body">
-            <a href="#">A link i'll fill in later</a></div>
+            <%= link_to "Contact Us", main_app.home_contact_path %></div>
         </li>
-        <li class="media">
+        <li>
           <div class="media-body">
-            <a href="#">A link i'll fill in later</a></div>
+            <%= link_to "Frequently Asked Questions", main_app.home_faq_path %></div>
         </li>
+        
       </ul>
     </div>
     <!--column 3-->
     <div class="col-xs-3">
-      <h6> fill this in later </h6>
-    </div>
-    <!--column 4-->
-    <div class="col-xs-3">
-      <h6>Connect With Us</h6>
+      <h6>Connect With Us</h6>      
+      <p>
       <a href="http://www.twitter.com/simpletronix" class="zocial icon twitter"></a>
       <a href="http://www.facebook.com/simpletronix" class="zocial icon facebook"></a>
       <a href="https://plus.google.com/100741076038418268673" class="zocial icon googleplus"></a>
-      <div style="color: #ffffff;">
-      </div>
+      </p>
+    </div>
+    <div class="col-xs-3 center">
+      <h6 style="padding-bottom: 0; text-align: left;" > Powered By</h6>
+      <%= link_to image_tag("oliversface.png", class: "oliver center-block"), main_app.home_about_path %>
+      <%= link_to "Mr. Oliver", main_app.home_about_path, style: "color: #fff;" %>
     </div>
   </div>
   </div>
