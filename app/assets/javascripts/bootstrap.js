@@ -658,9 +658,9 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
     if (!data || !data.transitioning) {
       if ($parent) $parent.find('[data-toggle="collapse"][data-parent="' + parent + '"]').not($this).addClass('collapsed')
       $this[$target.hasClass('in') ? 'addClass' : 'removeClass']('collapsed ')
-      $('.active_tab').removeClass('active_tab')
-      $this.parent()[$target.hasClass('in') ? 'removeClass' : 'addClass']('active_tab ')
-      if ($parent) $parent.find('[data-toggle="collapse"][data-parent="' + parent + '"]').not($this).removeClass('active_tab')
+      $('.active_tab').removeClass('')
+      $this.parent()[$target.hasClass('in') ? 'removeClass' : 'addClass']('')
+      if ($parent) $parent.find('[data-toggle="collapse"][data-parent="' + parent + '"]').not($this).removeClass('')
     }
 
     Plugin.call($target, option)

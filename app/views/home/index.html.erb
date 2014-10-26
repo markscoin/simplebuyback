@@ -64,6 +64,9 @@
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemorytmobile"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemoryverizon"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemorysprint"}) %></th>
+                <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemoryunlocked"}) do %>
+                      <i class="fa fa-fw fa-lg fa-unlock"></i><span>Unlocked</span> <% end %>
+                </th>
               </tr>
             </table>
             <div id="iphone6plusmemoryatt" class="collapse homepanel">
@@ -130,6 +133,22 @@
                 </tr>
               </table>
             </div>
+            <div id="iphone6plusmemoryunlocked" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 Plus 16GB - Unlocked</td>
+                  <td class="center">iPhone 6 Plus 64GB - Unlocked</td>
+                  <td class="center">iPhone 6 Plus 128GB - Unlocked</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-16gb-unlocked" %><a href="/store/products/apple-iphone-6-plus-16gb-unlocked" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-64gb-unlocked" %><a href="/store/products/apple-iphone-6-plus-64gb-unlocked" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-128gb-unlocked" %><a href="/store/products/apple-iphone-6-plus-128gb-unlocked"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
             </div>
           </div>  
           <div class="collapse" id="iphone6carrier">
@@ -141,6 +160,9 @@
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memorytmobile"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memoryverizon"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memorysprint"}) %></th>
+                <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memoryunlocked"}) do %>
+                      <i class="fa fa-fw fa-lg fa-unlock"></i><span>Unlocked</span> <% end %>
+                </th>
               </tr>
             </table>
             <div id="iphone6memoryatt" class="collapse homepanel">
@@ -207,6 +229,22 @@
                 </tr>
               </table>
             </div>
+            <div id="iphone6memoryunlocked" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 16GB - Unlocked</td>
+                  <td class="center">iPhone 6 64GB - Unlocked</td>
+                  <td class="center">iPhone 6 128GB - Unlocked</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-16gb-unlocked" %><a href="/store/products/apple-iphone-6-16gb-unlocked" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-64gb-unlocked" %><a href="/store/products/apple-iphone-6-64gb-unlocked" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-128gb-unlocked" %><a href="/store/products/apple-iphone-6-128gb-unlocked"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
             </div>
           </div>  
           <div class="collapse" id="iphone5scarrier">
@@ -218,6 +256,9 @@
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemorytmobile"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryverizon"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemorysprint"}) %></th>
+                <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryunlocked"}) do %>
+                      <i class="fa fa-fw fa-lg fa-unlock"></i><span>Unlocked</span> <% end %>
+                </th>
               </tr>
             </table>
               <div id="iphone5smemoryatt" class="collapse homepanel">
@@ -285,6 +326,23 @@
                   </tr>
                 </table>
               </div>
+              <div id="iphone5smemoryunlocked" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 5S 16GB - Unlocked</td>
+                    <td class="center">iPhone 5S 32GB - Unlocked</td>
+                    <td class="center">iPhone 5S 64GB - Unlocked</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-16gb-unlocked" %><a href="/store/products/apple-iphone-5s-16gb-unlocked" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-32gb-unlocked" %><a href="/store/products/apple-iphone-5s-32gb-unlocked" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-64gb-unlocked" %><a href="/store/products/apple-iphone-5s-64gb-unlocked"class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  </tr>
+                </table>
+              </div>
+
             </div>
           </div>
           <div class="collapse" id="iphone5ccarrier">
@@ -296,6 +354,9 @@
                   <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemorytmobile"}) %></th>
                   <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemoryverizon"}) %></th>
                   <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemorysprint"}) %></th>
+                  <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemoryunlocked"}) do %>
+                        <i class="fa fa-fw fa-lg fa-unlock"></i><span>Unlocked</span> <% end %>
+                  </th>
                 </tr>
               </table>
               <div id="iphone5cmemoryatt" class="collapse homepanel">
@@ -354,6 +415,20 @@
                   </tr>
                 </table>
               </div>
+              <div id="iphone5cmemoryunlocked" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 5C 16GB - Unlocked</td>
+                    <td class="center">iPhone 5C 32GB - Unlocked</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 16GB"), "/store/products/apple-iphone-5c-16gb-unlocked" %><a href="/store/products/apple-iphone-5c-16gb-unlocked" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 32GB"), "/store/products/apple-iphone-5c-32gb-unlocked" %><a href="/store/products/apple-iphone-5c-32gb-unlocked" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
           <div class="collapse" id="iphone5carrier">
@@ -365,6 +440,9 @@
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memorytmobile"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryverizon"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memorysprint"}) %></th>
+                <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryunlocked"}) do %>
+                      <i class="fa fa-fw fa-lg fa-unlock"></i><span>Unlocked</span> <% end %>
+                </th>
               </tr>
             </table>
               <div id="iphone5memoryatt" class="collapse homepanel">
@@ -431,6 +509,22 @@
                   </tr>
                 </table>
               </div>
+              <div id="iphone5memoryunlocked" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 5 16GB - Unlocked</td>
+                    <td class="center">iPhone 5 32GB - Unlocked</td>
+                    <td class="center">iPhone 5 64GB - Unlocked</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-16gb-unlocked"  %> <a href="/store/products/apple-iphone-5-16gb-unlocked" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-32gb-unlocked"  %> <a href="/store/products/apple-iphone-5-32gb-unlocked" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-64gb-unlocked"  %> <a href="/store/products/apple-iphone-5-64gb-unlocked" class="btn btn-success btn-rounded center-block">64GB </a></th>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
           <div class="collapse" id="iphone4scarrier">
@@ -442,6 +536,9 @@
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemorytmobile"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryverizon"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemorysprint"}) %></th>
+                <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryunlocked"}) do %>
+                      <i class="fa fa-fw fa-lg fa-unlock"></i><span>Unlocked</span> <% end %>
+                </th>
               </tr>
             </table>
               <div id="iphone4smemoryatt" class="collapse homepanel">
@@ -512,6 +609,24 @@
                   </tr>
                 </table>
               </div>
+              <div id="iphone4smemoryunlocked" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 4S 8GB - Unlocked</td>
+                    <td class="center">iPhone 4S 16GB - Unlocked</td>
+                    <td class="center">iPhone 4S 32GB - Unlocked</td>
+                    <td class="center">iPhone 4S 64GB - Unlocked</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-8gb-unlocked"  %> <a href="/store/products/apple-iphone-4s-8gb-unlocked" class="btn btn-success btn-rounded center-block">8GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-16gb-unlocked"  %> <a href="/store/products/apple-iphone-4s-16gb-unlocked" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-32gb-unlocked"  %> <a href="/store/products/apple-iphone-4s-32gb-unlocked" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-64gb-unlocked"  %> <a href="/store/products/apple-iphone-4s-64gb-unlocked" class="btn btn-success btn-rounded center-block">64GB </a></th>
+                  </tr>
+                </table>
+              </div>
             </div>
           </div>
           <div class="collapse" id="iphone4carrier">
@@ -522,6 +637,9 @@
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryatt"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorytmobile"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryverizon"}) %></th>
+                <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryunlocked"}) do %>
+                      <i class="fa fa-fw fa-lg fa-unlock"></i><span>Unlocked</span> <% end %>
+                </th>
               </tr>
             </table>
               <div id="iphone4memoryatt" class="collapse homepanel">
@@ -565,6 +683,22 @@
                     <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-8gb-verizon"  %> <a href="/store/products/apple-iphone-4-8gb-verizon" class="btn btn-success btn-rounded center-block">8GB </a></th>
                     <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-16gb-verizon"  %> <a href="/store/products/apple-iphone-4-16gb-verizon" class="btn btn-success btn-rounded center-block">16GB </a></th>
                     <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-32gb-verizon"  %> <a href="/store/products/apple-iphone-4-32gb-verizon" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone4memoryunlocked" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 4 8GB - Unlocked</td>
+                    <td class="center">iPhone 4 16GB - Unlocked</td>
+                    <td class="center">iPhone 4 32GB - Unlocked</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-8gb-unlocked"  %> <a href="/store/products/apple-iphone-4-8gb-unlocked" class="btn btn-success btn-rounded center-block">8GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-16gb-unlocked"  %> <a href="/store/products/apple-iphone-4-16gb-unlocked" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-32gb-unlocked"  %> <a href="/store/products/apple-iphone-4-32gb-unlocked" class="btn btn-success btn-rounded center-block">32GB </a></th>
                   </tr>
                 </table>
               </div>
