@@ -10,7 +10,7 @@ class String
 end
   
 crawler_data = []
-CSV.foreach("results.csv") do |x|
+CSV.foreach("usell_products.csv") do |x|
   crawler_data << x
 end
 
@@ -73,7 +73,7 @@ formatted_crawler_data.each do |x|
   #checks if crawler data row contains brandname and if it does, is it worth including(based on buyback amount)
   elsif brandname?(x[:name].downcase.to_s)
     prices = x[:price].split('|').flatten.collect { |w| w.to_f}
-    if prices[2] > 50
+    if prices[2] > 30
       CSV.open("updates_needed.csv", "ab") do |csv|
         csv << [ x[:product_id], "" ,0, x[:name],"","",1,"Condition:Broken,Good,Flawless", new_prices_csv]
       end

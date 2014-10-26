@@ -46,12 +46,169 @@
         <%= render partial: "iphone_modal" %>  
         <table class="table">
           <tr>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone6Plus.png",style: "max-width: 92px; margin-top: -10px;", alt: "iPhone 6 Plus", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6pluscarrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 6 Plus</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone6.png",style: "margin-top: -3px;" ,class: "apple_phone", alt: "iPhone 6", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6carrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block" style="margin-top: 1px;">iPhone 6</button></th>
             <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5scarrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5S</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5C", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5ccarrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5C</button></th>
             <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone", alt: "iPhone 5", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5carrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5</button></th>            
             <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone", alt: "iPhone 4S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4scarrier"})%><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4S</button></th>
             <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone", alt: "iPhone 4", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4carrier"})%><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4</button></th>
           </tr>
         </table>
+          <div class="collapse" id="iphone6pluscarrier">
+            <div id="iphone6plusmemory" class="homepanel">
+            <span>Select Your Carrier:</span>
+            <table class="table">
+              <tr>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemoryatt"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemorytmobile"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemoryverizon"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemorysprint"}) %></th>
+              </tr>
+            </table>
+            <div id="iphone6plusmemoryatt" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 Plus 16GB - AT&T</td>
+                  <td class="center">iPhone 6 Plus 64GB - AT&T</td>
+                  <td class="center">iPhone 6 Plus 128GB - AT&T</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-16gb-at-t" %><a href="/store/products/apple-iphone-6-plus-16gb-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-64gb-at-t" %><a href="/store/products/apple-iphone-6-plus-64gb-at-t" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-128gb-at-t" %><a href="/store/products/apple-iphone-6-plus-128gb-at-t"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            <div id="iphone6plusmemorytmobile" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 Plus 16GB - T-Mobile</td>
+                  <td class="center">iPhone 6 Plus 64GB - T-Mobile</td>
+                  <td class="center">iPhone 6 Plus 128GB - T-Mobile</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-16gb-t-mobile" %><a href="/store/products/apple-iphone-6-plus-16gb-t-mobile" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-64gb-t-mobile" %><a href="/store/products/apple-iphone-6-plus-64gb-t-mobile" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-128gb-t-mobile" %><a href="/store/products/apple-iphone-6-plus-128gb-t-mobile"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            <div id="iphone6plusmemoryverizon" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 Plus 16GB - Verizon</td>
+                  <td class="center">iPhone 6 Plus 64GB - Verizon</td>
+                  <td class="center">iPhone 6 Plus 128GB - Verizon</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-16gb-verizon" %><a href="/store/products/apple-iphone-6-plus-16gb-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-64gb-verizon" %><a href="/store/products/apple-iphone-6-plus-64gb-verizon" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-128gb-verizon" %><a href="/store/products/apple-iphone-6-plus-128gb-verizon"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            <div id="iphone6plusmemorysprint" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 Plus 16GB - Sprint</td>
+                  <td class="center">iPhone 6 Plus 64GB - Sprint</td>
+                  <td class="center">iPhone 6 Plus 128GB - Sprint</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-16gb-sprint" %><a href="/store/products/apple-iphone-6-plus-16gb-sprint" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-64gb-sprint" %><a href="/store/products/apple-iphone-6-plus-64gb-sprint" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6Plus.png", class: "apple_phone", alt: "iPhone 6 Plus"), "/store/products/apple-iphone-6-plus-128gb-sprint" %><a href="/store/products/apple-iphone-6-plus-128gb-sprint"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            </div>
+          </div>  
+          <div class="collapse" id="iphone6carrier">
+            <div id="iphone6memory" class="homepanel">
+            <span>Select Your Carrier:</span>
+            <table class="table">
+              <tr>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memoryatt"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memorytmobile"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memoryverizon"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memorysprint"}) %></th>
+              </tr>
+            </table>
+            <div id="iphone6memoryatt" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 16GB - AT&T</td>
+                  <td class="center">iPhone 6 64GB - AT&T</td>
+                  <td class="center">iPhone 6 128GB - AT&T</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-16gb-at-t" %><a href="/store/products/apple-iphone-6-16gb-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-64gb-at-t" %><a href="/store/products/apple-iphone-6-64gb-at-t" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-128gb-at-t" %><a href="/store/products/apple-iphone-6-128gb-at-t"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            <div id="iphone6memorytmobile" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 16GB - T-Mobile</td>
+                  <td class="center">iPhone 6 64GB - T-Mobile</td>
+                  <td class="center">iPhone 6 128GB - T-Mobile</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-16gb-t-mobile" %><a href="/store/products/apple-iphone-6-16gb-t-mobile" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-64gb-t-mobile" %><a href="/store/products/apple-iphone-6-64gb-t-mobile" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-128gb-t-mobile" %><a href="/store/products/apple-iphone-6-128gb-t-mobile"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            <div id="iphone6memoryverizon" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 16GB - Verizon</td>
+                  <td class="center">iPhone 6 64GB - Verizon</td>
+                  <td class="center">iPhone 6 128GB - Verizon</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-16gb-verizon" %><a href="/store/products/apple-iphone-6-16gb-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-64gb-verizon" %><a href="/store/products/apple-iphone-6-64gb-verizon" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-128gb-verizon" %><a href="/store/products/apple-iphone-6-128gb-verizon"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            <div id="iphone6memorysprint" class="collapse homepanel">
+              <span>Select iPhone Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPhone 6 16GB - Sprint</td>
+                  <td class="center">iPhone 6 64GB - Sprint</td>
+                  <td class="center">iPhone 6 128GB - Sprint</td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-16gb-sprint" %><a href="/store/products/apple-iphone-6-16gb-sprint" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-64gb-sprint" %><a href="/store/products/apple-iphone-6-64gb-sprint" class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  <th><%= link_to image_tag("phones/apple/iPhone6.png", class: "apple_phone", alt: "iPhone 6"), "/store/products/apple-iphone-6-128gb-sprint" %><a href="/store/products/apple-iphone-6-128gb-sprint"class="btn btn-success btn-rounded center-block">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            </div>
+          </div>  
           <div class="collapse" id="iphone5scarrier">
             <div id="iphone5smemory" class="homepanel">
             <span>Select Your Carrier:</span>
@@ -68,14 +225,15 @@
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
+                  <tr>
                     <td class="center">iPhone 5S 16GB - AT&T</td>
                     <td class="center">iPhone 5S 32GB - AT&T</td>
                     <td class="center">iPhone 5S 64GB - AT&T</td>
                   </tr>
                   <tr>
-                    <th><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S") %><button type="button" class="btn btn-success btn-rounded center-block ">16GB</button></th>
-                    <th><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S") %><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S") %><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-16gb-at-t" %><a href="/store/products/apple-iphone-5s-16gb-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-32gb-at-t" %><a href="/store/products/apple-iphone-5s-32gb-at-t" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-64gb-at-t" %><a href="/store/products/apple-iphone-5s-64gb-at-t"class="btn btn-success btn-rounded center-block">64GB</a></th>
                   </tr>
                 </table>
               </div>
@@ -84,9 +242,14 @@
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 5S 16GB - T-Mobile</td>
+                    <td class="center">iPhone 5S 32GB - T-Mobile</td>
+                    <td class="center">iPhone 5S 64GB - T-Mobile</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-16gb-t-mobile" %><a href="/store/products/apple-iphone-5s-16gb-t-mobile" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-32gb-t-mobile" %><a href="/store/products/apple-iphone-5s-32gb-t-mobile" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-64gb-t-mobile" %><a href="/store/products/apple-iphone-5s-64gb-t-mobile"class="btn btn-success btn-rounded center-block">64GB</a></th>
                   </tr>
                 </table>
               </div>
@@ -95,9 +258,14 @@
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 5S 16GB - Verizon</td>
+                    <td class="center">iPhone 5S 32GB - Verizon</td>
+                    <td class="center">iPhone 5S 64GB - Verizon</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-16gb-verizon" %><a href="/store/products/apple-iphone-5s-16gb-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-32gb-verizon" %><a href="/store/products/apple-iphone-5s-32gb-verizon" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-64gb-verizon" %><a href="/store/products/apple-iphone-5s-64gb-verizon"class="btn btn-success btn-rounded center-block">64GB</a></th>
                   </tr>
                 </table>
               </div>
@@ -106,9 +274,83 @@
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 5S 16GB - Sprint</td>
+                    <td class="center">iPhone 5S 32GB - Sprint</td>
+                    <td class="center">iPhone 5S 64GB - Sprint</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-16gb-sprint" %><a href="/store/products/apple-iphone-5s-16gb-sprint" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-32gb-sprint" %><a href="/store/products/apple-iphone-5s-32gb-sprint" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S"), "/store/products/apple-iphone-5s-64gb-sprint" %><a href="/store/products/apple-iphone-5s-64gb-sprint"class="btn btn-success btn-rounded center-block">64GB</a></th>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="collapse" id="iphone5ccarrier">
+            <div id="iphone5cmemory" class="homepanel">
+              <span>Select Your Carrier:</span>
+              <table class="table">
+                <tr>
+                  <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemoryatt"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemorytmobile"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemoryverizon"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemorysprint"}) %></th>
+                </tr>
+              </table>
+              <div id="iphone5cmemoryatt" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 5C 16GB - AT&T</td>
+                    <td class="center">iPhone 5C 32GB - AT&T</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 16GB"), "/store/products/apple-iphone-5c-16gb-at-t" %><a href="/store/products/apple-iphone-5c-16gb-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 32GB"), "/store/products/apple-iphone-5c-32gb-at-t" %><a href="/store/products/apple-iphone-5c-32gb-at-t" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5cmemorytmobile" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 5C 16GB - T-Mobile</td>
+                    <td class="center">iPhone 5C 32GB - T-Mobile</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 16GB"), "/store/products/apple-iphone-5c-16gb-t-mobile" %><a href="/store/products/apple-iphone-5c-16gb-t-mobile" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 32GB"), "/store/products/apple-iphone-5c-32gb-t-mobile" %><a href="/store/products/apple-iphone-5c-32gb-t-mobile" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5cmemoryverizon" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 5C 16GB - Verizon</td>
+                    <td class="center">iPhone 5C 32GB - Verizon</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 16GB"), "/store/products/apple-iphone-5c-16gb-verizon" %><a href="/store/products/apple-iphone-5c-16gb-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 32GB"), "/store/products/apple-iphone-5c-32gb-verizon" %><a href="/store/products/apple-iphone-5c-32gb-verizon" class="btn btn-success btn-rounded center-block">32GB</a></th>
+                  </tr>
+                </table>
+              </div>
+              <div id="iphone5cmemorysprint" class="collapse homepanel">
+                <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
+                <table class="table">
+                  <tr>
+                    <td class="center">iPhone 5C 16GB - Sprint</td>
+                    <td class="center">iPhone 5C 32GB - Sprint</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 16GB"), "/store/products/apple-iphone-5c-16gb-sprint" %><a href="/store/products/apple-iphone-5c-16gb-sprint" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                    <th><%= link_to image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5c 32GB"), "/store/products/apple-iphone-5c-32gb-sprint" %><a href="/store/products/apple-iphone-5c-32gb-sprint" class="btn btn-success btn-rounded center-block">32GB</a></th>
                   </tr>
                 </table>
               </div>
@@ -127,43 +369,65 @@
             </table>
               <div id="iphone5memoryatt" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
-                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memory_size">Whats the Memory Size of my iPhone?</button></span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 5 16GB - AT&T</td>
+                    <td class="center">iPhone 5 32GB - AT&T</td>
+                    <td class="center">iPhone 5 64GB - AT&T</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-16gb-at-t"  %> <a href="/store/products/apple-iphone-5-16gb-at-t" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-32gb-at-t"  %> <a href="/store/products/apple-iphone-5-32gb-at-t" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-64gb-at-t"  %> <a href="/store/products/apple-iphone-5-64gb-at-t" class="btn btn-success btn-rounded center-block">64GB </a></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone5memorytmobile" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
-                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memory_size" >Whats the Memory Size of my iPhone?</button></span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 5 16GB - T-Mobile</td>
+                    <td class="center">iPhone 5 32GB - T-Mobile</td>
+                    <td class="center">iPhone 5 64GB - T-Mobile</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-16gb-t-mobile"  %> <a href="/store/products/apple-iphone-5-16gb-t-mobile" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-32gb-t-mobile"  %> <a href="/store/products/apple-iphone-5-32gb-t-mobile" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-64gb-t-mobile"  %> <a href="/store/products/apple-iphone-5-64gb-t-mobile" class="btn btn-success btn-rounded center-block">64GB </a></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone5memoryverizon" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 5 16GB - Verizon</td>
+                    <td class="center">iPhone 5 32GB - Verizon</td>
+                    <td class="center">iPhone 5 64GB - Verizon</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-16gb-verizon"  %> <a href="/store/products/apple-iphone-5-16gb-verizon" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-32gb-verizon"  %> <a href="/store/products/apple-iphone-5-32gb-verizon" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-64gb-verizon"  %> <a href="/store/products/apple-iphone-5-64gb-verizon" class="btn btn-success btn-rounded center-block">64GB </a></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone5memorysprint" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 5 16GB - Sprint</td>
+                    <td class="center">iPhone 5 32GB - Sprint</td>
+                    <td class="center">iPhone 5 64GB - Sprint</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-16gb-sprint"  %> <a href="/store/products/apple-iphone-5-16gb-sprint" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-32gb-sprint"  %> <a href="/store/products/apple-iphone-5-32gb-sprint" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone"),"/store/products/apple-iphone-5-64gb-sprint"  %> <a href="/store/products/apple-iphone-5-64gb-sprint" class="btn btn-success btn-rounded center-block">64GB </a></th>
                   </tr>
                 </table>
               </div>
@@ -182,43 +446,69 @@
             </table>
               <div id="iphone4smemoryatt" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 4S 8GB - AT&T</td>
+                    <td class="center">iPhone 4S 16GB - AT&T</td>
+                    <td class="center">iPhone 4S 32GB - AT&T</td>
+                    <td class="center">iPhone 4S 64GB - AT&T</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-8gb-at-t"  %> <a href="/store/products/apple-iphone-4s-8gb-at-t" class="btn btn-success btn-rounded center-block">8GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-16gb-at-t"  %> <a href="/store/products/apple-iphone-4s-16gb-at-t" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-32gb-at-t"  %> <a href="/store/products/apple-iphone-4s-32gb-at-t" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-64gb-at-t"  %> <a href="/store/products/apple-iphone-4s-64gb-at-t" class="btn btn-success btn-rounded center-block">64GB </a></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone4smemorytmobile" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
+                    <td class="center">iPhone 4S 8GB - T-Mobile</td>
+                    <td class="center">iPhone 4S 16GB - T-Mobile</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-8gb-t-mobile"  %> <a href="/store/products/apple-iphone-4s-8gb-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">8GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-16gb-t-mobile"  %> <a href="/store/products/apple-iphone-4s-16gb-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">16GB </a></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone4smemoryverizon" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 4S 8GB - Verizon</td>
+                    <td class="center">iPhone 4S 16GB - Verizon</td>
+                    <td class="center">iPhone 4S 32GB - Verizon</td>
+                    <td class="center">iPhone 4S 64GB - Verizon</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-8gb-verizon"  %> <a href="/store/products/apple-iphone-4s-8gb-verizon" class="btn btn-success btn-rounded center-block">8GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-16gb-verizon"  %> <a href="/store/products/apple-iphone-4s-16gb-verizon" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-32gb-verizon"  %> <a href="/store/products/apple-iphone-4s-32gb-verizon" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-64gb-verizon"  %> <a href="/store/products/apple-iphone-4s-64gb-verizon" class="btn btn-success btn-rounded center-block">64GB </a></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone4smemorysprint" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                    <td class="center">iPhone 4S 8GB - Sprint</td>
+                    <td class="center">iPhone 4S 16GB - Sprint</td>
+                    <td class="center">iPhone 4S 32GB - Sprint</td>
+                    <td class="center">iPhone 4S 64GB - Sprint</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-8gb-sprint"  %> <a href="/store/products/apple-iphone-4s-8gb-sprint" class="btn btn-success btn-rounded center-block">8GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-16gb-sprint"  %> <a href="/store/products/apple-iphone-4s-16gb-sprint" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-32gb-sprint"  %> <a href="/store/products/apple-iphone-4s-32gb-sprint" class="btn btn-success btn-rounded center-block">32GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4s-64gb-sprint"  %> <a href="/store/products/apple-iphone-4s-64gb-sprint" class="btn btn-success btn-rounded center-block">64GB </a></th>
                   </tr>
                 </table>
               </div>
@@ -232,42 +522,49 @@
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryatt"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorytmobile"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryverizon"}) %></th>
-                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorysprint"}) %></th>
               </tr>
             </table>
               <div id="iphone4memoryatt" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <td class="center">iPhone 4 8GB - AT&T</td>
+                    <td class="center">iPhone 4 16GB - AT&T</td>
+                    <td class="center">iPhone 4 32GB - AT&T</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-8gb-at-t"  %> <a href="/store/products/apple-iphone-4-8gb-at-t" class="btn btn-success btn-rounded center-block">8GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-16gb-at-t"  %> <a href="/store/products/apple-iphone-4-16gb-at-t" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-32gb-at-t"  %> <a href="/store/products/apple-iphone-4-32gb-at-t" class="btn btn-success btn-rounded center-block">32GB </a></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone4memorytmobile" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                    <td class="center">iPhone 4 8GB - T-Mobile</td>
+                  </tr>
+                  <tr>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-8gb-t-mobile"  %> <a href="/store/products/apple-iphone-4-8gb-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">8GB </a></th>
                   </tr>
                 </table>
               </div>
               <div id="iphone4memoryverizon" class="collapse homepanel">
                 <span>Select iPhone Memory Size:</span>
+                <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
+                    <td class="center">iPhone 4 8GB - Verizon</td>
+                    <td class="center">iPhone 4 16GB - Verizon</td>
+                    <td class="center">iPhone 4 32GB - Verizon</td>
                   </tr>
-                </table>
-              </div>
-              <div id="iphone4memorysprint" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
-                <table class="table">
                   <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">8GB </button></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-8gb-verizon"  %> <a href="/store/products/apple-iphone-4-8gb-verizon" class="btn btn-success btn-rounded center-block">8GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-16gb-verizon"  %> <a href="/store/products/apple-iphone-4-16gb-verizon" class="btn btn-success btn-rounded center-block">16GB </a></th>
+                    <th><%= link_to image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone"),"/store/products/apple-iphone-4-32gb-verizon"  %> <a href="/store/products/apple-iphone-4-32gb-verizon" class="btn btn-success btn-rounded center-block">32GB </a></th>
                   </tr>
                 </table>
               </div>

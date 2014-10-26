@@ -3,5 +3,5 @@ $(document).ready(function() {
         var random = $(this).data('rel');
         $("#variant_id_" + random).prop("checked", true);
     });
-});
 
+});
