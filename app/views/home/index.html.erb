@@ -714,77 +714,204 @@
         <span>Select Phone Brand:</span>
         <table class="table">
           <tr>
-            <th class="growimages "><%= image_tag("manufacturers/110apple.png", class: "brand_image", alt: "Apple", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#applecarriers"}) %></th>
             <th class="growimages "><%= image_tag("manufacturers/110blackberry.png", class: "brand_image", alt: "BlackBerry", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#blackberrycarriers"}) %></th>
             <th class="growimages "><%= image_tag("manufacturers/110samsung.png", class: "brand_image", alt: "Samsung", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#samsungcarriers"}) %></th>
-            <th class="growimages "><%= image_tag("manufacturers/110motorola.png", class: "brand_image", alt: "Motorola", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#motorolacarriers"}) %></th>
-          </tr>
-          <tr>
-            <th class="notopborder growimages "><%= image_tag("manufacturers/110htc.png", class: "brand_image", alt: "HTC", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#htccarriers"}) %></th>
-            <th class="notopborder growimages "><%= image_tag("manufacturers/110nokia.png", class: "brand_image", alt: "Nokia", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#nokiacarriers"}) %></th>
+            <th class="growimages "><%= image_tag("manufacturers/110htc.png", class: "brand_image", alt: "HTC", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#htccarriers"}) %></th>
+            <th class="growimages "><%= image_tag("manufacturers/110nokia.png", class: "brand_image", alt: "Nokia", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#nokiacarriers"}) %></th>
           </tr>
         </table>
         <!-- divs that result from clicking on one of the phones from the anyphone category -->
-        <div id="applecarriers" class="collapse homepanel">
-          <span>Select Phone Carrier:</span>
-          <table class="table">
-            <tr>
-              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
-            </tr>
-          </table>
+        <div id="blackberrycarriers" class="collapse ">
+          <div id="blackberrymemory" class="homepanel">
+            <span>Select Phone Carrier:</span>
+            <table class="table">
+              <tr>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#blackberrymemory", :target => "#attblackberry"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#blackberrymemory", :target => "#tmobileblackberry"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#blackberrymemory", :target => "#verizonblackberry"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#blackberrymemory", :target => "#sprintblackberry"}) %></th>
+              </tr>
+            </table>
+            <div id="attblackberry" class="collapse homepanel">
+              ATT
+            </div>
+            <div id="tmobileblackberry" class="collapse homepanel">
+              tmobile
+            </div>
+            <div id="verizonblackberry" class="collapse homepanel">
+              verizon
+            </div>
+            <div id="sprintblackberry" class="collapse homepanel">
+              sprint
+            </div>
+          </div>
         </div>
-        <div id="blackberrycarriers" class="collapse homepanel">
-          <span>Select Phone Carrier:</span>
-          <table class="table">
-            <tr>
-              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
-            </tr>
-          </table>
+        <div id="samsungcarriers" class="collapse">
+          <div id="samsungmemory" class="homepanel">
+            <span>Select Phone Carrier:</span>
+            <table class="table">
+              <tr>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#samsungmemory", :target => "#attsamsung"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#samsungmemory", :target => "#tmobilesamsung"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#samsungmemory", :target => "#verizonsamsung"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#samsungmemory", :target => "#sprintsamsung"}) %></th>
+                <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#samsungmemory", :target => "#unlockedsamsung"}) do %>
+                      <i class="fa fa-fw fa-lg fa-unlock colour"></i><span>Unlocked</span> <% end %>
+                </th>
+              </tr>
+            </table>
+            <div id="attsamsung" class="collapse homepanel">
+              <table class="table">
+                <tr>
+                  <td>ATIV S Neo</td>
+                  <td>Galaxy Mega - AT&T</td>
+                  <td>Galaxy Note II - AT&T</td>
+                  <td>Galaxy Note III</td>
+                  <td>Galaxy S II Skyrocket - AT&T</td>
+                </tr>
+                <tr>
+                  <td><%= link_to image_tag("ATIV_S_Neo.png"),"/store/products/samsung-ativ-s-neo-at-t"  %> <a href="/store/products/samsung-ativ-s-neo-at-t" class="btn btn-success btn-rounded center-block button_width_200">ATIV S Neo</a></td>
+                  <td><%= link_to image_tag("Galaxy_Mega.png"),"/store/products/samsung-galaxy-mega-i527-at-t"  %> <a href="/store/products/samsung-galaxy-mega-i527-at-t" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Mega i527</a></td>
+                  <td><%= link_to image_tag("Note_II.png"),"/store/products/samsung-galaxy-note-ii-sgh-i317"  %> <a href="/store/products/samsung-galaxy-note-ii-sgh-i317" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note II</a></td>
+                  <td><%= link_to image_tag("Note_III.png"),"/store/products/samsung-galaxy-note-iii-at-t"  %> <a href="/store/products/samsung-galaxy-note-iii-at-t" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note III</a></td>
+                  <td><%= link_to image_tag("skyrocket.png"),"/store/products/samsung-galaxy-s-ii-skyrocket-sgh-i727"  %> <a href="/store/products/samsung-galaxy-s-ii-skyrocket-sgh-i727" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S II Skyrocket</a></td>
+                </tr>
+                <tr>
+                  <td>Galaxy S III</td>
+                  <td>Galaxy S III Mini - AT&T</td>
+                  <td>Galaxy S4 Active</td>
+                  <td>Galaxy S4 - AT&T</td>
+                  <td>Galaxy S5 - AT&T</td>
+                </tr>
+                <tr>
+                  <td><%= link_to image_tag("SIII.png"),"/store/products/samsung-galaxy-s-iii-sgh-i747-at-t"  %> <a href="/store/products/samsung-galaxy-s-iii-sgh-i747-at-t" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S III</a></td>
+                  <td><%= link_to image_tag("SIII_mini.png"),"/store/products/samsung-galaxy-siii-mini-at-t"  %> <a href="/store/products/samsung-galaxy-siii-mini-at-t" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S III Mini</a></td>
+                  <td><%= link_to image_tag("s4_active.png"),"/store/products/samsung-galaxy-s4-active-at-t"  %> <a href="/store/products/samsung-galaxy-s4-active-at-t" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4 Active</a></td>
+                  <td><%= link_to image_tag("s4.png"),"/store/products/samsung-galaxy-s4-sgh-i337-at-t"  %> <a href="/store/products/samsung-galaxy-s4-sgh-i337-at-t" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4</a></td>
+                  <td><%= link_to image_tag("s5.png"),"/store/products/samsung-galaxy-s5-at-t"  %> <a href="/store/products/samsung-galaxy-s5-at-t" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S5</a></td>
+                </tr>
+              </table>
+            </div>
+            <div id="tmobilesamsung" class="collapse homepanel">
+              <table class="table">
+                <tr>
+                  <td>Galaxy Note II - T-Mobile</td>
+                  <td>Galaxy Note III - T-Mobile</td>
+                  <td>Galaxy S II</td>
+                  <td>Galaxy S III</td>
+                  <td>Galaxy S4</td>
+                </tr>
+                <tr>
+                  <td><%= link_to image_tag("Note_II.png"),"/store/products/samsung-galaxy-note-ii-sgh-t889"  %> <a href="/store/products/samsung-galaxy-note-ii-sgh-t889" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note II</a></td>
+                  <td><%= link_to image_tag("Note_III.png"),"/store/products/samsung-galaxy-note-iii-t-mobile"  %> <a href="/store/products/samsung-galaxy-note-iii-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note III</a></td>
+                  <td><%= link_to image_tag("SII.png"),"/store/products/samsung-galaxy-s-ii-sgh-t989"  %> <a href="/store/products/samsung-galaxy-s-ii-sgh-t989" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S II</a></td>
+                  <td><%= link_to image_tag("SIII.png"),"/store/products/samsung-galaxy-s-iii-sgh-t999-t-mobile"  %> <a href="/store/products/samsung-galaxy-s-iii-sgh-t999-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S III</a></td>
+                  <td><%= link_to image_tag("s4.png"),"/store/products/samsung-galaxy-s4-sgh-m919-t-mobile"  %> <a href="/store/products/samsung-galaxy-s4-sgh-m919-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4</a></td>
+                </tr>
+                <tr>
+                  <td>Galaxy S5</td>
+                </tr>
+                <tr>
+                  <td><%= link_to image_tag("s5.png"),"/store/products/samsung-galaxy-s5-t-mobile"  %> <a href="/store/products/samsung-galaxy-s5-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S5</a></td>
+                </tr>
+              </table>
+            </div>
+            <div id="verizonsamsung" class="collapse homepanel">
+              <table class="table">
+                <tr>
+                  <td>Galaxy Note II - Verizon</td>
+                  <td>Galaxy Note III - Verizon</td>
+                  <td>Galaxy S III - Verizon</td>
+                  <td>Galaxy S III Mini - Verizon</td>
+                  <td>Galaxy S4 - Verizon</td>
+                </tr>
+                <tr>
+                  <td><%= link_to image_tag("Note_II.png"),"/store/products/samsung-galaxy-note-ii-sch-i605"  %> <a href="/store/products/samsung-galaxy-note-ii-sch-i605" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note II</a></td>
+                  <td><%= link_to image_tag("Note_III.png"),"/store/products/samsung-galaxy-note-iii-verizon"  %> <a href="/store/products/samsung-galaxy-note-iii-verizon" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note III</a></td>
+                  <td><%= link_to image_tag("SIII.png"),"/store/products/samsung-galaxy-s-iii-sch-i535-verizon"  %> <a href="/store/products/samsung-galaxy-s-iii-sch-i535-verizon" class="btn btn-success btn-rounded center-block button_width_200">Galaxy SIII</a></td>
+                  <td><%= link_to image_tag("SIII_mini.png"),"/store/products/samsung-galaxy-siii-mini-verizon"  %> <a href="/store/products/samsung-galaxy-siii-mini-verizon" class="btn btn-success btn-rounded center-block button_width_200">Galaxy SIII Mini</a></td>
+                  <td><%= link_to image_tag("s4.png"),"/store/products/samsung-galaxy-s4-sch-i545-verizon"  %> <a href="/store/products/samsung-galaxy-s4-sch-i545-verizon" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4</a></td>
+                </tr>
+                <tr>
+                  <td>Galaxy S4 Mini - Verizon</td>
+                  <td>Galaxy S5 - Verizon</td>
+                </tr>
+                <tr>
+                  <td><%= link_to image_tag("s4_mini.png"),"/store/products/samsung-galaxy-s4-mini-sch-i435-verizon"  %> <a href="/store/products/samsung-galaxy-s4-mini-sch-i435-verizon" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4 Mini</a></td>
+                  <td><%= link_to image_tag("s5.png"),"/store/products/samsung-galaxy-s5-verizon"  %> <a href="/store/products/samsung-galaxy-s5-verizon" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S5</a></td>
+                </tr>
+              </table>
+            </div>
+            <div id="sprintsamsung" class="collapse homepanel">
+              <table class="table">
+                <tr>
+                  <td>Galaxy Note II - Sprint</td>
+                  <td>Galaxy Note III - Sprint</td>
+                  <td>Galaxy SIII - Sprint</td>
+                  <td>Galaxy S4 - Sprint</td>
+                  <td>Glaxy S5 - Sprint</td>
+                </tr>
+                <tr>
+                  <td><%= link_to image_tag("Note_II.png"),"/store/products/samsung-galaxy-note-ii-sph-l900-sprint"  %> <a href="/store/products/samsung-galaxy-note-ii-sph-l900-sprint" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note II</a></td>
+                  <td><%= link_to image_tag("Note_III.png"),"/store/products/samsung-galaxy-note-iii-sprint"  %> <a href="/store/products/samsung-galaxy-note-iii-sprint" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note III</a></td>
+                  <td><%= link_to image_tag("SIII.png"),"/store/products/samsung-galaxy-s-iii-sph-l710-sprint"  %> <a href="/store/products/samsung-galaxy-s-iii-sph-l710-sprint" class="btn btn-success btn-rounded center-block button_width_200">Galaxy SIII</a></td>
+                  <td><%= link_to image_tag("s4.png"),"/store/products/samsung-galaxy-s4-sph-l720-sprint"  %> <a href="/store/products/samsung-galaxy-s4-sph-l720-sprint" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4</a></td>
+                  <td><%= link_to image_tag("s5.png"),"/store/products/samsung-galaxy-s5-sprint"  %> <a href="/store/products/samsung-galaxy-s5-sprint" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S5</a></td>
+                </tr>
+              </table>
+            </div>
+            <div id="unlockedsamsung" class="collapse homepanel">
+              <table class="table">
+                <tr>
+                  <td>Galaxy Mega - Unlocked</td>
+                  <td>Galaxy SIII - Unlocked</td>
+                  <td>Galaxy S4 - Unlocked</td>
+                </tr>
+                <tr>
+                  <td><%= link_to image_tag("Galaxy_Mega.png"),"/store/products/samsung-galaxy-mega-sgh-i9205"  %> <a href="/store/products/samsung-galaxy-mega-sgh-i9205" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Mega</a></td>
+                  <td><%= link_to image_tag("SIII.png"),"/store/products/samsung-galaxy-s-iii-gt-i9300"  %> <a href="/store/products/samsung-galaxy-s-iii-gt-i9300" class="btn btn-success btn-rounded center-block button_width_200">Galaxy SIII</a></td>
+                  <td><%= link_to image_tag("s4.png"),"/store/products/samsung-galaxy-s4-gt-i9500"  %> <a href="/store/products/samsung-galaxy-s4-gt-i9500" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-        <div id="samsungcarriers" class="collapse homepanel">
-          <span>Select Phone Carrier:</span>
-          <table class="table">
-            <tr>
-              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
-            </tr>
-          </table></div>
-        <div id="motorolacarriers" class="collapse homepanel">
-          <span>Select Phone Carrier:</span>
-          <table class="table">
-            <tr>
-              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
-            </tr>
-          </table></div>
-        <div id="htccarriers" class="collapse homepanel">
-          <span>Select Phone Carrier:</span>
-          <table class="table">
-            <tr>
-              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint") %></th>
-            </tr>
-          </table>
+        <div id="htccarriers" class="collapse">
+          <div id="htcmemory" class="homepanel">
+            <span>Select Phone Carrier:</span>
+            <table class="table">
+              <tr>
+                <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#htcmemory", :target => "#atthtc"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#htcmemory", :target => "#tmobilehtc"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#htcmemory", :target => "#verizonhtc"}) %></th>
+                <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#htcmemory", :target => "#sprinthtc"}) %></th>
+              </tr>
+            </table>
+            <div id="atthtc" class="collapse homepanel">
+              att
+            </div>
+            <div id="tmobilehtc" class="collapse homepanel">
+              tmobile
+            </div>
+            <div id="verizonhtc" class="collapse homepanel">
+              verizon
+            </div>
+            <div id="sprinthtc" class="collapse homepanel">
+              sprint
+            </div>
+          </div>  
         </div>
         <div id="nokiacarriers" class="collapse homepanel">
-          <span>Select Phone Carrier:</span>
-          <table class="table">
+          <table>
             <tr>
-              <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile") %></th>
-              <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon") %></th>
+              <td class="center">Nokia Lumia 1020 - AT&T</td>
+              <td class="center">Nokia Lumia 1520 - AT&T</td>
+              <td class="center">Nokia Lumia 925 - AT&T</td>
+            </tr>
+            <tr>
+              <td><%= link_to image_tag("Lum"),"/store/products/samsung-galaxy-mega-sgh-i9205"  %> <a href="/store/products/samsung-galaxy-mega-sgh-i9205" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Mega</a></td>
+              <td><%= link_to image_tag("SIII.png"),"/store/products/samsung-galaxy-s-iii-gt-i9300"  %> <a href="/store/products/samsung-galaxy-s-iii-gt-i9300" class="btn btn-success btn-rounded center-block button_width_200">Galaxy SIII</a></td>
+              <td><%= link_to image_tag("s4.png"),"/store/products/samsung-galaxy-s4-gt-i9500"  %> <a href="/store/products/samsung-galaxy-s4-gt-i9500" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4</a></td>
             </tr>
           </table>
         </div>

@@ -427,3 +427,26 @@ div > div > div > table > tbody > tr > th > a > img:hover {
 div > div > div > div > table > tbody > tr > td {
     font-size: 12px;
 }
+
+div > div > table > tbody > tr > th > img:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+div > div > table > tbody > tr > th > img {
+    max-width: 140px;
+}
+
+div > div > table > tbody > tr > th {
+    vertical-align: middle;
+}
+
+/* Fixes the last panel of the "any phone" tab */
+
+#anyphone > div > div > div > div > table > tbody > tr > td {
+    text-align: center;
+}
+
+#anyphone > div > div > div > div > table > tbody > tr > td > a > img{
+    max-width: 80px;
+}
