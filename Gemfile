@@ -67,6 +67,8 @@ gem 'datashift_spree', :github => 'markscoin/datashift_spree'
 #crawler
 gem 'nokogiri'
 
+#compression
+gem 'heroku-deflater', :group => :production
 
 #fonts
 gem 'font-awesome-rails'
