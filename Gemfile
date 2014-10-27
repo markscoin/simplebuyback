@@ -68,3 +68,7 @@ gem 'datashift_spree', :github => 'markscoin/datashift_spree'
 gem 'nokogiri'
 
 
+#fonts
+gem 'font-awesome-rails'
+
+

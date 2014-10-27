@@ -381,6 +381,7 @@ DEPENDENCIES
   datashift_spree!
   devise
   factory_girl_rails
+  font-awesome-rails
   foreman
   jbuilder (~> 2.0)
   jquery-rails

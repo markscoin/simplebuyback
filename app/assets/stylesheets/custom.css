@@ -423,3 +423,7 @@ div > div > div > table > tbody > tr > th > a > img:hover {
     -webkit-transform:scale(1.03);
     -o-transform:scale(1.03);
 }
+
+div > div > div > div > table > tbody > tr > td {
+    font-size: 12px;
+}

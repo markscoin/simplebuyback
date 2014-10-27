@@ -3,6 +3,7 @@
 <%= render partial: "ipad_modal" %>
 <div class="container">
   <div class="row">
+    
     <div class="col-md-9 col-md-offset-3">
       <h1>Sell Your Smartphone and Electronics</h1>
     </div>
@@ -638,7 +639,7 @@
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memorytmobile"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryverizon"}) %></th>
                 <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryunlocked"}) do %>
-                      <i class="fa fa-fw fa-lg fa-unlock"></i><span>Unlocked</span> <% end %>
+                      <i class="fa fa-fw fa-lg fa-unlock colour"></i><span>Unlocked</span> <% end %>
                 </th>
               </tr>
             </table>
@@ -797,7 +798,7 @@
         <table class="table">
           <tr>
             <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image", alt: "iPad", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipad"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad</button></th>
-            <th class="growimages"><%= image_tag("150ipadair.png",class: "ipad_image", alt: "iPad Air", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadair"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Air</button></th>
+            <th class="growimages"><%= image_tag("150ipadair.png",class: "ipad_image", alt: "iPad Air", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadair"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Air 1</button></th>
             <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadmini"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini</button></th>
           </tr>
         </table>
@@ -820,6 +821,9 @@
                   <tr>
                     <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipad2attmemory"}) %></th>
                     <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipad2verizonmemory"}) %></th>
+                    <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipad2wifimemory"}) do %>
+                          <i class="fa fa-fw fa-wifi"></i><span>Wi-Fi Only</span> <% end %>
+                    </th>
                   </tr>
                 </table>
                   <div id="ipad2attmemory" class="collapse homepanel">
@@ -827,9 +831,14 @@
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                        <td class="center">iPad 2 16GB - AT&T</td>
+                        <td class="center">iPad 2 32GB - AT&T</td>
+                        <td class="center">iPad 2 64GB - AT&T</td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-16gb-wifi-3g-at-t" %><a href="/store/products/apple-ipad-2-16gb-wifi-3g-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-32gb-wifi-3g-at-t" %><a href="/store/products/apple-ipad-2-32gb-wifi-3g-at-t" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-64gb-wifi-3g-at-t" %><a href="/store/products/apple-ipad-2-64gb-wifi-3g-at-t" class="btn btn-success btn-rounded center-block ">64GB</a></th>
                       </tr>
                     </table>
                   </div>
@@ -838,9 +847,30 @@
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                        <td class="center">iPad 2 16GB - Verizon</td>
+                        <td class="center">iPad 2 32GB - Verizon</td>
+                        <td class="center">iPad 2 64GB - Verizon</td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-16gb-wifi-3g-verizon" %><a href="/store/products/apple-ipad-2-16gb-wifi-3g-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-32gb-wifi-3g-verizon" %><a href="/store/products/apple-ipad-2-32gb-wifi-3g-verizon" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-64gb-wifi-3g-verizon" %><a href="/store/products/apple-ipad-2-64gb-wifi-3g-verizon" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="ipad2wifimemory" class="collapse homepanel">
+                    <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
+                    <table class="table">
+                      <tr>
+                        <td class="center">iPad 2 16GB - Unlocked</td>
+                        <td class="center">iPad 2 32GB - Unlocked</td>
+                        <td class="center">iPad 2 64GB - Unlocked</td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-16gb-wifi" %><a href="/store/products/apple-ipad-2-16gb-wifi" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-32gb-wifi" %><a href="/store/products/apple-ipad-2-32gb-wifi" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 2"), "/store/products/apple-ipad-2-64gb-wifi" %><a href="/store/products/apple-ipad-2-64gb-wifi" class="btn btn-success btn-rounded center-block ">64GB</a></th>
                       </tr>
                     </table>
                   </div>
@@ -853,6 +883,9 @@
                   <tr>
                     <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryatt"}) %></th>
                     <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryverizon"}) %></th>
+                    <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memorywifi"}) do %>
+                          <i class="fa fa-fw fa-wifi"></i><span>Wi-Fi Only</span> <% end %>
+                    </th>
                   </tr>
                 </table>
                   <div id="ipad3memoryatt" class="collapse homepanel">
@@ -860,9 +893,14 @@
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                        <td class="center">iPad 3 16GB - AT&T</td>
+                        <td class="center">iPad 3 32GB - AT&T</td>
+                        <td class="center">iPad 3 64GB - AT&T</td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-16gb-4g-at-t" %><a href="/store/products/apple-ipad-3rd-generation-16gb-4g-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-32gb-4g-at-t" %><a href="/store/products/apple-ipad-3rd-generation-32gb-4g-at-t" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-64gb-4g-at-t" %><a href="/store/products/apple-ipad-3rd-generation-64gb-4g-at-t" class="btn btn-success btn-rounded center-block ">64GB</a></th>
                       </tr>
                     </table>
                   </div>
@@ -871,15 +909,36 @@
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
+                        <td class="center">iPad 3 16GB - Verizon</td>
+                        <td class="center">iPad 3 32GB - Verizon</td>
+                        <td class="center">iPad 3 64GB - Verizon</td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-16gb-4g-verizon" %><a href="/store/products/apple-ipad-3rd-generation-16gb-4g-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-32gb-4g-verizon" %><a href="/store/products/apple-ipad-3rd-generation-32gb-4g-verizon" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-64gb-4g-verizon" %><a href="/store/products/apple-ipad-3rd-generation-64gb-4g-verizon" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="ipad3memorywifi" class="collapse homepanel">
+                    <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
+                    <table class="table">
+                      <tr>
+                        <td class="center">iPad 3 16GB - Wi-Fi Only</td>
+                        <td class="center">iPad 3 32GB - Wi-Fi Only</td>
+                        <td class="center">iPad 3 64GB - Wi-Fi Only</td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-16gb-wifi" %><a href="/store/products/apple-ipad-3rd-generation-16gb-wifi" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-32gb-wifi" %><a href="/store/products/apple-ipad-3rd-generation-32gb-wifi" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 3"), "/store/products/apple-ipad-3rd-generation-64gb-wifi" %><a href="/store/products/apple-ipad-3rd-generation-64gb-wifi" class="btn btn-success btn-rounded center-block ">64GB</a></th>
                       </tr>
                     </table>
                   </div>
                 </div>
               </div>
-              <div id="ipad4carrier" class="collapse homepanel">
+            <div id="ipad4carrier" class="collapse homepanel">
                 <span>Select Carrier (if any):</span>
                 <div id="ipad4memory">
                 <table class="table">
@@ -887,6 +946,9 @@
                     <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memoryatt"}) %></th>
                     <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memoryverizon"}) %></th>
                     <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memorysprint"}) %></th>
+                    <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#ipad4memory", :target => "#ipad4memorywifi"}) do %>
+                          <i class="fa fa-fw fa-wifi"></i><span>Wi-Fi Only</span> <% end %>
+                    </th>
                   </tr>
                 </table>
                   <div id="ipad4memoryatt" class="collapse homepanel">
@@ -894,10 +956,16 @@
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                        <td class="center">iPad 4 16GB - AT&T </td>
+                        <td class="center">iPad 4 32GB - AT&T </td>
+                        <td class="center">iPad 4 64GB - AT&T </td>
+                        <td class="center">iPad 4 128GB - AT&T </td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-16gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-4th-generation-16gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-32gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-4th-generation-32gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-64gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-4th-generation-64gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-128gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-4th-generation-128gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">128GB</a></th>
                       </tr>
                     </table>
                   </div>
@@ -906,10 +974,16 @@
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                        <td class="center">iPad 4 16GB - Verizon </td>
+                        <td class="center">iPad 4 32GB - Verizon </td>
+                        <td class="center">iPad 4 64GB - Verizon </td>
+                        <td class="center">iPad 4 128GB - Verizon </td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-16gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-4th-generation-16gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-32gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-4th-generation-32gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-64gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-4th-generation-64gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-128gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-4th-generation-128gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">128GB</a></th>
                       </tr>
                     </table>
                   </div>
@@ -918,10 +992,34 @@
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
                       <tr>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                        <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                        <td class="center">iPad 4 16GB - Sprint </td>
+                        <td class="center">iPad 4 32GB - Sprint </td>
+                        <td class="center">iPad 4 64GB - Sprint </td>
+                        <td class="center">iPad 4 128GB - Sprint </td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-16gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-4th-generation-16gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-32gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-4th-generation-32gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-64gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-4th-generation-64gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-128gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-4th-generation-128gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">128GB</a></th>
+                      </tr>
+                    </table>
+                  </div>
+                  <div id="ipad4memorywifi" class="collapse homepanel">
+                    <span>Select Memory Size:</span>
+                    <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
+                    <table class="table">
+                      <tr>
+                        <td class="center">iPad 4 16GB - Wi-Fi </td>
+                        <td class="center">iPad 4 32GB - Wi-Fi </td>
+                        <td class="center">iPad 4 64GB - Wi-Fi </td>
+                        <td class="center">iPad 4 128GB - Wi-Fi </td>
+                      </tr>
+                      <tr>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-16gb-wifi" %><a href="/store/products/apple-ipad-4th-generation-16gb-wifi" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-32gb-wifi" %><a href="/store/products/apple-ipad-4th-generation-32gb-wifi" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-64gb-wifi" %><a href="/store/products/apple-ipad-4th-generation-64gb-wifi" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                        <th><%= link_to image_tag("150ipad2.png", class: "ipad_image", alt: "iPad 4"), "/store/products/apple-ipad-4th-generation-128gb-wifi" %><a href="/store/products/apple-ipad-4th-generation-128gb-wifi" class="btn btn-success btn-rounded center-block ">128GB</a></th>
                       </tr>
                     </table>
                   </div>
@@ -938,6 +1036,9 @@
                 <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairverizonmemory"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairsprintmemory"}) %></th>
                 <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairtmobilememory"}) %></th>
+                <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#ipadairmemory", :target => "#ipadairwifimemory"}) do %>
+                      <i class="fa fa-fw fa-wifi"></i><span>Wi-Fi Only</span> <% end %>
+                </th>
               </tr>
             </table>
             <div class="collapse homepanel" id="ipadairattmemory">
@@ -945,10 +1046,16 @@
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
                 <tr>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                  <td class="center">iPad Air 16GB - AT&T </td>
+                  <td class="center">iPad Air 32GB - AT&T </td>
+                  <td class="center">iPad Air 64GB - AT&T </td>
+                  <td class="center">iPad Air 128GB - AT&T </td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-16gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-air-16gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-32gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-air-32gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-64gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-air-64gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-128gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-air-128gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">128GB</a></th>
                 </tr>
               </table>
             </div>
@@ -957,10 +1064,16 @@
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
                 <tr>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                  <td class="center">iPad Air 16GB - Verizon </td>
+                  <td class="center">iPad Air 32GB - Verizon </td>
+                  <td class="center">iPad Air 64GB - Verizon </td>
+                  <td class="center">iPad Air 128GB - Verizon </td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-16gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-air-16gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-32gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-air-32gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-64gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-air-64gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-128gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-air-128gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">128GB</a></th>
                 </tr>
               </table>
             </div>
@@ -969,10 +1082,16 @@
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
                 <tr>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                  <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                  <td class="center">iPad Air 16GB - Sprint </td>
+                  <td class="center">iPad Air 32GB - Sprint </td>
+                  <td class="center">iPad Air 64GB - Sprint </td>
+                  <td class="center">iPad Air 128GB - Sprint </td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-16gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-air-16gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-32gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-air-32gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-64gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-air-64gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-128gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-air-128gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">128GB</a></th>
                 </tr>
               </table>
             </div>
@@ -980,13 +1099,37 @@
               <span>Select Memory Size:</span>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
-                  <tr>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                    <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
-                  </tr>
-                </table>
+                <tr>
+                  <td class="center">iPad Air 16GB - T-Mobile </td>
+                  <td class="center">iPad Air 32GB - T-Mobile </td>
+                  <td class="center">iPad Air 64GB - T-Mobile </td>
+                  <td class="center">iPad Air 128GB - T-Mobile </td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-16gb-wifi-4g-t-mobile" %><a href="/store/products/apple-ipad-air-16gb-wifi-4g-t-mobile" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-32gb-wifi-4g-t-mobile" %><a href="/store/products/apple-ipad-air-32gb-wifi-4g-t-mobile" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-64gb-wifi-4g-t-mobile" %><a href="/store/products/apple-ipad-air-64gb-wifi-4g-t-mobile" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-128gb-wifi-4g-t-mobile" %><a href="/store/products/apple-ipad-air-128gb-wifi-4g-t-mobile" class="btn btn-success btn-rounded center-block ">128GB</a></th>
+                </tr>
+              </table>
+            </div>
+            <div class="collapse homepanel" id="ipadairwifimemory">
+              <span>Select Memory Size:</span>
+              <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
+              <table class="table">
+                <tr>
+                  <td class="center">iPad Air 16GB - Wi-Fi </td>
+                  <td class="center">iPad Air 32GB - Wi-Fi </td>
+                  <td class="center">iPad Air 64GB - Wi-Fi </td>
+                  <td class="center">iPad Air 128GB - Wi-Fi </td>
+                </tr>
+                <tr>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-16gb-wifi" %><a href="/store/products/apple-ipad-air-16gb-wifi" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-32gb-wifi" %><a href="/store/products/apple-ipad-air-32gb-wifi" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-64gb-wifi" %><a href="/store/products/apple-ipad-air-64gb-wifi" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                  <th><%= link_to image_tag("150ipadair.png", class: "ipad_image", alt: "iPad Air"), "/store/products/apple-ipad-air-128gb-wifi" %><a href="/store/products/apple-ipad-air-128gb-wifi" class="btn btn-success btn-rounded center-block ">128GB</a></th>
+                </tr>
+              </table>
             </div>
             </div>
           </div>
@@ -1008,6 +1151,9 @@
                   <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryatt"}) %></th>
                   <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryverizon"}) %></th>
                   <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemorysprint"}) %></th>
+                  <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemorywifi"}) do %>
+                        <i class="fa fa-fw fa-wifi"></i><span>Wi-Fi Only</span> <% end %>
+                  </th>
                 </tr>
               </table>
                 <div id="originalminimemoryatt" class="collapse homepanel">
@@ -1015,10 +1161,14 @@
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      <td class="center">iPad Mini 16GB - Wi-Fi + 4G AT&T </td>
+                      <td class="center">iPad Mini 32GB - Wi-Fi + 4G AT&T </td>
+                      <td class="center">iPad Mini 64GB - Wi-Fi + 4G AT&T </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-16gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-mini-16gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-32gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-mini-32gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-64gb-wifi-4g-at-t" %><a href="/store/products/apple-ipad-mini-64gb-wifi-4g-at-t" class="btn btn-success btn-rounded center-block ">64GB</a></th>
                     </tr>
                   </table>
                 </div>
@@ -1027,10 +1177,14 @@
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      <td class="center">iPad Mini 16GB - Wi-Fi + 4G Verizon </td>
+                      <td class="center">iPad Mini 32GB - Wi-Fi + 4G Verizon </td>
+                      <td class="center">iPad Mini 64GB - Wi-Fi + 4G Verizon </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-16gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-mini-16gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-32gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-mini-32gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-64gb-wifi-4g-verizon" %><a href="/store/products/apple-ipad-mini-64gb-wifi-4g-verizon" class="btn btn-success btn-rounded center-block ">64GB</a></th>
                     </tr>
                   </table>
                 </div>
@@ -1039,10 +1193,30 @@
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      <td class="center">iPad Mini 16GB - Wi-Fi + 4G Sprint </td>
+                      <td class="center">iPad Mini 32GB - Wi-Fi + 4G Sprint </td>
+                      <td class="center">iPad Mini 64GB - Wi-Fi + 4G Sprint </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-16gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-mini-16gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-32gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-mini-32gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-64gb-wifi-4g-sprint" %><a href="/store/products/apple-ipad-mini-64gb-wifi-4g-sprint" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                    </tr>
+                  </table>
+                </div>
+                <div id="originalminimemorywifi" class="collapse homepanel">
+                  <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
+                  <table class="table">
+                    <tr>
+                      <td class="center">iPad Mini 16GB - Wi-Fi Only </td>
+                      <td class="center">iPad Mini 32GB - Wi-Fi Only </td>
+                      <td class="center">iPad Mini 64GB - Wi-Fi Only </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-16gb-wifi" %><a href="/store/products/apple-ipad-mini-16gb-wifi" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-32gb-wifi" %><a href="/store/products/apple-ipad-mini-32gb-wifi" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini"), "/store/products/apple-ipad-mini-64gb-wifi" %><a href="/store/products/apple-ipad-mini-64gb-wifi" class="btn btn-success btn-rounded center-block ">64GB</a></th>
                     </tr>
                   </table>
                 </div>
@@ -1056,6 +1230,10 @@
                   <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&T", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#attminimemory"}) %></th>
                   <th class="growimages "><%= image_tag("carriers/160x80verizon.png", class: "carrier_image", alt: "Verizon", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#verizonminimemory"}) %></th>
                   <th class="growimages "><%= image_tag("carriers/160x80sprint.png", class: "carrier_image", alt: "Sprint", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#sprintminimemory"}) %></th>
+                  <th class="growimages "><%= image_tag("carriers/160x80tmobile.png", class: "carrier_image", alt: "T-Mobile", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#tmobileminimemory"}) %></th>
+                  <th><%= button_tag(class: "unlocked", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#wifiminimemory"}) do %>
+                        <i class="fa fa-fw fa-wifi"></i><span>Wi-Fi Only</span> <% end %>
+                  </th>
                 </tr>
               </table>
                 <div id="verizonminimemory" class="collapse homepanel">
@@ -1063,10 +1241,17 @@
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      <td class="center">iPad Mini w/ Retina 16GB - Verizon </td>
+                      <td class="center">iPad Mini w/ Retina 32GB - Verizon </td>
+                      <td class="center">iPad Mini w/ Retina 64GB - Verizon </td>
+                      <td class="center">iPad Mini w/ Retina 128GB - Verizon </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-16gb-verizon" %><a href="/store/products/apple-ipad-mini-with-retina-display-16gb-verizon" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-32gb-verizon" %><a href="/store/products/apple-ipad-mini-with-retina-display-32gb-verizon" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-64gb-verizon" %><a href="/store/products/apple-ipad-mini-with-retina-display-64gb-verizon" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-128gb-verizon" %><a href="/store/products/apple-ipad-mini-with-retina-display-128gb-verizon" class="btn btn-success btn-rounded center-block ">128GB</a></th>
+
                     </tr>
                   </table>
                 </div>
@@ -1075,10 +1260,17 @@
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      <td class="center">iPad Mini w/ Retina 16GB - AT&T </td>
+                      <td class="center">iPad Mini w/ Retina 32GB - AT&T </td>
+                      <td class="center">iPad Mini w/ Retina 64GB - AT&T </td>
+                      <td class="center">iPad Mini w/ Retina 128GB - AT&T </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-16gb-at-t" %><a href="/store/products/apple-ipad-mini-with-retina-display-16gb-at-t" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-32gb-at-t" %><a href="/store/products/apple-ipad-mini-with-retina-display-32gb-at-t" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-64gb-at-t" %><a href="/store/products/apple-ipad-mini-with-retina-display-64gb-at-t" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-128gb-at-t" %><a href="/store/products/apple-ipad-mini-with-retina-display-128gb-at-t" class="btn btn-success btn-rounded center-block ">128GB</a></th>
+
                     </tr>
                   </table>
                 </div>
@@ -1087,10 +1279,55 @@
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
                     <tr>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">16GB </button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">32GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">64GB</button></th>
-                      <th><button type="button" class="btn btn-success btn-rounded center-block">128GB</button></th>
+                      <td class="center">iPad Mini w/ Retina 16GB - Sprint </td>
+                      <td class="center">iPad Mini w/ Retina 32GB - Sprint </td>
+                      <td class="center">iPad Mini w/ Retina 64GB - Sprint </td>
+                      <td class="center">iPad Mini w/ Retina 128GB - Sprint </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-16gb-sprint" %><a href="/store/products/apple-ipad-mini-with-retina-display-16gb-sprint" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-32gb-sprint" %><a href="/store/products/apple-ipad-mini-with-retina-display-32gb-sprint" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-64gb-sprint" %><a href="/store/products/apple-ipad-mini-with-retina-display-64gb-sprint" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-128gb-sprint" %><a href="/store/products/apple-ipad-mini-with-retina-display-128gb-sprint" class="btn btn-success btn-rounded center-block ">128GB</a></th>
+
+                    </tr>
+                  </table>
+                </div>
+                <div id="wifiminimemory" class="collapse homepanel">
+                  <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
+                  <table class="table">
+                    <tr>
+                      <td class="center">iPad Mini w/ Retina 16GB - Wi-Fi Only </td>
+                      <td class="center">iPad Mini w/ Retina 32GB - Wi-Fi Only </td>
+                      <td class="center">iPad Mini w/ Retina 64GB - Wi-Fi Only </td>
+                      <td class="center">iPad Mini w/ Retina 128GB - Wi-Fi Only </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-16gb-wifi" %><a href="/store/products/apple-ipad-mini-with-retina-display-16gb-wifi" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-32gb-wifi" %><a href="/store/products/apple-ipad-mini-with-retina-display-32gb-wifi" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-64gb-wifi" %><a href="/store/products/apple-ipad-mini-with-retina-display-64gb-wifi" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-128gb-wifi" %><a href="/store/products/apple-ipad-mini-with-retina-display-128gb-wifi" class="btn btn-success btn-rounded center-block ">128GB</a></th>
+
+                    </tr>
+                  </table>
+                </div>
+                <div id="tmobileminimemory" class="collapse homepanel">
+                  <span>Select Memory Size:</span>
+                  <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
+                  <table class="table">
+                    <tr>
+                      <td class="center">iPad Mini w/ Retina 16GB - T-Mobile </td>
+                      <td class="center">iPad Mini w/ Retina 32GB - T-Mobile </td>
+                      <td class="center">iPad Mini w/ Retina 64GB - T-Mobile </td>
+                      <td class="center">iPad Mini w/ Retina 128GB - T-Mobile </td>
+                    </tr>
+                    <tr>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-16gb-t-mobile" %><a href="/store/products/apple-ipad-mini-with-retina-display-16gb-t-mobile" class="btn btn-success btn-rounded center-block ">16GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-32gb-t-mobile" %><a href="/store/products/apple-ipad-mini-with-retina-display-32gb-t-mobile" class="btn btn-success btn-rounded center-block ">32GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-64gb-t-mobile" %><a href="/store/products/apple-ipad-mini-with-retina-display-64gb-t-mobile" class="btn btn-success btn-rounded center-block ">64GB</a></th>
+                      <th><%= link_to image_tag("150ipadmini.png", class: "ipad_image", alt: "iPad Mini w/ Retina"), "/store/products/apple-ipad-mini-with-retina-display-128gb-t-mobile" %><a href="/store/products/apple-ipad-mini-with-retina-display-128gb-t-mobile" class="btn btn-success btn-rounded center-block ">128GB</a></th>
+
                     </tr>
                   </table>
                 </div>

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get '/store/', to: 'home#index'
   mount Spree::Core::Engine, :at => '/store'
   devise_for :users, :controllers => { registrations: 'registrations', sessions: 'sessions'}
   root to: 'home#index'
