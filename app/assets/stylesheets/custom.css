@@ -445,8 +445,24 @@ div > div > table > tbody > tr > th {
 
 #anyphone > div > div > div > div > table > tbody > tr > td {
     text-align: center;
+    vertical-align: bottom;
 }
 
 #anyphone > div > div > div > div > table > tbody > tr > td > a > img{
     max-width: 80px;
+}
+
+/* specific version for nokia */
+
+#nokiacarriers > table > tbody > tr > td {
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#nokiacarriers > table > tbody > tr > td > a > img{
+    max-width: 80px;
+}
+
+#iphonepanel > table > tbody > tr > th {
+    vertical-align: bottom;
 }
