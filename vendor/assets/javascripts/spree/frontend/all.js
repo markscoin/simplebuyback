@@ -6,6 +6,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.lazy-images
 //= require modernizr.custom.63321
 //= require modernizr.custom
 //= require cbpGridGallery
@@ -25,7 +26,8 @@
 //= require scripts
 //= require custom
 //= require bootstrap
-//= require spree/frontend
 //= require retina_tag
 //= require googleanalytics
+//= require spree/frontend
 //= require_tree .
+

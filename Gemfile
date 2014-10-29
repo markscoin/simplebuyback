@@ -74,3 +74,5 @@ gem 'heroku-deflater', :group => :production
 gem 'font-awesome-rails'
 
 
+gem 'jquery-lazy-images'
+
