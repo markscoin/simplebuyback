@@ -12,7 +12,7 @@
       <div class="navbar-header">
         <!--logo-->
         <div class="logo">
-          <a href="/"><%= image_tag("logo.png",class: "animated bounceInDown main-logo", alt: "Simple Buy Back")%></a>
+          <a href="/"><%= eager_image_tag("logo.png",class: "animated bounceInDown main-logo", alt: "Simple Buy Back")%></a>
         </div>
       </div>
 
@@ -116,7 +116,7 @@
     </div>
     <div class="col-xs-3 center">
       <h6 style="padding-bottom: 0; text-align: left;" > Powered By</h6>
-      <%= link_to image_tag("oliversface.png", class: "oliver center-block"), main_app.home_about_path %>
+      <%= link_to eager_image_tag("oliversface.png", class: "oliver center-block"), main_app.home_about_path %>
       <%= link_to "Mr. Oliver", main_app.home_about_path, style: "color: #fff;" %>
     </div>
   </div>

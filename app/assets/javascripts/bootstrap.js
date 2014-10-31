@@ -530,13 +530,13 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
   }
 
   Collapse.prototype.show = function () {
-    if (this.transitioning || this.$element.hasClass('.collapse.in')) return
+    if (this.transitioning || this.$element.hasClass('in')) return
 
     var startEvent = $.Event('show.bs.collapse')
     this.$element.trigger(startEvent)
     if (startEvent.isDefaultPrevented()) return
 
-    var actives = this.$parent && this.$parent.find('.collapse.in')
+    var actives = this.$parent && this.$parent.find('> .panel > .in')
 
     if (actives && actives.length) {
       var hasData = actives.data('bs.collapse')
@@ -657,10 +657,7 @@ if (typeof jQuery === 'undefined') { throw new Error('Bootstrap\'s JavaScript re
 
     if (!data || !data.transitioning) {
       if ($parent) $parent.find('[data-toggle="collapse"][data-parent="' + parent + '"]').not($this).addClass('collapsed')
-      $this[$target.hasClass('in') ? 'addClass' : 'removeClass']('collapsed ')
-      $('.active_tab').removeClass('')
-      $this.parent()[$target.hasClass('in') ? 'removeClass' : 'addClass']('')
-      if ($parent) $parent.find('[data-toggle="collapse"][data-parent="' + parent + '"]').not($this).removeClass('')
+      $this[$target.hasClass('in') ? 'addClass' : 'removeClass']('collapsed')
     }
 
     Plugin.call($target, option)

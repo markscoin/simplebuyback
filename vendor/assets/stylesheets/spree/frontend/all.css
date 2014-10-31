@@ -5,7 +5,6 @@
  *
  *= require font-awesome.css.erb
  *= require_self
- *= require jquery.lazy-images
  *= require alt_footer
  *= require bootstrap
  *= require colour
