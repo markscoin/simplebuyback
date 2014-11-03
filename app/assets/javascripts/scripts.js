@@ -4,13 +4,13 @@ $(document).ready(function(){
 	MENU
 ***************************************************/
 jQuery('ul.nav li.dropdown').hover(function (){
-    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).css("display","flex").fadeIn();
     jQuery('a').hover(function() {
         var height = jQuery(this).offset();
         jQuery(this).parent().find('.sub-menu').css('top', height.top - +106);
     });
 }, function (){
-    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();      
+    jQuery(this).find('.dropdown-menu').stop(true, true).fadeOut();      
 });
 
 jQuery('.btn-navbar').on('click',function(){

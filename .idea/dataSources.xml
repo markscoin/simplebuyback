@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="543086801">
-    <data-source source="LOCAL" name="Rails template: development" uuid="8a3d032b-47a9-4c08-91f9-1c96c44b3bcd">
+  <component name="DataSourceManagerImpl" format="xml" hash="1508504245">
+    <data-source source="LOCAL" name="Rails simplebuyback: development" uuid="dc7eb4d2-885f-4e02-9f83-a88d3cb6fee2">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:template_development</jdbc-url>
@@ -9,7 +9,7 @@
       <user-password>dfc9dfcbdfd8dfdedfc7dfcfdfc4df9bdf99df98</user-password>
       <libraries />
     </data-source>
-    <data-source source="LOCAL" name="Rails template: test" uuid="65222f37-aa9f-4cdd-a12e-35b6de42aac9">
+    <data-source source="LOCAL" name="Rails simplebuyback: test" uuid="53439164-f8c8-4edd-a035-7c3407b8eb2c">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:template_test</jdbc-url>
@@ -17,7 +17,7 @@
       <user-password>dfc9dfcbdfd8dfdedfc7dfcfdfc4df9bdf99df98</user-password>
       <libraries />
     </data-source>
-    <data-source source="LOCAL" name="Rails template: production" uuid="311d6479-70af-4c5b-be6e-ce2401a73bb1">
+    <data-source source="LOCAL" name="Rails simplebuyback: production" uuid="f81dcc04-ca6c-4186-b283-924e4d9a338b">
       <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:template_production</jdbc-url>

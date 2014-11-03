@@ -28,5 +28,6 @@
 //= require googleanalytics
 //= require spree/frontend
 //= require custom
+//= require homepage
 //= require_tree .
 
