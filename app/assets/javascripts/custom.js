@@ -24,4 +24,9 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function(){
+    $('#Good').addClass('in');
+    $("button[data-target='#Good']").addClass('active_button');
+});
+
 

@@ -1,31 +1,24 @@
-<div class="container">
-
-
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
-
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
-
-  <div><%= f.label :email %>
-  <%= f.email_field :email, autofocus: true %></div>
-
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div><%= f.label "Password (leave blank if you don't want to change it)" %>
-    <%= f.password_field :password, autocomplete: "off" %></div>
-
-  <div><%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
-
-  <div><%= f.label "Current Password (we need your current password to confirm your changes)" %>
-    <%= f.password_field :current_password, autocomplete: "off" %></div>
-  <div class="clear pad10">&nbsp;</div>
-  <div><%= link_to "Back", :back, class: "btn btn-warning marg-right5"  %><%= f.submit "Update" , class: "btn btn-success"%></div>
-<% end %>
-
-
+<div class="pad45"></div>
+<div class="container ">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-4 signup">
+    <h2>Edit Account Information</h2>
+    
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= devise_error_messages! %>
+    
+      <div class="input-group bottom_margin_10"><span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span><%= f.email_field :email, autofocus: true, size: "35", class: "input_field" %></div>
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+      <div class="input-group bottom_margin_10"><span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span><%= f.password_field :password, autocomplete: "off", size: "35", placeholder: "New Password", class: "input_field"  %></div>
+      <div class="input-group bottom_margin_10"><span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span><%= f.password_field :password_confirmation, autocomplete: "off", size: "35", placeholder: "Confirm New Password", class: "input_field"  %></div>
+      <div class="input-group bottom_margin_10"><span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span><%= f.password_field :current_password, autocomplete: "off", size: "35", placeholder: "Old Password", class: "input_field"  %></div>
+      <div class="clear pad10">&nbsp;</div>
+      <div><%= link_to "Back", :back, class: "btn btn-warning marg-right5"  %><%= f.submit "Update" , class: "btn btn-success"%></div>
+    <% end %>
+    </div>
+  </div>
 </div>
 
 
