@@ -68,7 +68,7 @@ a:hover { color: #555;}
 	MENU
  ***************************************************/
 
-#main_menu  .nav > li > a { color: #bbb; }
+#main_menu  .nav > li > a { color: #fff; }
 #main_menu  .nav > .active > a, #main_menu  .nav> .active > a:hover { background: #45B39E;  color: #fff!important; }
 #main_menu .nav > li > a:hover { background: transparent; color: #fff!important; }
 .dropdown-menu { background: #323A45; }

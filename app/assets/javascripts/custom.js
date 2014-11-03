@@ -12,6 +12,15 @@ $(document).ready(function() {
         $('button').removeClass('active_button');
         $(this).toggleClass('active_button');
     });
+    
+    var about = $('div#about').text().length;
+    var contact = $('div#contact').text().length;
+    if(about) {
+        $('#about').addClass('active');
+    }
+    if(contact){
+        $('#contact').addClass('active');
+    }
 });
 
 

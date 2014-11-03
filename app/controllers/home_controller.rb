@@ -6,7 +6,7 @@ class HomeController < ApplicationController
  
   
   def index
-    
+    @homepage = true;
   end
 
   def show
@@ -18,7 +18,7 @@ class HomeController < ApplicationController
   end
 
   def contact
-    render 'home/contact', layout: "contactlayout"
+    render 'home/contact'
   end
 
   def send_mail
