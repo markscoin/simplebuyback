@@ -42,7 +42,7 @@ gem 'rails_12factor', group: :production
 
 #Gives you an endpoint for incoming mail and configuration for sendgrid
 # Analytics
-gem 'spree', github: 'spree/spree', branch: '2-3-stable'
+gem 'spree', github: 'spree/spree', tag: 'v2.3.2'
 gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-3-stable'
 gem 'paperclip'
 gem 'aws-sdk'
