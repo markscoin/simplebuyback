@@ -26,8 +26,8 @@ GIT
       mechanize (~> 2.6, >= 2.6.0)
 
 GIT
-  remote: git://github.com/spree/spree.git
-  revision: cf6618eee0021ea8b8f63e9ff12df47a24f2ee90
+  remote: git://github.com/markscoin/spree.git
+  revision: 51c83d0f74b86dcbd34a78c9b98d8823c8837245
   branch: 2-3-stable
   specs:
     spree (2.3.5.beta)
