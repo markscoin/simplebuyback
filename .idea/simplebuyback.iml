@@ -128,7 +128,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="rails:update: simplebuyback" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+    <configuration default="false" name="railties:install:migrations: simplebuyback" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
       <module name="simplebuyback" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
@@ -144,12 +144,115 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="rails:update" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="railties:install:migrations" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:remigrate: simplebuyback" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="simplebuyback" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:remigrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:seed: simplebuyback" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="simplebuyback" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:seed" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate: simplebuyback" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="simplebuyback" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Rails console: simplebuyback" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="simplebuyback" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/bin/rails" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -167,7 +270,7 @@
     <orderEntry type="library" scope="PROVIDED" name="actionpack (v4.1.6, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="actionview (v4.1.6, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="active_utils (v2.2.3, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="activemerchant (v1.43.3, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="activemerchant (v1.44.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activemodel (v4.1.6, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.1.6, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.1.6, rbenv: 2.1.2) [gem]" level="application" />
@@ -180,7 +283,7 @@
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.2.0.2, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.7.3, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="cancancan (v1.8.4, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="cancancan (v1.9.2, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="canonical-rails (v0.0.7, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.4.4, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.0.3, rbenv: 2.1.2) [gem]" level="application" />
@@ -213,9 +316,9 @@
     <orderEntry type="library" scope="PROVIDED" name="httparty (v0.13.2, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.11, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.2.4, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v3.1.0, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v4.1.2, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="kaminari (v0.15.1, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v3.1.2, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jquery-ui-rails (v5.0.2, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="kaminari (v0.16.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.6.3, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mechanize (v2.7.3, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v2.4.3, rbenv: 2.1.2) [gem]" level="application" />
@@ -229,11 +332,12 @@
     <orderEntry type="library" scope="PROVIDED" name="net-http-persistent (v2.9.4, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.3.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ntlm-http (v0.1.1, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="offsite_payments (v2.0.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="paperclip (v4.2.0, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="paranoia (v2.0.2, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.17.1, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="polyamorous (v1.0.0, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="polyamorous (v1.1.0, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.5, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rabl (v0.9.4.pre1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.5.2, rbenv: 2.1.2) [gem]" level="application" />
@@ -244,7 +348,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rails_stdout_logging (v0.0.3, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.1.6, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.3.2, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="ransack (v1.2.3, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ransack (v1.4.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.1.2, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="responders (v1.1.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="retina_tag (v1.3.1, rbenv: 2.1.2) [gem]" level="application" />
@@ -260,14 +364,14 @@
     <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="select2-rails (v3.5.9.1, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spreadsheet (v0.9.9, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spree (v2.3.2@bbe414, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spree_api (v2.3.2@bbe414, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spree_backend (v2.3.2@bbe414, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spree (v2.3.5.beta@cf6618, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spree_api (v2.3.5.beta@cf6618, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spree_backend (v2.3.5.beta@cf6618, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="spree_bootstrap_frontend (v2.3.0@b5ecfa, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spree_cmd (v2.3.2@bbe414, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spree_core (v2.3.2@bbe414, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spree_frontend (v2.3.2@bbe414, rbenv: 2.1.2) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spree_sample (v2.3.2@bbe414, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spree_cmd (v2.3.5.beta@cf6618, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spree_core (v2.3.5.beta@cf6618, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spree_frontend (v2.3.5.beta@cf6618, rbenv: 2.1.2) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spree_sample (v2.3.5.beta@cf6618, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v2.11.3, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v2.2.0, rbenv: 2.1.2) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="state_machine (v1.2.0, rbenv: 2.1.2) [gem]" level="application" />

@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 ruby '2.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '~> 4.1.6'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets
@@ -42,7 +42,7 @@ gem 'rails_12factor', group: :production
 
 #Gives you an endpoint for incoming mail and configuration for sendgrid
 # Analytics
-gem 'spree', github: 'spree/spree', tag: 'v2.3.2'
+gem 'spree', github: 'spree/spree', branch: '2-3-stable'
 gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-3-stable'
 gem 'paperclip'
 gem 'aws-sdk'
@@ -72,6 +72,6 @@ gem 'heroku-deflater', :group => :production
 
 #fonts
 gem 'font-awesome-rails'
-
+gem 'railties'
 
 

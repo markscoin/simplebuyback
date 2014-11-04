@@ -8,6 +8,7 @@
 Spree.config do |config|
 
   config.show_variant_full_price = true
+  config.allow_guest_checkout = false
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
