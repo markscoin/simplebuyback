@@ -99,15 +99,24 @@ label {
 /* Styling for Why sell to us reasons */
 
 .reasons {
-    display: table-cell;
     vertical-align: middle;
     margin-right: 10px;
     text-align: center;
+
+}
+
+.reasons.icon-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
 }
 
 .maketable {
     display: table;
-    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding-top: 10px;
 }
 
 /* styling for the home page panel system */
@@ -485,4 +494,9 @@ div > div > table > tbody > tr > th {
     webkit-border-radius: 4px 4px 0px 0px;
     -moz-border-radius: 4px 4px 0px 0px;
     border-radius: 4px 4px 0px 0px;
+}
+
+.col-xs-12.col-sm-6.col-md-3 > a {
+    clear: both;
+    float: left;
 }

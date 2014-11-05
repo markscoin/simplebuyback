@@ -10,38 +10,19 @@
     </div>
   </div>
   <div class="row" id="accordion">
-      <div class="col-xs-3">
-      <h2 class="colour"><strong>Why Sell To Us?</strong></h2>
-      <div class="maketable">
-        <%= image_tag("icons/checkmark.png", class: "reasons icon-img") %>
-        <p class="reasons"><strong>  Competitive Prices</strong></p>
-      </div>
-      <div class="maketable">
-        <%= image_tag("icons/Mail.png", class: "reasons icon-img") %>
-        <p class="reasons"><strong>  Free Shipping</strong></p>
-      </div>
-      <div class="maketable">
-        <%= image_tag("icons/Watches.png", class: "reasons icon-img") %>
-        <p class="reasons"><strong>  Fast Payment</strong></p>
-      </div>
-      <div class="maketable">
-        <%= image_tag("icons/green_infinity.png", class: "reasons icon-img") %>
-        <p class="reasons"><strong>  No Risk</strong></p>
-      </div>
-      </div>
-      <div class="col-xs-3 center growimages">
+      <div class="col-xs-12 col-sm-4 center growimages">
         <%=  image_tag("devices/iPhone5swithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPhone"}) %><br>
         <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPhone"> Sell Your iPhone</button>
       </div>
-      <div class="col-xs-3 growimages center">
+      <div class="col-xs-12 col-sm-4 growimages center">
         <%= image_tag("devices/galaxywithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#anyphone"}) %><br>
         <button type="button" class="btn btn-success btn-lg btn-rounded center-block"  data-toggle="collapse" data-parent="#accordion" data-target="#anyphone"> Sell Any Phone</button>
       </div>
-      <div class="col-xs-3 growimages center">
+      <div class="col-xs-12 col-sm-4 growimages center">
         <%= image_tag("devices/iPadairwithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPad"}) %><br>
         <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPad"> Sell Your iPad</button>
       </div>
-      <div class="col-xs-9 col-xs-offset-3">
+      <div class="col-xs-12">
       <div id="iPhone" class="collapse">
         <div id="iphonepanel" class="homepanel">
         <span>Select Your iPhone:</span>
@@ -1568,28 +1549,53 @@
       </div>
   </div>
   <div class="row">
-    <div class="col-md-9 col-md-offset-3 top_divider">
+    <div class="col-md-12 top_divider">
     </div>
     <div class="col-md-12">
       <div class="col-md-12" style="margin-top: 15px;">
         <h2 class="colour" style="margin-top:0px;"><strong> How Does it Work? </strong></h2>
-        <table class="works_table">
-          <tr>
-            <td style="padding-right: 5px;">
-              <%= image_tag "icons/handshake.png", class: "width75" %> <h2> Receive a Free Quote</h2>
-              <p style="text-align: left;"> Get a free quote in a few simple steps. <br>Price quotes are good for 30 days.</p>
-            </td>
-            <td style="padding: 0 10px;">
-              <%= image_tag "icons/free_shipping.png", class: "width75"  %> <h2>Ship Your Device for Free</h2>
-              <p style="text-align: left;">Shipping is free. We provide the prepaid shipping label you provide the box.</p>
-            </td>
-            <td style="padding-right: 50px;">
-              <%= image_tag "icons/money_icon.png", class: "width75" %> <h2> Get Paid</h2>
-              <p>Get paid via Check or Paypal. Payment in as little as 4 days.</p>
-            </td>
-          </tr>
-        </table>
+        <div class="tile col-sm-6 col-md-4 col-xs-12">
+          <%= image_tag "icons/handshake.png", class: "width75" %> <h2> Receive a Free Quote</h2>
+          <p> Get a free quote in a few simple steps. <br>Price quotes are good for 30 days.</p>
+        </div>
+        <div class="tile col-sm-6 col-md-4 col-xs-12">
+          <%= image_tag "icons/free_shipping.png", class: "width75"  %> <h2>Ship Your Device for Free</h2>
+          <p>Shipping is free. We provide the prepaid shipping label you provide the box.</p>
+        </div>
+        <div class="tile col-sm-6 col-md-4 col-xs-12">
+          <%= image_tag "icons/money_icon.png", class: "width75" %> <h2> Get Paid</h2>
+          <p>Get paid via Check or Paypal. Payment in as little as 4 days.</p>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+    <h2 class="colour"><strong>Why Sell To Us?</strong></h2>
+    <div class=" col-xs-6 col-sm-3">
+      <div class="maketable col-xs-12">
+      <%= image_tag("icons/checkmark.png", class: "reasons icon-img", style: "margin-top: 5px;") %>
+      <p class="reasons" style="margin-left: -10px; margin-right: -10px;"><strong>  Competitive Prices</strong></p>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+      <div class="maketable col-xs-12">
+      <%= image_tag("icons/Mail.png", class: "reasons icon-img") %>
+      <p class="reasons"><strong>  Free Shipping</strong></p>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+      <div class="maketable col-xs-12">
+      <%= image_tag("icons/Watches.png", class: "reasons icon-img") %>
+      <p class="reasons"><strong>  Fast Payment</strong></p>
+      </div>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+      <div class="maketable col-xs-12">
+      <%= image_tag("icons/green_infinity.png", class: "reasons icon-img") %>
+      <p class="reasons"><strong>  No Risk</strong></p>
+      </div>
+    </div>
+  </div>
   </div>
 </div>

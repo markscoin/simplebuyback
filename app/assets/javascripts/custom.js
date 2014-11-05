@@ -21,6 +21,19 @@ $(document).ready(function() {
     if(contact){
         $('#contact').addClass('active');
     }
+
+    var windowwidth = $(window).width();
+    
+    $(window).resize(function() {
+        var windowwidth = $(window).width();
+        if( windowwidth < 992 ) {
+         $("<div class='clear' id='space'></div>").insertBefore("#connect");
+        }
+        if( windowwidth > 992) {
+            $('#space').remove();
+        }
+    });
+   
 });
 
 
