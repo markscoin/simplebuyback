@@ -3,19 +3,28 @@ $(document).ready(function(){
 /***************************************************
 	MENU
 ***************************************************/
-jQuery('ul.nav li.dropdown').hover(function (){
-    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).css("display","flex").fadeIn();
-    jQuery('a').hover(function() {
-        var height = jQuery(this).offset();
-        jQuery(this).parent().find('.sub-menu').css('top', height.top - +106);
-    });
-}, function (){
-    jQuery(this).find('.dropdown-menu').stop(true, true).fadeOut();      
+jQuery('ul.nav li.dropdown').on('click',function () {
+    if($(this).find('.dropdown-menu').hasClass('flex')){
+        
+    }
+    else {
+        $('.dropdown-menu').removeClass('flex');
+    }
+    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).toggleClass('flex');
 });
 
-jQuery('.btn-navbar').on('click',function(){
-    jQuery('nav#main_menu > .nav-collapse > ul.navbar-nav').slideDown();
+
+
+        jQuery('.btn-navbar').on('click',function(){
+    if(('.ul.navbar-nav').hasClass('in')){
+      $('ul.navbar-nav').removeClass('in')
+    }
+    else {
+        $('ul.navbar-nav').addClass('in')
+    }
 });
+    
+    
 
 /***************************************************
 		TOOLTIP & POPOVER

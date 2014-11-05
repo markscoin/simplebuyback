@@ -10,17 +10,23 @@
   <nav id="main_menu" class="navbar" role="navigation">
     <div class="container">
       <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
         <!--logo-->
         <div class="logo">
           <a href="/"><%= image_tag("logo.png",class: "animated bounceInDown main-logo", alt: "Simple Buy Back")%></a>
         </div>
       </div>
 
-      <div class=" navbar-default" id="menu">
-        <ul class="nav navbar-nav pull-right">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav pull-right " id="menu">
           <% if @homepage %>
-          <li class="dropdown"><a href="#"><strong>Sell iPhone</strong></a>
-            <ul class="dropdown-menu custommenu" data-firstpanel="iPhone">
+          <li class="dropdown"><a href="#"><strong>Sell iPhone</strong><b class="caret"></b></a>
+            <ul class="dropdown-menu custommenu" role='menu' data-firstpanel="iPhone">
               <li  data-secondpanel="iphone6pluscarrier"><a href="#">iPhone 6 Plus</a></li>
               <li data-secondpanel="iphone6carrier"><a href="#">iPhone 6</a></li>
               <li data-secondpanel="iphone5scarrier"><a href="#">iPhone 5S</a></li>
@@ -30,7 +36,7 @@
               <li data-secondpanel="iphone4carrier"><a href="#">iPhone 4</a></li>
             </ul>
           </li>
-          <li class="dropdown"><a href="#"><strong>Sell Cellphone</strong></a>
+          <li class="dropdown"><a href="#"><strong>Sell Cellphone</strong><b class="caret"></b></a>
             <ul class="dropdown-menu custommenu" data-firstpanel="anyphone">
               <li data-secondpanel="blackberrycarriers"><a href="#">Blackberry</a></li>
               <li data-secondpanel="samsungcarriers"><a href="#">Samsung</a></li>
@@ -44,7 +50,7 @@
               </li>
            <% end %>
           <% if user_signed_in? %>
-              <li class="dropdown <%= is_active?(main_app.edit_user_registration_path) %>"><a><strong>Your Account</strong></a>
+              <li class="dropdown <%= is_active?(main_app.edit_user_registration_path) %>"><a href="#"><strong>Your Account</strong><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="<%= main_app.home_order_path %>"><strong>Your Orders</strong></a></li>
                   <li><a href="<%= main_app.edit_user_registration_path %>"><strong>Edit Account</strong></a></li>

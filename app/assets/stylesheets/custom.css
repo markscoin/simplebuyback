@@ -37,9 +37,6 @@ label {
     overflow: visible !important;
 }
 
-.navbar-toggle {
-    display: none;
-}
 .navbar-collapse {
     border-top: 0;
 }
@@ -58,6 +55,10 @@ label {
 }
 .navbar-nav > li > a {
     padding: 15px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white;
 }
 
 /* Redeclare since we override the float above */
@@ -499,4 +500,8 @@ div > div > table > tbody > tr > th {
 .col-xs-12.col-sm-6.col-md-3 > a {
     clear: both;
     float: left;
+}
+
+.flex {
+    display: flex;
 }

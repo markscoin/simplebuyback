@@ -27,13 +27,22 @@ $(document).ready(function() {
     $(window).resize(function() {
         var windowwidth = $(window).width();
         if( windowwidth < 992 ) {
+         $('#space').remove();
          $("<div class='clear' id='space'></div>").insertBefore("#connect");
         }
         if( windowwidth > 992) {
             $('#space').remove();
         }
+        if( windowwidth > 767) {
+            if ($('ul#menu').hasClass('collapse')){
+                if($('ul#menu').hasClass('in')){
+                }
+                else {
+                    $('.navbar-toggle').trigger('click');
+                }
+            }
+        }
     });
-   
 });
 
 
