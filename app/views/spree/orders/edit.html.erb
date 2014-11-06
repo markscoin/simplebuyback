@@ -40,9 +40,9 @@
   <div id="empty-cart" class="col-xs-6 pull-left" data-hook>
     <%= form_tag empty_cart_path, :method => :put do %>
       <p id="clear_cart_link" data-hook>
-        <%= submit_tag "Empty Recycle Bin", :class => 'btn btn-default' %>
+        <%= submit_tag "Empty Recycle Bin", :class => 'btn btn-default btn-danger' %>
         <%= Spree.t(:or) %>
-        <%= link_to "Search for Additional Items", products_path, :class => 'continue' %>
+        <%= link_to "Search for Additional Items", products_path, :class => 'continue btn btn-primary' %>
       </p>
     <% end %>
   </div>

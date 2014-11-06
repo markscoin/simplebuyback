@@ -19,7 +19,7 @@ $(document).ready(function(){
         var firstcomplete = $('*[data-target="'+"#"+first+'"]'); 
         var secondcomplete = $('*[data-target="'+"#"+second+'"]');
         var finished = $('#' + first);
-        $('.in').removeClass('in');
+        $('.in').not($('#menu')).removeClass('in');
         $('.active_panel').removeClass('active_panel');
         firstcomplete.trigger('click');
         secondcomplete.trigger('click');

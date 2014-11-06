@@ -22,7 +22,7 @@ label {
     display: block;
 }
 
-.btn {
+.growimages > .btn {
     margin-bottom: 15px;
 }
 
@@ -538,4 +538,8 @@ div > div > table > tbody > tr > th {
 .media-body:hover >a {
     color: #fff;
     font-size: 16px;
+}
+
+.alert-success {
+    margin-bottom: 0;
 }
