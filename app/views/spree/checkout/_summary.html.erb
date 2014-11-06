@@ -1,12 +1,7 @@
-<h3>Offer Summary</h3>
+<h2 style="text-align: left;">Offer Summary</h2>
 
-<table class="table" data-hook="order_summary">
+<table class="table" data-hook="order_summary" style="text-align: left;">
   <tbody>
-    <tr data-hook="item_total">
-      <td><strong><%= Spree.t(:item_total) %>:</strong></td>
-      <td><strong><%= order.display_item_total.to_html %></strong></td>
-    </tr>
-
     <% if order.line_item_adjustments.exists? %>
       <tbody data-hook="order_details_promotion_adjustments">
         <% order.all_adjustments.promotion.eligible.group_by(&:label).each do |label, adjustments| %>
@@ -17,7 +12,6 @@
         <% end %>
       </tbody>
     <% end %>
-
     <tbody data-hook="order_details_tax_adjustments">
       <% order.all_adjustments.tax.eligible.group_by(&:label).each do |label, adjustments| %>
         <tr class="total">
@@ -52,8 +46,7 @@
     <% end %>
 
     <tr data-hook="order_total">
-      <td><strong><%= Spree.t(:order_total) %>:</strong></td>
+      <td><strong class="lead" style="color: #555;">Total Cash Offer:</strong></td>
       <td><strong><span id='summary-order-total' class="lead text-primary"><%= order.display_total.to_html %></span></strong></td>
     </tr>
-  </tbody>
 </table>

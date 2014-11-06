@@ -1,5 +1,6 @@
 <% address_id = address_type.chars.first %>
 <div class="inner" data-hook=<%="#{address_type}_inner" %>>
+  <div class="col-xs-12 col-md-6">
   <p class="field" id=<%="#{address_id}firstname" %>>
     <%= form.label :firstname, Spree.t(:first_name) %>
     <%= form.text_field :firstname, :class => 'form-control required' %>
@@ -19,22 +20,26 @@
     <%= form.text_field :address1, :class => 'form-control  required' %>
   </p>
   <p class="field" id=<%="#{address_id}address2" %>>
-    <%= form.label :address2, Spree.t(:street_address_2) %><br />
+    <%= form.label :address2, Spree.t(:street_address_2) %>
     <%= form.text_field :address2, :class => 'form-control' %>
   </p>
   <p class="field" id=<%="#{address_id}city" %>>
     <%= form.label :city, Spree.t(:city) %>
     <%= form.text_field :city, :class => 'form-control required' %>
   </p>
+    
+  </div>
+  <div class="col-xs-12 col-md-6">
   <p class="field" id=<%="#{address_id}country" %>>
     <%= form.label :country_id, Spree.t(:country) %>
     <span id=<%="#{address_id}country-selection" %>>
       <%= form.collection_select :country_id, available_countries, :id, :name, {}, {:class => 'form-control required'} %>
     </span>
   </p>
+  <p class="field">
     <%= form.label :state, Spree.t(:state) %>
     <%= form.text_field :state_name, :class => 'form-control required' %>
-
+  </p>
   <p class="field" id=<%="#{address_id}zipcode" %>>
     <%= form.label :zipcode, Spree.t(:zip) %><% if address.require_zipcode? %><% end %>
     <%= form.text_field :zipcode, :class => "form-control #{'required' if address.require_zipcode?}" %>
@@ -49,4 +54,5 @@
       <%= form.phone_field :alternative_phone, :class => 'form-control' %>
     </p>
   <% end %>
+  </div>
 </div>

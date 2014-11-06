@@ -1,5 +1,6 @@
+
 <div class="row">
-  <div class="col-xs-6 col-xs-offset-4" data-hook="billing_fieldset_wrapper">
+  <div class="col-xs-12 col-md-12" data-hook="billing_fieldset_wrapper">
     <div class="panel panel-default" id="billing" data-hook>
       <%= form.fields_for :bill_address do |bill_form| %>
         <div class="panel-heading">
@@ -32,7 +33,13 @@
   </div>
 </div>
 
-<div class="well text-right form-buttons col-xs-6 col-xs-offset-4" data-hook="buttons">
+<div class="well text-right form-buttons col-xs-12" data-hook="buttons">
+  <div id="checkout-summary" data-hook="checkout_summary_box">
+  <div class="col-xs-12 col-md-6">
+  <%= render :partial => 'summary', :locals => { :order => @order } %>
+  </div>
+  <div class="row">
+  <div class="col-xs-12 col-md-6">  
   <%= submit_tag Spree.t(:save_and_continue), :class => 'btn btn-lg btn-success' %>
   <% if try_spree_current_user %>
     <span data-hook="save_user_address" style="display:none;">
@@ -41,4 +48,7 @@
       <%= label_tag :save_user_address, Spree.t(:save_my_address) %>
     </span>
   <% end %>
+  </div>
+  </div>
+  </div>
 </div>

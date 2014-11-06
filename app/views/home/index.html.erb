@@ -1,14 +1,17 @@
 <!-- Modal must be at the top to render properly when click links in the panels -->
 <%= render partial: "memory_modal" %> 
 <%= render partial: "ipad_modal" %>
-<div class="pad45"></div>
-<div class="container">
+<div class="container-fluid main_banner">
+  <div class="container">
   <div class="row">
-    
-    <div class="col-md-9 col-md-offset-3">
-      <h1>Sell Your Smartphone and Electronics</h1>
+    <div class="col-xs-12">
+      <h1 class="home_banner1"> We Make Selling Your Electronics Simple.</h1>
     </div>
   </div>
+  </div>
+</div>
+<div class="pad25"></div>
+<div class="container">
   <div class="row" id="accordion">
       <div class="col-xs-12 col-sm-4 center growimages">
         <%=  image_tag("devices/iPhone5swithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPhone"}) %><br>

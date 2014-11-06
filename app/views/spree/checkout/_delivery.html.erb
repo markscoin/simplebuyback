@@ -34,7 +34,7 @@
             </tbody>
           </table>
 
-          <h4 class="stock-shipping-method-title">Select how you would like to ship your device</h4>
+          <h4 class="stock-shipping-method-title">How would you like to ship your device?</h4>
           <ul class="list-group shipping-methods">
             <% ship_form.object.shipping_rates.each do |rate| %>
               <li class="list-group-item shipping-method">
@@ -90,9 +90,23 @@
     <% end %>
   </div>
 </div>
-
-<br />
-
-<div class="well text-right form-buttons" data-hook="buttons">
+<div class="row">
+<div class="well col-xs-12">
+  <h3>How does shipping work?</h3>
+  <div class="col-xs-12 col-md-4 center">
+    <%= image_tag("printer.png") %>
+    <p>Print Your Prepaid Label</p>
+  </div>
+  <div class="col-xs-12 col-md-4 center">
+    
+  </div>
+  <div class="col-xs-12 col-md-4 center">
+    
+  </div>
+</div>
+</div>
+<div class="row">
+<div class="well text-right form-buttons col-xs-12" data-hook="buttons">
   <%= submit_tag Spree.t(:save_and_continue), :class => 'btn btn-lg btn-success' %>
+</div>
 </div>
