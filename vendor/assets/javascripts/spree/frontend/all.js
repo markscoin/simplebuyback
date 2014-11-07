@@ -5,29 +5,28 @@
 // the compiled file.
 //
 //= require jquery
-//= require jquery_ujs
-//= require spree/frontend
-//= require modernizr.custom.63321
-//= require modernizr.custom
-//= require cbpGridGallery
-//= require classie
-//= require gmap3.min
-//= require imagesloaded.pkgd.min
 //= require jPages
-//= require jquery.carouFredSel-6.2.1-packed
+//= require jquery_ujs
 //= require jquery.catslider
 //= require jquery.isotope.min
 //= require jquery.mousewheel.min
+//= require jquery-ui
 //= require jquery.nerveSlider.min
 //= require jquery.nivo.slider.pack
 //= require jquery.prettyPhoto
 //= require jquery.touchSwipe.min
-//= require jquery-ui.min
-//= require scripts
 //= require bootstrap
+//= require spree/frontend
+//= require modernizr.custom.63321
+//= require modernizr.custom
+//= require classie
+//= require gmap3.min
+//= require imagesloaded.pkgd.min
 //= require retina_tag
+//= require cbpGridGallery
 //= require googleanalytics
 //= require custom
 //= require homepage
+//= require scripts
 //= require_tree .
 

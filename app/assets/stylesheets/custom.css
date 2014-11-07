@@ -543,3 +543,12 @@ div > div > table > tbody > tr > th {
 .alert-success {
     margin-bottom: 0;
 }
+
+.alert-danger {
+    margin-bottom: 0;
+}
+
+#bstate > select {
+    height: 34px;
+    width: 100%;
+}

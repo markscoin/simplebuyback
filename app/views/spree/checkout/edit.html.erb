@@ -1,7 +1,10 @@
-<div class="pad20"></div>
 <div id="checkout" data-hook>
+  <div class="container-fluid alert-danger">
+    <div class="container">
   <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @order } %>
-
+    </div>
+  </div>
+  <div class="pad20"></div>
   <div class="row" data-hook="checkout_header">
     <div class="col-xs-8 col-xs-offset-2" style="border-bottom: 1px solid black; margin-bottom: 10px; text-align: center;"><strong><h3>Checkout Process</h3></strong></div>
     <div class="col-xs-8 col-xs-offset-2" data-hook="checkout_progress"><%= checkout_progress %></div>
