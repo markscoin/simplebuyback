@@ -505,7 +505,11 @@ div > div > table > tbody > tr > th {
 
 
 .flex {
-    display: flex;
+    display: -webkit-box;  
+    display: -moz-box;    
+    display: -ms-flexbox;   
+    display: -webkit-flex; 
+    display: flex;  
 }
 
 .main_banner {
