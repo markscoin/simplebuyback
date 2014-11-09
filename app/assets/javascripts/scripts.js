@@ -3,6 +3,7 @@ $(document).ready(function(){
 /***************************************************
 	MENU
 ***************************************************/
+
 jQuery('ul.nav li.dropdown').on('click',function () {
     if($(this).find('.dropdown-menu').hasClass('flex')){
         
@@ -10,7 +11,7 @@ jQuery('ul.nav li.dropdown').on('click',function () {
     else {
         $('.dropdown-menu').removeClass('flex');
     }
-    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).toggleClass('flex');
+    jQuery(this).find('.dropdown-menu').stop(true, true).toggleClass('flex');
 });
 
 

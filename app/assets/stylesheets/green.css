@@ -70,14 +70,13 @@ a:hover { color: #555;}
 
 #main_menu  .nav > li > a { color: #fff; }
 #main_menu  .nav > .active > a, #main_menu  .nav> .active > a:hover { background: #45B39E;  color: #fff!important; }
-#main_menu .nav > li > a:hover { background: transparent; color: #fff!important; }
+#main_menu .nav > li > a:hover { background: transparent; color: #fff !important; }
 .dropdown-menu { background: #323A45; }
 .dropdown-menu  li a { color: #bbb;  }
 .dropdown-menu > li > a:hover, 
 .dropdown-menu > li > a:focus, 
 .dropdown-submenu:hover > a, 
-.dropdown-submenu:focus > a,
-.nav > li > a:focus { text-decoration: none;  color: #fff; background: transparent!important; }
+.dropdown-submenu:focus > a { text-decoration: none;  color: #fff; background: transparent!important; }
 .navbar-toggle { color: #fff; background-color: #31C3A6; }
 .navbar-toggle > .btn:hover, .navbar-toggle > .btn:focus { color: #fff; text-decoration: none; }
 .navbar-toggle:hover { color: #fff; background-color: #45B39E; }

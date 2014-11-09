@@ -50,7 +50,7 @@
               </li>
            <% end %>
           <% if user_signed_in? %>
-              <li class="dropdown <%= is_active?(main_app.edit_user_registration_path) %>"><a href="#"><strong>Your Account</strong><b class="caret"></b></a>
+              <li class="dropdown <%= is_active?(main_app.edit_user_registration_path) %>"><a href="#"><strong>Account</strong><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="<%= main_app.edit_user_registration_path %>"><strong>Edit Account</strong></a></li>
                   <li><a rel="nofollow" href="<%= main_app.destroy_user_session_path %>" data-method="delete"><strong>Sign out</strong></a></li>

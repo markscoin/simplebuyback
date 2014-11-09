@@ -1691,11 +1691,16 @@ div.pp_default .pp_content_container .pp_right{background:#fff; padding-left:0px
 .navbar-nav ul { position: absolute; top: 80px; left: 0; z-index: 999; }
 }
 @media ( min-width:768px) and (max-width:979px){
-.logo { float:left;  margin: 35px 0px 0 0px!important; }
-#main_menu .nav > li > a { font-size: 12px; margin:0px 0 -10px 0!important; padding:24px 15px 22px!important; }
-#main_menu .nav { margin:28px -20px 0px 0!important; }
+.logo { float:left;  margin: 20px 0px 0 -30px !important; }
+.logo > a > img { height: auto !important; width: 200px !important ; }
+#menu > li > a,
+#menu > li > ul > li > a { font-size: 10px !important ;} 
+#main_menu .nav > li > a { font-size: 10px; margin:0px 0 -10px 0!important; padding:24px 15px 22px!important; }
+#main_menu .nav { margin:0px -35px 0px 0!important; }
 .FlickrImagesBlog li { width:10%!important; }
 h3.follow { width: 80%; }
+.tile > p { margin-left: -10px; margin-right: -10px; font-size: 11px; }
+.tile > h2 {font-size: 14px;}
 }
 @media ( min-width:979px) and (max-width:1028px){
 h3.follow { width: 70%; }
@@ -1703,11 +1708,20 @@ h3.follow { width: 70%; }
 @media only screen and (max-width: 480px) { 
 .nivo_height { padding-top:0px!important; }
 #banner { padding-bottom:25px!important; }
+.mobile_display_none { display: none; }
+.confirmation_table > tbody > tr > td > h4,
+.confirmation_table > tbody > tr > td > span,
+.confirmation_table > tfoot > tr > td > span,
+.confirmation_table {font-size: 10px; padding-top: 0;}
+.main-logo {height: auto !important; width: 200px !important;}
+
 }
+
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 320px) {
 h1.title { line-height:40px!important; }
 }
+
 /* slider revolution */
 @media screen and (min-width: 480px) and (max-width: 768px){
 .rev-title { font-size: 16px; line-height: 22px; } 
@@ -1791,5 +1805,17 @@ span.nav-close:before { color: #555; }
 .slideshow nav span.nav-prev, .slideshow nav span.nav-next { display: none; }
 }
 
+.tel > span {
+  font-weight: 400;
+}
+.local > span {
+  font-weight: 400;
+}
+.delivery > div > span {
+  font-weight: 400;
+}
 
+.payment-info > span {
+  font-weight: 400;
+}
 

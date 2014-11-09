@@ -556,3 +556,16 @@ div > div > table > tbody > tr > th {
     height: 34px;
     width: 100%;
 }
+
+/* Checkout Process */
+
+/* Delivery Method */
+.completed > a:hover {
+    background-color: #45b39e !important;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#order > div > div > div {
+    margin-bottom: 20px;
+}

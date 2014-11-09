@@ -47,11 +47,19 @@
 
     <ul class="nav" id="payment-methods" data-hook>
       <% @order.available_payment_methods.each do |method| %>
-        <li id="payment_method_<%= method.id %>" class="<%= 'last' if method == @order.available_payment_methods.last %>" data-hook>
-          <fieldset>
-            <%= render :partial => "spree/checkout/payment/#{method.method_type}", :locals => { :payment_method => method } %>
-          </fieldset>
-        </li>
+        <% if method.name.include?('PayPal') %>
+              <li id="payment_method_<%= method.id %>" class="<%= 'last' if method == @order.available_payment_methods.last %>" data-hook>
+                <fieldset>
+                  <%= render :partial => "spree/checkout/payment/paypal", :locals => { :payment_method => method } %>
+                </fieldset>
+              </li>
+        <% else %>
+              <li id="payment_method_<%= method.id %>" class="<%= 'last' if method == @order.available_payment_methods.last %>" data-hook>
+                <fieldset>
+                  <%= render :partial => "spree/checkout/payment/#{method.method_type}", :locals => { :payment_method => method } %>
+                </fieldset>
+              </li>
+        <% end %>
       <% end %>
     </ul>
 
