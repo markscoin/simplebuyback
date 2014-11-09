@@ -1714,7 +1714,12 @@ h3.follow { width: 70%; }
 .confirmation_table > tfoot > tr > td > span,
 .confirmation_table {font-size: 10px; padding-top: 0;}
 .main-logo {height: auto !important; width: 200px !important;}
-
+.lead {font-size: 11px;}
+.shoppingcartquantity { width: 45px !important; font-size: 11px;}
+.dropdown-menu > li { border-radius: 10px;}
+.dropdown-menu > li > a { padding: 15px !important; font-size: 11px; }
+.custommenu > li { float: left; width: 33%}
+.flex { display: inline !important; }
 }
 
 /* All Mobile Sizes (devices and browser) */

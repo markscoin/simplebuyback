@@ -569,3 +569,12 @@ div > div > table > tbody > tr > th {
 #order > div > div > div {
     margin-bottom: 20px;
 }
+
+#clear_cart_link > .btn {
+    margin-bottom: 5px;
+}
+
+#order_coupon_code {
+    max-width: 150px;
+    display: inline;
+}

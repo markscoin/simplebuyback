@@ -1,7 +1,7 @@
 <div class="container">
 <div class="pad25"></div>
 <fieldset id="order_summary" data-hook>
-  <div class="col-xs-4 col-xs-offset-1">
+  <div class="col-xs-12">
   <legend><%= Spree.t(:order_number, :number => @order.number) %></legend>
   <% if order_just_completed?(@order) %>
     <strong><%= Spree.t(:thank_you_for_your_order) %></strong>
