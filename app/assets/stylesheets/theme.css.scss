@@ -1723,7 +1723,26 @@ h3.follow { width: 70%; }
 #main_menu .nav > li > a { padding: 15px !important;}
 .home_banner1 { font-size: 15px !important; margin-left: -35px; margin-right: -35px;}
 .home_banner2 { font-size: 14px !important; margin-left: -35px; margin-right: -35px;}
-
+.growimages > .btn { margin-bottom: 4px !important; margin-top: 4px !important;}
+  #iphonepanel > table > tbody > tr > th {
+    float: left;
+    vertical-align: bottom;
+    width: 50%;
+  }
+th > .btn, tr > .btn {width: 100%; }  
+#accordion > div > div > div > table > tbody > tr > th { margin: 0px;}
+  #anypanel > table > tbody > tr > th {
+    float: left;
+    margin: 0;
+    width: 50%;
+  }
+#anypanel > table > tbody > tr > th > img {max-width: 90px;}
+  #anypanel > div > div > table > tbody > tr > th {
+    float: left;
+    margin: 0;
+    width: 50%;
+  }
+  #anypanel > div > div > table > tbody > tr > th > img {max-width: 90px;}
 }
 
 /* All Mobile Sizes (devices and browser) */

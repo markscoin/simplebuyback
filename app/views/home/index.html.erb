@@ -16,15 +16,15 @@
 <h2>Select Your Device</h2>
   <div class="row" id="accordion">
       <div class="col-xs-12 col-sm-4 center growimages">
-        <%=  image_tag("devices/iPhone5swithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPhone"}) %><br>
+        <%=  image_tag("devices/iPhone5swithlogo.png", class: "center-block device_image mobile_display_none", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPhone"}) %>
         <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPhone"> Sell Your iPhone</button>
       </div>
       <div class="col-xs-12 col-sm-4 growimages center">
-        <%= image_tag("devices/galaxywithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#anyphone"}) %><br>
+        <%= image_tag("devices/galaxywithlogo.png", class: "center-block device_image mobile_display_none", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#anyphone"}) %>
         <button type="button" class="btn btn-success btn-lg btn-rounded center-block"  data-toggle="collapse" data-parent="#accordion" data-target="#anyphone"> Sell Any Phone</button>
       </div>
       <div class="col-xs-12 col-sm-4 growimages center">
-        <%= image_tag("devices/iPadairwithlogo.png", class: "center-block device_image", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPad"}) %><br>
+        <%= image_tag("devices/iPadairwithlogo.png", class: "center-block device_image mobile_display_none", :data => {:toggle => "collapse", :parent => "#accordion", :target => "#iPad"}) %>
         <button type="button" class="btn btn-success btn-lg btn-rounded center-block" data-toggle="collapse" data-parent="#accordion" data-target="#iPad"> Sell Your iPad</button>
       </div>
       <div class="col-xs-12">
@@ -34,13 +34,13 @@
         <%= render partial: "iphone_modal" %>  
         <table class="table">
           <tr>
-            <th class="growimages"><%= image_tag("phones/apple/iPhone6Plus.png",style: "max-width: 92px; margin-top: -10px;", alt: "iPhone 6 Plus", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6pluscarrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 6 Plus</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/iPhone6.png",style: "margin-top: -3px;" ,class: "apple_phone", alt: "iPhone 6", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6carrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block" style="margin-top: 1px;">iPhone 6</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone", alt: "iPhone 5S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5scarrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5S</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/iPhone5C.png", class: "apple_phone", alt: "iPhone 5C", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5ccarrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5C</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone", alt: "iPhone 5", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5carrier"}) %><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5</button></th>            
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone", alt: "iPhone 4S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4scarrier"})%><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4S</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone", alt: "iPhone 4", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4carrier"})%><br><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone6Plus.png",style: "max-width: 92px; margin-top: -10px;", class:"mobile_display_none", alt: "iPhone 6 Plus", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6pluscarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPhone 6 Plus</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone6.png",style: "margin-top: -3px;" ,class: "apple_phone mobile_display_none", alt: "iPhone 6", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" style="margin-top: 1px;">iPhone 6</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone mobile_display_none", alt: "iPhone 5S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5scarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5S</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone5C.png", class: "apple_phone mobile_display_none", alt: "iPhone 5C", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5ccarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5C</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone mobile_display_none", alt: "iPhone 5", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5</button></th>            
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone mobile_display_none", alt: "iPhone 4S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4scarrier"})%><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4S</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone mobile_display_none", alt: "iPhone 4", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4carrier"})%><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4</button></th>
           </tr>
         </table>
           <div class="collapse" id="iphone6pluscarrier">
@@ -1011,9 +1011,9 @@
          <!-- The panel with the clickable images of the ipads -M.O. -->
         <table class="table">
           <tr>
-            <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image", alt: "iPad", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipad"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad</button></th>
-            <th class="growimages"><%= image_tag("150ipadair.png",class: "ipad_image", alt: "iPad Air", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadair"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Air 1</button></th>
-            <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadmini"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini</button></th>
+            <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipad"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad</button></th>
+            <th class="growimages"><%= image_tag("150ipadair.png",class: "ipad_image mobile_display_none", alt: "iPad Air", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadair"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Air 1</button></th>
+            <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image mobile_display_none", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadmini"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini</button></th>
           </tr>
         </table>
           <!-- The panels that result from clicking on an iPad -M.O. -->
@@ -1023,9 +1023,9 @@
             <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad do I have?</button></span>
               <table class="table">
               <tr>
-                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image", alt: "iPad 2",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad2carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 2 </button></th>
-                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image", alt: "iPad 3",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad3carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 3</button></th>
-                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image", alt: "iPad 4", :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad4carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 4</button></th>
+                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 2",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad2carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 2 </button></th>
+                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 3",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad3carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 3</button></th>
+                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 4", :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad4carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 4</button></th>
               </tr>
             </table>
             <div id="ipad2carrier" class="collapse">
