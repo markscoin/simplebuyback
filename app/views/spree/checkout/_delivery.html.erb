@@ -25,7 +25,7 @@
             <tbody>
               <% ship_form.object.manifest.each do |item| %>
                 <tr class="stock-item">
-                  <td class="item-image"><%= mini_image(item.variant) %></td>
+                  <td class="item-image"><%= mini_image(item.variant, class: "mobile_display_none") %></td>
                   <td class="item-name center"><%= item.variant.name %></td>
                   <td class="item-qty center"><%= item.quantity %></td>
                   <td class="item-price center"><%= display_price(item.variant) %></td>

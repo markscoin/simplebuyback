@@ -490,7 +490,6 @@ div > div > table > tbody > tr > th {
 
 .active_panel {
     box-shadow: 0px 1px 1px rgba(0,0,0,0.075) inset,0 0 8px black;
-    color: #fff;
     border-radius: 5px;
 }
 
@@ -523,6 +522,14 @@ div > div > table > tbody > tr > th {
 .home_banner1{
     font-weight:400;
     font-size: 34px;
+    text-align: center;
+    font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+.home_banner2{
+    font-weight:400;
+    font-size: 24px;
     text-align: center;
     font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 
