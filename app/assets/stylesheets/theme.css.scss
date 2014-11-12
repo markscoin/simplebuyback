@@ -1729,6 +1729,8 @@ h3.follow { width: 70%; }
     vertical-align: bottom;
     width: 50%;
   }
+#anypanel > div > div > div img {display: none;}
+#nokiacarriers img {display:none;}
 th > .btn, tr > .btn {width: 100%; }  
 #accordion > div > div > div > table > tbody > tr > th { margin: 0px;}
   #anypanel > table > tbody > tr > th {
@@ -1736,13 +1738,36 @@ th > .btn, tr > .btn {width: 100%; }
     margin: 0;
     width: 50%;
   }
-#anypanel > table > tbody > tr > th > img {max-width: 90px;}
+#anypanel > table > tbody > tr > th > img {max-width: 130px;}
   #anypanel > div > div > table > tbody > tr > th {
     float: left;
     margin: 0;
+    width: 49%;
+  }
+  #anypanel > div > div > table > tbody > tr > th > img {max-width: 130px;}
+.mobile_hide {display: none;}
+  #anypanel > div > div > div td {
+    float: left;
     width: 50%;
   }
-  #anypanel > div > div > table > tbody > tr > th > img {max-width: 90px;}
+#nokiacarriers td {float: left; width: 50%;}
+  #iphonepanel > div > div th {
+    float: left;
+    width: 50%;
+  }
+#iphonepanel > div > div > div img {display:none}
+  #ipadpanel > div > div > div > div th {
+    float: left;
+    width: 50%;
+  }
+#ipadpanel > div > div th {
+  float: left;
+  width: 50%;
+}
+  
+#ipadpanel a > img { display: none;}
+#ipadminimemory > table > tbody > tr > th > img {display: none;}
+#ipadminimemory > table > tbody > tr > th {width: 100%;}
 }
 
 /* All Mobile Sizes (devices and browser) */
@@ -1846,4 +1871,6 @@ span.nav-close:before { color: #555; }
 .payment-info > span {
   font-weight: 400;
 }
+
+
 

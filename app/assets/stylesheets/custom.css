@@ -585,3 +585,10 @@ div > div > table > tbody > tr > th {
     max-width: 150px;
     display: inline;
 }
+
+.growimages:hover {
+    border-radius: 10px;
+    border: 1px solid black;
+    margin-bottom: -1px !important;
+    margin-top: -1px !important;
+}

@@ -30,22 +30,22 @@
       <div class="col-xs-12">
       <div id="iPhone" class="collapse">
         <div id="iphonepanel" class="homepanel">
-        <span>Select Your iPhone:</span>
+        <h2>Select Your iPhone:</h2>
         <%= render partial: "iphone_modal" %>  
         <table class="table">
           <tr>
-            <th class="growimages"><%= image_tag("phones/apple/iPhone6Plus.png",style: "max-width: 92px; margin-top: -10px;", class:"mobile_display_none", alt: "iPhone 6 Plus", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6pluscarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPhone 6 Plus</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/iPhone6.png",style: "margin-top: -3px;" ,class: "apple_phone mobile_display_none", alt: "iPhone 6", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" style="margin-top: 1px;">iPhone 6</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone mobile_display_none", alt: "iPhone 5S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5scarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5S</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/iPhone5C.png", class: "apple_phone mobile_display_none", alt: "iPhone 5C", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5ccarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5C</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone mobile_display_none", alt: "iPhone 5", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPhone 5</button></th>            
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone mobile_display_none", alt: "iPhone 4S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4scarrier"})%><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4S</button></th>
-            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone mobile_display_none", alt: "iPhone 4", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4carrier"})%><button type="button" class="btn btn-success btn-rounded center-block">iPhone 4</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone6Plus.png",style: "max-width: 92px; margin-top: -10px;", class:"mobile_display_none", alt: "iPhone 6 Plus", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6pluscarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#iphonepanel" data-target="#iphone6pluscarrier">iPhone 6 Plus</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone6.png",style: "margin-top: -3px;" ,class: "apple_phone mobile_display_none", alt: "iPhone 6", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone6carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#iphonepanel" data-target="#iphone6carrier">iPhone 6</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5S.png", class: "apple_phone mobile_display_none", alt: "iPhone 5S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5scarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#iphonepanel" data-target="#iphone5scarrier">iPhone 5S</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/iPhone5C.png", class: "apple_phone mobile_display_none", alt: "iPhone 5C", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5ccarrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#iphonepanel" data-target="#iphone5ccarrier">iPhone 5C</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone5.png", class: "apple_phone mobile_display_none", alt: "iPhone 5", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone5carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#iphonepanel" data-target="#iphone5carrier">iPhone 5</button></th>            
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone mobile_display_none", alt: "iPhone 4S", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4scarrier"})%><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#iphonepanel" data-target="#iphone4scarrier">iPhone 4S</button></th>
+            <th class="growimages"><%= image_tag("phones/apple/75x150iPhone4S.png", class: "apple_phone mobile_display_none", alt: "iPhone 4", :data => {:toggle => "collapse", :parent => "#iphonepanel", :target => "#iphone4carrier"})%><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#iphonepanel" data-target="#iphone4carrier">iPhone 4</button></th>
           </tr>
         </table>
           <div class="collapse" id="iphone6pluscarrier">
             <div id="iphone6plusmemory" class="homepanel">
-            <span>Select Your Carrier:</span>
+            <h2>Select Your Carrier:</h2>
             <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#iphone6plusmemory", :target => "#iphone6plusmemoryatt"}) %></th>
@@ -58,10 +58,10 @@
               </tr>
             </table>
             <div id="iphone6plusmemoryatt" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 Plus 16GB - AT&amp;T</td>
                   <td class="center">iPhone 6 Plus 64GB - AT&amp;T</td>
                   <td class="center">iPhone 6 Plus 128GB - AT&amp;T</td>
@@ -74,10 +74,10 @@
               </table>
             </div>
             <div id="iphone6plusmemorytmobile" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 Plus 16GB - T-Mobile</td>
                   <td class="center">iPhone 6 Plus 64GB - T-Mobile</td>
                   <td class="center">iPhone 6 Plus 128GB - T-Mobile</td>
@@ -90,10 +90,10 @@
               </table>
             </div>
             <div id="iphone6plusmemoryverizon" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 Plus 16GB - Verizon</td>
                   <td class="center">iPhone 6 Plus 64GB - Verizon</td>
                   <td class="center">iPhone 6 Plus 128GB - Verizon</td>
@@ -106,10 +106,10 @@
               </table>
             </div>
             <div id="iphone6plusmemorysprint" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 Plus 16GB - Sprint</td>
                   <td class="center">iPhone 6 Plus 64GB - Sprint</td>
                   <td class="center">iPhone 6 Plus 128GB - Sprint</td>
@@ -122,10 +122,10 @@
               </table>
             </div>
             <div id="iphone6plusmemoryunlocked" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 Plus 16GB - Unlocked</td>
                   <td class="center">iPhone 6 Plus 64GB - Unlocked</td>
                   <td class="center">iPhone 6 Plus 128GB - Unlocked</td>
@@ -141,7 +141,7 @@
           </div>  
           <div class="collapse" id="iphone6carrier">
             <div id="iphone6memory" class="homepanel">
-            <span>Select Your Carrier:</span>
+            <h2>Select Your Carrier:</h2>
             <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#iphone6memory", :target => "#iphone6memoryatt"}) %></th>
@@ -154,10 +154,10 @@
               </tr>
             </table>
             <div id="iphone6memoryatt" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 16GB - AT&amp;T</td>
                   <td class="center">iPhone 6 64GB - AT&amp;T</td>
                   <td class="center">iPhone 6 128GB - AT&amp;T</td>
@@ -170,10 +170,10 @@
               </table>
             </div>
             <div id="iphone6memorytmobile" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 16GB - T-Mobile</td>
                   <td class="center">iPhone 6 64GB - T-Mobile</td>
                   <td class="center">iPhone 6 128GB - T-Mobile</td>
@@ -186,10 +186,10 @@
               </table>
             </div>
             <div id="iphone6memoryverizon" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 16GB - Verizon</td>
                   <td class="center">iPhone 6 64GB - Verizon</td>
                   <td class="center">iPhone 6 128GB - Verizon</td>
@@ -202,10 +202,10 @@
               </table>
             </div>
             <div id="iphone6memorysprint" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 16GB - Sprint</td>
                   <td class="center">iPhone 6 64GB - Sprint</td>
                   <td class="center">iPhone 6 128GB - Sprint</td>
@@ -218,10 +218,10 @@
               </table>
             </div>
             <div id="iphone6memoryunlocked" class="collapse homepanel">
-              <span>Select iPhone Memory Size:</span>
+              <h2>Select iPhone Memory Size:</h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPhone 6 16GB - Unlocked</td>
                   <td class="center">iPhone 6 64GB - Unlocked</td>
                   <td class="center">iPhone 6 128GB - Unlocked</td>
@@ -237,7 +237,7 @@
           </div>  
           <div class="collapse" id="iphone5scarrier">
             <div id="iphone5smemory" class="homepanel">
-            <span>Select Your Carrier:</span>
+            <h2>Select Your Carrier:</h2>
             <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#iphone5smemory", :target => "#iphone5smemoryatt"}) %></th>
@@ -250,11 +250,11 @@
               </tr>
             </table>
               <div id="iphone5smemoryatt" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
                   <tr>
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5S 16GB - AT&amp;T</td>
                     <td class="center">iPhone 5S 32GB - AT&amp;T</td>
                     <td class="center">iPhone 5S 64GB - AT&amp;T</td>
@@ -267,10 +267,10 @@
                 </table>
               </div>
               <div id="iphone5smemorytmobile" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5S 16GB - T-Mobile</td>
                     <td class="center">iPhone 5S 32GB - T-Mobile</td>
                     <td class="center">iPhone 5S 64GB - T-Mobile</td>
@@ -283,10 +283,10 @@
                 </table>
               </div>
               <div id="iphone5smemoryverizon" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5S 16GB - Verizon</td>
                     <td class="center">iPhone 5S 32GB - Verizon</td>
                     <td class="center">iPhone 5S 64GB - Verizon</td>
@@ -299,10 +299,10 @@
                 </table>
               </div>
               <div id="iphone5smemorysprint" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5S 16GB - Sprint</td>
                     <td class="center">iPhone 5S 32GB - Sprint</td>
                     <td class="center">iPhone 5S 64GB - Sprint</td>
@@ -315,10 +315,10 @@
                 </table>
               </div>
               <div id="iphone5smemoryunlocked" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5S 16GB - Unlocked</td>
                     <td class="center">iPhone 5S 32GB - Unlocked</td>
                     <td class="center">iPhone 5S 64GB - Unlocked</td>
@@ -335,7 +335,7 @@
           </div>
           <div class="collapse" id="iphone5ccarrier">
             <div id="iphone5cmemory" class="homepanel">
-              <span>Select Your Carrier:</span>
+              <h2>Select Your Carrier:</h2>
               <table class="table">
                 <tr>
                   <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#iphone5cmemory", :target => "#iphone5cmemoryatt"}) %></th>
@@ -348,10 +348,10 @@
                 </tr>
               </table>
               <div id="iphone5cmemoryatt" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5C 16GB - AT&amp;T</td>
                     <td class="center">iPhone 5C 32GB - AT&amp;T</td>
                   </tr>
@@ -362,10 +362,10 @@
                 </table>
               </div>
               <div id="iphone5cmemorytmobile" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5C 16GB - T-Mobile</td>
                     <td class="center">iPhone 5C 32GB - T-Mobile</td>
                   </tr>
@@ -376,10 +376,10 @@
                 </table>
               </div>
               <div id="iphone5cmemoryverizon" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5C 16GB - Verizon</td>
                     <td class="center">iPhone 5C 32GB - Verizon</td>
                   </tr>
@@ -390,10 +390,10 @@
                 </table>
               </div>
               <div id="iphone5cmemorysprint" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5C 16GB - Sprint</td>
                     <td class="center">iPhone 5C 32GB - Sprint</td>
                   </tr>
@@ -404,10 +404,10 @@
                 </table>
               </div>
               <div id="iphone5cmemoryunlocked" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5C 16GB - Unlocked</td>
                     <td class="center">iPhone 5C 32GB - Unlocked</td>
                   </tr>
@@ -421,7 +421,7 @@
           </div>
           <div class="collapse" id="iphone5carrier">
             <div id="iphone5memory" class="homepanel">
-              <span>Select Your Carrier:</span>
+              <h2>Select Your Carrier:</h2>
               <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#iphone5memory", :target => "#iphone5memoryatt"}) %></th>
@@ -434,10 +434,10 @@
               </tr>
             </table>
               <div id="iphone5memoryatt" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5 16GB - AT&amp;T</td>
                     <td class="center">iPhone 5 32GB - AT&amp;T</td>
                     <td class="center">iPhone 5 64GB - AT&amp;T</td>
@@ -450,10 +450,10 @@
                 </table>
               </div>
               <div id="iphone5memorytmobile" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5 16GB - T-Mobile</td>
                     <td class="center">iPhone 5 32GB - T-Mobile</td>
                     <td class="center">iPhone 5 64GB - T-Mobile</td>
@@ -466,10 +466,10 @@
                 </table>
               </div>
               <div id="iphone5memoryverizon" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5 16GB - Verizon</td>
                     <td class="center">iPhone 5 32GB - Verizon</td>
                     <td class="center">iPhone 5 64GB - Verizon</td>
@@ -482,10 +482,10 @@
                 </table>
               </div>
               <div id="iphone5memorysprint" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5 16GB - Sprint</td>
                     <td class="center">iPhone 5 32GB - Sprint</td>
                     <td class="center">iPhone 5 64GB - Sprint</td>
@@ -498,10 +498,10 @@
                 </table>
               </div>
               <div id="iphone5memoryunlocked" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 5 16GB - Unlocked</td>
                     <td class="center">iPhone 5 32GB - Unlocked</td>
                     <td class="center">iPhone 5 64GB - Unlocked</td>
@@ -517,7 +517,7 @@
           </div>
           <div class="collapse" id="iphone4scarrier">
             <div id="iphone4smemory" class="homepanel">
-              <span>Select Your Carrier:</span>
+              <h2>Select Your Carrier:</h2>
               <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#iphone4smemory", :target => "#iphone4smemoryatt"}) %></th>
@@ -530,10 +530,10 @@
               </tr>
             </table>
               <div id="iphone4smemoryatt" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4S 8GB - AT&amp;T</td>
                     <td class="center">iPhone 4S 16GB - AT&amp;T</td>
                     <td class="center">iPhone 4S 32GB - AT&amp;T</td>
@@ -548,10 +548,10 @@
                 </table>
               </div>
               <div id="iphone4smemorytmobile" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4S 8GB - T-Mobile</td>
                     <td class="center">iPhone 4S 16GB - T-Mobile</td>
                   </tr>
@@ -562,10 +562,10 @@
                 </table>
               </div>
               <div id="iphone4smemoryverizon" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4S 8GB - Verizon</td>
                     <td class="center">iPhone 4S 16GB - Verizon</td>
                     <td class="center">iPhone 4S 32GB - Verizon</td>
@@ -580,10 +580,10 @@
                 </table>
               </div>
               <div id="iphone4smemorysprint" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4S 8GB - Sprint</td>
                     <td class="center">iPhone 4S 16GB - Sprint</td>
                     <td class="center">iPhone 4S 32GB - Sprint</td>
@@ -598,10 +598,10 @@
                 </table>
               </div>
               <div id="iphone4smemoryunlocked" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4S 8GB - Unlocked</td>
                     <td class="center">iPhone 4S 16GB - Unlocked</td>
                     <td class="center">iPhone 4S 32GB - Unlocked</td>
@@ -619,7 +619,7 @@
           </div>
           <div class="collapse" id="iphone4carrier">
             <div id="iphone4memory" class="homepanel">
-              <span>Select Your Carrier:</span>
+              <h2>Select Your Carrier:</h2>
               <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#iphone4memory", :target => "#iphone4memoryatt"}) %></th>
@@ -631,10 +631,10 @@
               </tr>
             </table>
               <div id="iphone4memoryatt" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4 8GB - AT&amp;T</td>
                     <td class="center">iPhone 4 16GB - AT&amp;T</td>
                     <td class="center">iPhone 4 32GB - AT&amp;T</td>
@@ -647,10 +647,10 @@
                 </table>
               </div>
               <div id="iphone4memorytmobile" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4 8GB - T-Mobile</td>
                   </tr>
                   <tr>
@@ -659,10 +659,10 @@
                 </table>
               </div>
               <div id="iphone4memoryverizon" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4 8GB - Verizon</td>
                     <td class="center">iPhone 4 16GB - Verizon</td>
                     <td class="center">iPhone 4 32GB - Verizon</td>
@@ -675,10 +675,10 @@
                 </table>
               </div>
               <div id="iphone4memoryunlocked" class="collapse homepanel">
-                <span>Select iPhone Memory Size:</span>
+                <h2>Select iPhone Memory Size:</h2>
                 <span><button type="button" style="float: right;" class="btn btn-sm btn-warning memorysize" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPhone?</button></span>
                 <table class="table">
-                  <tr>
+                  <tr class="mobile_hide">
                     <td class="center">iPhone 4 8GB - Unlocked</td>
                     <td class="center">iPhone 4 16GB - Unlocked</td>
                     <td class="center">iPhone 4 32GB - Unlocked</td>
@@ -698,7 +698,7 @@
       <div id="anyphone" class="collapse">
         <!-- The panels that results from clicking on "any phone" -M.O. -->
         <div id="anypanel" class="homepanel">
-        <span>Select Phone Brand:</span>
+        <h2>Select Phone Brand:</h2>
         <table class="table">
           <tr>
             <th class="growimages "><%= image_tag("manufacturers/110blackberry.png", class: "brand_image", alt: "BlackBerry", :data => {:toggle => "collapse", :parent => "#anypanel", :target => "#blackberrycarriers"}) %></th>
@@ -710,7 +710,7 @@
         <!-- divs that result from clicking on one of the phones from the anyphone category -->
         <div id="blackberrycarriers" class="collapse ">
           <div id="blackberrymemory" class="homepanel">
-            <span>Select Phone Carrier:</span>
+            <h2>Select Phone Carrier:</h2>
             <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#blackberrymemory", :target => "#attblackberry"}) %></th>
@@ -721,10 +721,10 @@
             </table>
             <div id="attblackberry" class="collapse homepanel">
               <table class="table">
-                <tr>
-                  <td>BlackBerry Bold 9900 - AT&amp;T</td>
-                  <td>BlackBerry Q10 - AT&amp;T</td>
-                  <td>BlackBerry Z10 - AT&amp;T</td>
+                <tr class="mobile_hide">
+                  <th>BlackBerry Bold 9900 - AT&amp;T</th>
+                  <th>BlackBerry Q10 - AT&amp;T</th>
+                  <th>BlackBerry Z10 - AT&amp;T</th>
                 </tr>
                 <tr>
                   <td><%= link_to image_tag("Blackberry_9900.png"),"/store/products/blackberry-bold-9900-at-t"  %> <a href="/store/products/blackberry-bold-9900-at-t" class="btn btn-success btn-rounded center-block button_width_200">Bold 9900</a></td>
@@ -735,7 +735,7 @@
             </div>
             <div id="tmobileblackberry" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>BlackBerry Bold 9900 - T-Mobile</td>
                   <td>BlackBerry Q10 - T-Mobile</td>
                   <td>BlackBerry Z10 - T-Mobile</td>
@@ -749,7 +749,7 @@
             </div>
             <div id="verizonblackberry" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>BlackBerry Bold 9930 - Verizon</td>
                   <td>BlackBerry Q10 - Verizon</td>
                   <td>BlackBerry Z10 - Verizon</td>
@@ -763,7 +763,7 @@
             </div>
             <div id="sprintblackberry" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>BlackBerry Bold 9900 - Sprint</td>
                   <td>BlackBerry Q10 - Sprint</td>
                 </tr>
@@ -777,7 +777,7 @@
         </div>
         <div id="samsungcarriers" class="collapse">
           <div id="samsungmemory" class="homepanel">
-            <span>Select Phone Carrier:</span>
+            <h2>Select Phone Carrier:</h2>
             <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#samsungmemory", :target => "#attsamsung"}) %></th>
@@ -791,7 +791,7 @@
             </table>
             <div id="attsamsung" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>ATIV S Neo</td>
                   <td>Galaxy Mega - AT&amp;T</td>
                   <td>Galaxy Note II - AT&amp;T</td>
@@ -805,7 +805,7 @@
                   <td><%= link_to image_tag("Note_III.png"),"/store/products/samsung-galaxy-note-iii-at-t"  %> <a href="/store/products/samsung-galaxy-note-iii-at-t" class="btn btn-success btn-rounded center-block button_width_200">Galaxy Note III</a></td>
                   <td><%= link_to image_tag("Galaxy_Skyrocket.png"),"/store/products/samsung-galaxy-s-ii-skyrocket-sgh-i727"  %> <a href="/store/products/samsung-galaxy-s-ii-skyrocket-sgh-i727" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S II Skyrocket</a></td>
                 </tr>
-                <tr>
+                <tr class="mobile_hide">
                   <td>Galaxy S III</td>
                   <td>Galaxy S III Mini - AT&amp;T</td>
                   <td>Galaxy S4 Active</td>
@@ -823,7 +823,7 @@
             </div>
             <div id="tmobilesamsung" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>Galaxy Note II - T-Mobile</td>
                   <td>Galaxy Note III - T-Mobile</td>
                   <td>Galaxy S II</td>
@@ -837,7 +837,7 @@
                   <td><%= link_to image_tag("SIII.png"),"/store/products/samsung-galaxy-s-iii-sgh-t999-t-mobile"  %> <a href="/store/products/samsung-galaxy-s-iii-sgh-t999-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S III</a></td>
                   <td><%= link_to image_tag("s4.png"),"/store/products/samsung-galaxy-s4-sgh-m919-t-mobile"  %> <a href="/store/products/samsung-galaxy-s4-sgh-m919-t-mobile" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4</a></td>
                 </tr>
-                <tr>
+                <tr class="mobile_hide">
                   <td>Galaxy S5</td>
                 </tr>
                 <tr>
@@ -847,7 +847,7 @@
             </div>
             <div id="verizonsamsung" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>Galaxy Note II - Verizon</td>
                   <td>Galaxy Note III - Verizon</td>
                   <td>Galaxy S III - Verizon</td>
@@ -861,7 +861,7 @@
                   <td><%= link_to image_tag("SIII_mini.png"),"/store/products/samsung-galaxy-siii-mini-verizon"  %> <a href="/store/products/samsung-galaxy-siii-mini-verizon" class="btn btn-success btn-rounded center-block button_width_200">Galaxy SIII Mini</a></td>
                   <td><%= link_to image_tag("s4.png"),"/store/products/samsung-galaxy-s4-sch-i545-verizon"  %> <a href="/store/products/samsung-galaxy-s4-sch-i545-verizon" class="btn btn-success btn-rounded center-block button_width_200">Galaxy S4</a></td>
                 </tr>
-                <tr>
+                <tr class="mobile_hide">
                   <td>Galaxy S4 Mini - Verizon</td>
                   <td>Galaxy S5 - Verizon</td>
                 </tr>
@@ -873,7 +873,7 @@
             </div>
             <div id="sprintsamsung" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>Galaxy Note II - Sprint</td>
                   <td>Galaxy Note III - Sprint</td>
                   <td>Galaxy SIII - Sprint</td>
@@ -891,7 +891,7 @@
             </div>
             <div id="unlockedsamsung" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>Galaxy Mega - Unlocked</td>
                   <td>Galaxy SIII - Unlocked</td>
                   <td>Galaxy S4 - Unlocked</td>
@@ -907,7 +907,7 @@
         </div>
         <div id="htccarriers" class="collapse">
           <div id="htcmemory" class="homepanel">
-            <span>Select Phone Carrier:</span>
+            <h2>Select Phone Carrier:</h2>
             <table class="table">
               <tr>
                 <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#htcmemory", :target => "#atthtc"}) %></th>
@@ -918,7 +918,7 @@
             </table>
             <div id="atthtc" class="collapse homepanel">
               <table class="table">
-              <tr>
+              <tr class="mobile_hide">
                 <td>HTC First - AT&amp;T</td>
                 <td>HTC One - AT&amp;T</td>
                 <td>HTC One M8 - AT&amp;T</td>
@@ -932,7 +932,7 @@
                 <td><%= link_to image_tag("HTC_One_Mini.png"),"/store/products/htc-one-mini"  %> <a href="/store/products/htc-one-mini" class="btn btn-success btn-rounded center-block button_width_200">HTC One Mini</a></td>
                 <td><%= link_to image_tag("HTC_One_VX.png"),"/store/products/htc-one-vx"  %> <a href="/store/products/htc-one-vx" class="btn btn-success btn-rounded center-block button_width_200">HTC One VX</a></td>
               </tr>
-              <tr>
+              <tr class="mobile_hide">
                 <td>Windows Phone 8x - AT&amp;T</td>
               </tr>
               <tr>
@@ -942,7 +942,7 @@
             </div>
             <div id="tmobilehtc" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>HTC One - T-Mobile</td>
                   <td>HTC One M8 - T-Mobile</td>
                   <td>Windows Phone 8x - T-Mobile</td>
@@ -956,7 +956,7 @@
             </div>
             <div id="verizonhtc" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>HTC Droid DNA - Verizon</td>
                   <td>HTC One - Verizon</td>
                   <td>HTC One M8 - Verizon</td>
@@ -974,7 +974,7 @@
             </div>
             <div id="sprinthtc" class="collapse homepanel">
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td>HTC One - Sprint</td>
                   <td>HTC One M8 - Sprint</td>
                   <td>HTC One Max - Sprint</td>
@@ -990,7 +990,7 @@
         </div>
         <div id="nokiacarriers" class="collapse homepanel">
           <table class="table">
-            <tr>
+            <tr class="mobile_hide">
               <td class="center">Nokia Lumia 1020 - AT&amp;T</td>
               <td class="center">Nokia Lumia 1520 - AT&amp;T</td>
               <td class="center">Nokia Lumia 925 - AT&amp;T</td>
@@ -1006,31 +1006,31 @@
       </div>
       <div id="iPad" class="collapse ">
         <div id="ipadpanel" class="homepanel">
-        <span>Select Your iPad:</span>
+        <h2>Select Your iPad:</h2>
         <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad do I have?</button></span>
          <!-- The panel with the clickable images of the ipads -M.O. -->
         <table class="table">
           <tr>
-            <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipad"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad</button></th>
-            <th class="growimages"><%= image_tag("150ipadair.png",class: "ipad_image mobile_display_none", alt: "iPad Air", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadair"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Air 1</button></th>
-            <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image mobile_display_none", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadmini"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini</button></th>
+            <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipad"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#ipadpanel" data-target="#ipad">iPad</button></th>
+            <th class="growimages"><%= image_tag("150ipadair.png",class: "ipad_image mobile_display_none", alt: "iPad Air", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadair"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#ipadpanel" data-target="#ipadair">iPad Air 1</button></th>
+            <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image mobile_display_none", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadpanel", :target => "#ipadmini"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#ipadpanel" data-target="#ipadmini">iPad Mini</button></th>
           </tr>
         </table>
           <!-- The panels that result from clicking on an iPad -M.O. -->
           <div id="ipad" class="collapse">
             <div id="ipadcarrier" class="homepanel">
-            <span>Select Generation:</span>
+            <h2>Select Generation:</h2>
             <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad do I have?</button></span>
               <table class="table">
               <tr>
-                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 2",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad2carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 2 </button></th>
-                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 3",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad3carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 3</button></th>
-                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 4", :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad4carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad 4</button></th>
+                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 2",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad2carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#ipadcarrier" data-target="#ipad2carrier">iPad 2 </button></th>
+                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 3",  :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad3carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#ipadcarrier" data-target="#ipad3carrier">iPad 3</button></th>
+                <th class="growimages"><%= image_tag("150ipad2.png",class: "ipad_image mobile_display_none", alt: "iPad 4", :data => {:toggle => "collapse", :parent => "#ipadcarrier", :target => "#ipad4carrier"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#ipadcarrier" data-target="#ipad4carrier">iPad 4</button></th>
               </tr>
             </table>
             <div id="ipad2carrier" class="collapse">
                 <div id="ipad2memory" class="homepanel">
-                <span>Select Carrier (if any) :</span>
+                <h2>Select Carrier (if any) :</h2>
                 <table class="table">
                   <tr>
                     <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#ipad2memory", :target => "#ipad2attmemory"}) %></th>
@@ -1041,10 +1041,10 @@
                   </tr>
                 </table>
                   <div id="ipad2attmemory" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size:</h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 2 16GB - AT&amp;T</td>
                         <td class="center">iPad 2 32GB - AT&amp;T</td>
                         <td class="center">iPad 2 64GB - AT&amp;T</td>
@@ -1057,10 +1057,10 @@
                     </table>
                   </div>
                   <div id="ipad2verizonmemory" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size:</h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 2 16GB - Verizon</td>
                         <td class="center">iPad 2 32GB - Verizon</td>
                         <td class="center">iPad 2 64GB - Verizon</td>
@@ -1073,10 +1073,10 @@
                     </table>
                   </div>
                   <div id="ipad2wifimemory" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size:</h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 2 16GB - Unlocked</td>
                         <td class="center">iPad 2 32GB - Unlocked</td>
                         <td class="center">iPad 2 64GB - Unlocked</td>
@@ -1092,7 +1092,7 @@
             </div>
             <div id="ipad3carrier" class="collapse">
                 <div id="ipad3memory" class="homepanel">
-                  <span>Select Carrier (if any):</span>
+                  <h2>Select Carrier (if any):</h2>
                 <table class="table">
                   <tr>
                     <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#ipad3memory", :target => "#ipad3memoryatt"}) %></th>
@@ -1103,10 +1103,10 @@
                   </tr>
                 </table>
                   <div id="ipad3memoryatt" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size: </h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 3 16GB - AT&amp;T</td>
                         <td class="center">iPad 3 32GB - AT&amp;T</td>
                         <td class="center">iPad 3 64GB - AT&amp;T</td>
@@ -1119,10 +1119,10 @@
                     </table>
                   </div>
                   <div id="ipad3memoryverizon" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size: </h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 3 16GB - Verizon</td>
                         <td class="center">iPad 3 32GB - Verizon</td>
                         <td class="center">iPad 3 64GB - Verizon</td>
@@ -1135,10 +1135,10 @@
                     </table>
                   </div>
                   <div id="ipad3memorywifi" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size: </h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 3 16GB - Wi-Fi Only</td>
                         <td class="center">iPad 3 32GB - Wi-Fi Only</td>
                         <td class="center">iPad 3 64GB - Wi-Fi Only</td>
@@ -1153,7 +1153,7 @@
                 </div>
               </div>
             <div id="ipad4carrier" class="collapse homepanel">
-                <span>Select Carrier (if any):</span>
+                <h2>Select Carrier (if any):</h2>
                 <div id="ipad4memory">
                 <table class="table">
                   <tr>
@@ -1166,10 +1166,10 @@
                   </tr>
                 </table>
                   <div id="ipad4memoryatt" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size: </h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 4 16GB - AT&amp;T </td>
                         <td class="center">iPad 4 32GB - AT&amp;T </td>
                         <td class="center">iPad 4 64GB - AT&amp;T </td>
@@ -1184,10 +1184,10 @@
                     </table>
                   </div>
                   <div id="ipad4memoryverizon" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size: </h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 4 16GB - Verizon </td>
                         <td class="center">iPad 4 32GB - Verizon </td>
                         <td class="center">iPad 4 64GB - Verizon </td>
@@ -1202,10 +1202,10 @@
                     </table>
                   </div>
                   <div id="ipad4memorysprint" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size: </h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 4 16GB - Sprint </td>
                         <td class="center">iPad 4 32GB - Sprint </td>
                         <td class="center">iPad 4 64GB - Sprint </td>
@@ -1220,10 +1220,10 @@
                     </table>
                   </div>
                   <div id="ipad4memorywifi" class="collapse homepanel">
-                    <span>Select Memory Size:</span>
+                    <h2>Select Memory Size: </h2>
                     <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                     <table class="table">
-                      <tr>
+                      <tr class="mobile_hide">
                         <td class="center">iPad 4 16GB - Wi-Fi </td>
                         <td class="center">iPad 4 32GB - Wi-Fi </td>
                         <td class="center">iPad 4 64GB - Wi-Fi </td>
@@ -1242,7 +1242,7 @@
             </div>
           </div>
           <div id="ipadair" class="collapse homepanel">
-            <span>Select Carrier (if any):</span>
+            <h2>Select Carrier (if any):</h2>
             <div id="ipadairmemory">
             <table class="table">
               <tr>
@@ -1256,10 +1256,10 @@
               </tr>
             </table>
             <div class="collapse homepanel" id="ipadairattmemory">
-              <span>Select Memory Size:</span>
+              <h2>Select Memory Size: </h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPad Air 16GB - AT&amp;T </td>
                   <td class="center">iPad Air 32GB - AT&amp;T </td>
                   <td class="center">iPad Air 64GB - AT&amp;T </td>
@@ -1274,10 +1274,10 @@
               </table>
             </div>
             <div class="collapse homepanel" id="ipadairverizonmemory">
-              <span>Select Memory Size:</span>
+              <h2>Select Memory Size: </h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPad Air 16GB - Verizon </td>
                   <td class="center">iPad Air 32GB - Verizon </td>
                   <td class="center">iPad Air 64GB - Verizon </td>
@@ -1292,10 +1292,10 @@
               </table>
             </div>
             <div class="collapse homepanel" id="ipadairsprintmemory">
-              <span>Select Memory Size:</span>
+              <h2>Select Memory Size: </h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPad Air 16GB - Sprint </td>
                   <td class="center">iPad Air 32GB - Sprint </td>
                   <td class="center">iPad Air 64GB - Sprint </td>
@@ -1310,10 +1310,10 @@
               </table>
             </div>
             <div class="collapse homepanel" id="ipadairtmobilememory">
-              <span>Select Memory Size:</span>
+              <h2>Select Memory Size: </h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPad Air 16GB - T-Mobile </td>
                   <td class="center">iPad Air 32GB - T-Mobile </td>
                   <td class="center">iPad Air 64GB - T-Mobile </td>
@@ -1328,10 +1328,10 @@
               </table>
             </div>
             <div class="collapse homepanel" id="ipadairwifimemory">
-              <span>Select Memory Size:</span>
+              <h2>Select Memory Size: </h2>
               <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
               <table class="table">
-                <tr>
+                <tr class="mobile_hide">
                   <td class="center">iPad Air 16GB - Wi-Fi </td>
                   <td class="center">iPad Air 32GB - Wi-Fi </td>
                   <td class="center">iPad Air 64GB - Wi-Fi </td>
@@ -1349,17 +1349,17 @@
           </div>
           <div id="ipadmini" class="collapse">
             <div id="ipadminimemory" class="homepanel">
-            <span>Select iPad Type:</span>
+            <h2>Select iPad Type:</h2>
             <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#ipad_modal" >Which iPad Mini do I have?</button></span>
               <table class="table">
               <tr>
-                <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadminimemory", :target => "#minicarriers"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini</button></th>
-                <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image", alt: "iPad Mini with Retina Display", :data => {:toggle => "collapse", :parent => "#ipadminimemory", :target => "#miniretinacarriers"}) %><button type="button" class="btn btn-success btn-rounded center-block">iPad Mini with Retina Display</button></th>
+                <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image", alt: "iPad Mini", :data => {:toggle => "collapse", :parent => "#ipadminimemory", :target => "#minicarriers"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#ipadminimemory" data-target="#minicarriers">iPad Mini</button></th>
+                <th class="growimages"><%= image_tag("150ipadmini.png",class: "ipad_image", alt: "iPad Mini with Retina Display", :data => {:toggle => "collapse", :parent => "#ipadminimemory", :target => "#miniretinacarriers"}) %><button type="button" class="btn btn-success btn-rounded center-block" data-toggle="collapse" data-parent="#ipadminimemory" data-target="#miniretinacarriers">iPad Mini /w Retina Display</button></th>
               </tr>
             </table>
             <div id="minicarriers" class="collapse">
               <div id="originalminimemory" class="homepanel">
-              <span>Select Carrier (if any):</span>
+              <h2>Select Carrier (if any):</h2>
               <table class="table">
                 <tr>
                   <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#originalminimemory", :target => "#originalminimemoryatt"}) %></th>
@@ -1371,10 +1371,10 @@
                 </tr>
               </table>
                 <div id="originalminimemoryatt" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini 16GB - Wi-Fi + 4G AT&amp;T </td>
                       <td class="center">iPad Mini 32GB - Wi-Fi + 4G AT&amp;T </td>
                       <td class="center">iPad Mini 64GB - Wi-Fi + 4G AT&amp;T </td>
@@ -1387,10 +1387,10 @@
                   </table>
                 </div>
                 <div id="originalminimemoryverizon" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini 16GB - Wi-Fi + 4G Verizon </td>
                       <td class="center">iPad Mini 32GB - Wi-Fi + 4G Verizon </td>
                       <td class="center">iPad Mini 64GB - Wi-Fi + 4G Verizon </td>
@@ -1403,10 +1403,10 @@
                   </table>
                 </div>
                 <div id="originalminimemorysprint" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini 16GB - Wi-Fi + 4G Sprint </td>
                       <td class="center">iPad Mini 32GB - Wi-Fi + 4G Sprint </td>
                       <td class="center">iPad Mini 64GB - Wi-Fi + 4G Sprint </td>
@@ -1419,10 +1419,10 @@
                   </table>
                 </div>
                 <div id="originalminimemorywifi" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini 16GB - Wi-Fi Only </td>
                       <td class="center">iPad Mini 32GB - Wi-Fi Only </td>
                       <td class="center">iPad Mini 64GB - Wi-Fi Only </td>
@@ -1438,7 +1438,7 @@
             </div>
             <div id="miniretinacarriers" class="collapse">
               <div id="minimemory" class="homepanel">
-              <span>Select Carrier (if any):</span>
+              <h2>Select Carrier (if any):</h2>
               <table class="table">
                 <tr>
                   <th class="growimages "><%= image_tag("carriers/160x80att.png", class: "carrier_image", alt: "AT&amp;T", :data => {:toggle => "collapse", :parent => "#minimemory", :target => "#attminimemory"}) %></th>
@@ -1451,10 +1451,10 @@
                 </tr>
               </table>
                 <div id="verizonminimemory" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini w/ Retina 16GB - Verizon </td>
                       <td class="center">iPad Mini w/ Retina 32GB - Verizon </td>
                       <td class="center">iPad Mini w/ Retina 64GB - Verizon </td>
@@ -1470,10 +1470,10 @@
                   </table>
                 </div>
                 <div id="attminimemory" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini w/ Retina 16GB - AT&amp;T </td>
                       <td class="center">iPad Mini w/ Retina 32GB - AT&amp;T </td>
                       <td class="center">iPad Mini w/ Retina 64GB - AT&amp;T </td>
@@ -1489,10 +1489,10 @@
                   </table>
                 </div>
                 <div id="sprintminimemory" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini w/ Retina 16GB - Sprint </td>
                       <td class="center">iPad Mini w/ Retina 32GB - Sprint </td>
                       <td class="center">iPad Mini w/ Retina 64GB - Sprint </td>
@@ -1508,10 +1508,10 @@
                   </table>
                 </div>
                 <div id="wifiminimemory" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini w/ Retina 16GB - Wi-Fi Only </td>
                       <td class="center">iPad Mini w/ Retina 32GB - Wi-Fi Only </td>
                       <td class="center">iPad Mini w/ Retina 64GB - Wi-Fi Only </td>
@@ -1527,10 +1527,10 @@
                   </table>
                 </div>
                 <div id="tmobileminimemory" class="collapse homepanel">
-                  <span>Select Memory Size:</span>
+                  <h2>Select Memory Size: </h2>
                   <span><button type="button" style="float: right;" class="btn btn-sm btn-warning" data-toggle="modal" data-target="#memorysize" >What is the Memory Size of my iPad?</button></span>
                   <table class="table">
-                    <tr>
+                    <tr class="mobile_hide">
                       <td class="center">iPad Mini w/ Retina 16GB - T-Mobile </td>
                       <td class="center">iPad Mini w/ Retina 32GB - T-Mobile </td>
                       <td class="center">iPad Mini w/ Retina 64GB - T-Mobile </td>

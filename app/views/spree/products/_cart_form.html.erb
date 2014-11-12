@@ -6,7 +6,7 @@
         <div class="container">
         <div class="row" id="conditionaccordion">
             <% @product.variants_and_option_values(current_currency).each_with_index do |variant, index| %>
-              <div class="col-xs-3">
+              <div class="col-xs-4 col-sm-3" style="margin-bottom: 10px;">
                 <button type="button" class="btn btn-success btn-lg btn-rounded center-block trigger" data-toggle="collapse" data-parent="#conditionaccordion" data-target="#<%=variant_options variant %>" data-rel="<%= variant.id %>"> <%= variant_options variant %></button>
               </div>
             <% end %>
@@ -14,7 +14,7 @@
               <% @condition = variant_options variant %>
               <div id="<%= @condition %>" class="collapse col-xs-12">
                 <% if @condition == "Broken" %>
-                  <div class="col-xs-4">
+                  <div class="col-xs-12 col-md-4">
                     <h5>Device is broken if <strong><span style="font-size: 1.2em; color: red;">ANY</span></strong> of the following is true:</h5>
                     <ul>
                       <li><strong>Device is not fully functional</strong></li>
@@ -22,7 +22,7 @@
                       <li><strong>Cracked screen</strong></li>
                     </ul>
                   </div>
-                  <div class="col-xs-4 offerwell">
+                  <div class="col-xs-12 col-md-4 offerwell">
                         <h4><strong>Our Offer:</strong></h4>
                         <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s, 'data-rel' => index, :style => "display: none;"  %>
                         <%= label_tag "variant_id", :class => "offerprice" do %>
@@ -38,7 +38,7 @@
                       </div>
                   </div>
                 <% elsif @condition == "Good" %>
-                    <div class="col-xs-4">
+                    <div class="col-xs-12 col-md-4">
                       <h5>Device is in Good Condition if...</h5>
                       <ul>
                         <li><strong>Device is fully functional</strong></li>
@@ -46,7 +46,7 @@
                         <li><strong>Not missing any buttons</strong></li>
                       </ul>
                     </div>
-                    <div class="col-xs-4 offerwell">
+                    <div class="col-xs-12 col-md-4 offerwell">
                       <h4><strong>Your Offer:</strong></h4>
                       <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s, 'data-rel' => index, :style => "display: none;"  %>
                       <%= label_tag "variant_id", :class => "offerprice" do %>
@@ -62,7 +62,7 @@
                       </div>
                     </div>
                 <% else %>
-                  <div class="col-xs-4">
+                  <div class="col-xs-12 col-md-4">
                     <h5>Device is Flawless if..</h5>
                       <ul>
                         <li><strong>Device is completely functional</strong></li>
@@ -70,7 +70,7 @@
                         <li><strong>Looks new (almost no wear)</strong></li>
                       </ul>
                   </div>
-                    <div class="col-xs-4 offerwell">
+                    <div class="col-xs-12 col-md-4 offerwell">
                       <h4><strong>Our Offer:</strong></h4>
                       <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s, 'data-rel' => index, :style => "display: none;"  %>
                       <%= label_tag "variant_id", :class => "offerprice" do %>
