@@ -61,7 +61,7 @@
     
   <p class="field" id=<%="#{address_id}zipcode" %>>
     <%= form.label :zipcode, Spree.t(:zip) %><% if address.require_zipcode? %><% end %>
-    <%= form.text_field :zipcode, :class => "form-control #{'required' if address.require_zipcode?}" %>
+    <%= form.text_field :zipcode, maxlength: 5,:class => "form-control #{'required' if address.require_zipcode?}" %>
   </p>
   <p class="field" id=<%="#{address_id}phone" %>>
     <%= form.label :phone, Spree.t(:phone) %><% if address.require_phone? %><% end %>

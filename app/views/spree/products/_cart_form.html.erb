@@ -48,7 +48,7 @@
                     </div>
                     <div class="col-xs-12 col-md-4 offerwell">
                       <h4><strong>Your Offer:</strong></h4>
-                      <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s, 'data-rel' => index, :style => "display: none;"  %>
+                      <%= radio_button_tag "variant_id", variant.id, index == 0, 'data-price' => Spree::Money.new(variant.price, with_currency: true).to_s, 'data-rel' => index, :style => "display: none;", checked: true  %>
                       <%= label_tag "variant_id", :class => "offerprice" do %>
                           <span class="price diff" style="color: #5cb85c;"><%= variant_price variant %></span>
                       <% end %>
