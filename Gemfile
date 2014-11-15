@@ -75,4 +75,5 @@ gem 'heroku-deflater', :group => :production
 gem 'font-awesome-rails'
 gem 'railties'
 
-
+#Mail
+gem 'mandrill-api'
