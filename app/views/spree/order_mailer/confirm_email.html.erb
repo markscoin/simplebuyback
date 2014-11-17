@@ -97,6 +97,9 @@
                     <!-- Nav -->
                     <table width="280" border="0" cellpadding="0" cellspacing="0" align="right" style="text-align: right; text-transform: uppercase; height: 60px;" class="fullCenter">
                       <tbody><tr>
+                        <td valign="middle" class="navTd" height="25" mc:edit="mailchimp613">
+                          <a href="http://www.simplebuyback.com" style="text-decoration: none; color: #67cbb0;" >Visit Us</a>
+                        </td>
                         <td valign="middle" width="33%" class="navTd" mc:edit="mailchimp1767">
                           <a href="http://simplebuyback.com/home/about" style="text-decoration: none; color: #9b9b9b;">About Us</a>
                         </td>
@@ -159,7 +162,7 @@
                                 </tr>
                                 <tr>
                                   <td width="100%" style="font-family: Myriad Pro, Helvetica, Arial, sans-serif; font-size: 18px; color: #ffffff; text-align: center; font-weight: 100; font-style: italic;" mc:edit="mailchimp5419">
-                                    Next Step: Ship Your Device
+                                    Next Step: Ship Your Device (Shipping is Always Free!)
                                   </td>
                                 </tr>
                                 <tr>
@@ -238,7 +241,7 @@
                         <td height="15"></td>
                       </tr>
                       <tr>
-                        <td><a style="text-decoration: none; color: #ffffff; font-weight: bold; background-color: #67cbb0; padding: 12px 14px 12px 14px; border-radius: 3px; font-size: 13px; font-family: Myriad Pro, Helvetica, Arial, sans-serif; text-transform: uppercase;" href="#">DOWNLOAD SHIPPING LABEL</a></td>
+                        <td><a style="text-decoration: none; color: #ffffff; font-weight: bold; background-color: #67cbb0; padding: 12px 14px 12px 14px; border-radius: 3px; font-size: 13px; font-family: Myriad Pro, Helvetica, Arial, sans-serif; text-transform: uppercase;" href="#">DOWNLOAD PREPAID LABEL</a></td>
                       </tr>
                       </tr>
                       </tbody></table>
@@ -295,7 +298,7 @@
                       </tr>
                       <tr>
                         <td style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #9b9b9b; text-align: left; font-weight: 100; line-height: 24px;" class="textCenter" mc:edit="mailchimp4310">
-                          <p style="color: #464646; font-weight: 700;">Place in Mailbox or Drop off at USPS</p>
+                          <p style="color: #464646; font-weight: 700;">Place in Mailbox or Drop off at any USPS</p>
                         </td>
                       </tr>
 
@@ -329,32 +332,45 @@
           </tbody></table>
 
         <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" class="full">
-          <tbody><tr>
-            <td align="left" style="font-size: 24px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; font-weight: 600; line-height: 28px;" mc:edit="mailchimp3671">
-              Offer Summary
+          <tbody>
+          <tr>
+            <td>
+              <p style="color:#464646; font-size: 16px; font-weight: 600;">You're almost there!  You offer is good for 30 days.  Just ship your device and get paid!</p>
+            
             </td>
           </tr>
           <tr>
-            <td height="28"></td>
+            <td height="25px;"></td>
           </tr>
           <tr>
-            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #9b9b9b; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
-              <p>Offer is valid for 30 days. </p>
+            <td align="left" style="font-size: 24px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; font-weight: 600; line-height: 28px;" mc:edit="mailchimp3671">
+              <p style="text-align: center;">Offer Summary</p>
+            </td>
+          </tr>
+          <tr>
+            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
+              <p><b style="font-size: 16px;">Device(s): </b></p>
               <% @order.line_items.each do |item| %>
                    <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text) -%> Condition (<%=item.quantity%>) @ <%= item.single_money %> = <%= item.display_amount %>
                   <% end %>
             </td>
           </tr>
           <tr>
-            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #9b9b9b; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
+            <td height="20px;"></td>
+          </tr>
+          <tr>
+            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
               <% @order.shipments.group_by { |s| s.selected_shipping_rate.try(:name) }.each do |name, shipments| %>
-                  Shipping Method: <%= name %> 
+                  <b style="font-size: 16px;">Shipping Method:</b> <%= name %> 
               <% end %>
             </td>
           </tr>
           <tr>
-            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #9b9b9b; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
-              Total Offer: <%= @order.display_total %>
+            <td height="10px;"></td>
+          </tr>
+          <tr>
+            <td align="left" style="font-size: 16px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
+              <b>Total Offer: <%= @order.display_total %></b>
             </td>
           </tr>
           </tbody></table>
