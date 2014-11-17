@@ -4,7 +4,8 @@ class Notifier < ActionMailer::Base
   def welcome_email(user)
     @user = user
     mail(:to => user.email,
-         :subject => "Welcome to SimpleBuyBack")
+         :subject => "Welcome to SimpleBuyBack",
+         :from => '"SimpleBuyBack" <support@simplebuyback.com>')
   end
 
   def contact_email(name, email, subject, message)
