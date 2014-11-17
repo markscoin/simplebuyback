@@ -37,7 +37,7 @@
       </div>
     <% end %>
   </div>
-  <div id="empty-cart" class="col-xs-12 col-sm-6 pull-left" data-hook>
+  <div id="empty-cart" class="col-xs-12 col-sm-6 pull-left mobile_display_none" data-hook>
     <%= form_tag empty_cart_path, :method => :put do %>
       <p id="clear_cart_link" data-hook>
         <%= submit_tag "Empty Recycle Bin", :class => 'btn btn-default btn-danger' %>

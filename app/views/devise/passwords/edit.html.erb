@@ -1,16 +1,22 @@
-<h2>Change your password</h2>
+<div class="pad30"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-md-5 signup">
+        <h2>Change your password</h2>
+        
+        <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
+          <%= devise_error_messages! %>
+          <%= f.hidden_field :reset_password_token %>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
-  <%= f.hidden_field :reset_password_token %>
-
-  <div><%= f.label :password, "New password" %><br />
-    <%= f.password_field :password, autofocus: true, autocomplete: "off" %></div>
-
-  <div><%= f.label :password_confirmation, "Confirm new password" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %></div>
-
-  <div><%= f.submit "Change my password" %></div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+          <div class="input-group bottom_margin_10"><span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span><%= f.password_field :password, autofocus: true, autocomplete: "off", class: "input_field", placeholder: "New Password", size: "30"%></div>
+          <div class="input-group bottom_margin_10"><span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span><%= f.password_field :password_confirmation, autocomplete: "off", class: "input_field", placeholder: "Confirm New Password", size: "30" %></div>
+        
+          <div><%= f.submit "Change my password",class: "btn btn-success" %></div>
+        <% end %>
+          <div class="pad10" style="border-top:1px solid lightgray; margin-top: 10px;"></div>
+          <p>Remember Your Password or Don't Have an Account?</p>
+          <%= link_to "Sign In", new_session_path(resource_name), class: "btn-success btn" %> or
+          <%= link_to "Sign Up", new_registration_path(resource_name), class: "btn-success btn" %>
+    </div>
+  </div>
+</div>
