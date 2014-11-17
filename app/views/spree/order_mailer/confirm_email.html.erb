@@ -226,7 +226,7 @@
             <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #9b9b9b; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
               <p>Thank you for your recent order! Your offer is valid for 30 days. Ship your item at your earliest convenience but still within 30 days. </p>
               <%= @order.line_items.each do |item| %>
-                  <%= if item.quantity == 1 %>
+                  <% if item.quantity == 1 %>
                       <%= item.variant.sku %> <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text)  -%> Condition (<%=item.quantity%>) 
                       <b>Offer Amount:<b> <b><%= item.display_amount %></b>
                   <% else %>
