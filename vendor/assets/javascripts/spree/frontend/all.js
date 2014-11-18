@@ -24,7 +24,6 @@
 //= require imagesloaded.pkgd.min
 //= require retina_tag
 //= require cbpGridGallery
-//= require googleanalytics
 //= require custom
 //= require homepage
 //= require scripts
