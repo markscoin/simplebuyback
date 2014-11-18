@@ -25,5 +25,4 @@
 //= require scripts
 //= require custom
 //= require bootstrap
-//= require googleanalytics
 //= require_tree .
