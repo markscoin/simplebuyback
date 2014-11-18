@@ -343,12 +343,12 @@
             <td height="25px;"></td>
           </tr>
           <tr>
-            <td align="left" style="font-size: 24px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; font-weight: 600; line-height: 28px;" mc:edit="mailchimp3671">
+            <td align="left" style="font-size: 24px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; font-weight: 600; line-height: 28px; padding: 10px; border-top: 1px solid gray; border-left:1px solid gray;border-radius: 5px 5px 0 0;border-right:1px solid gray;" mc:edit="mailchimp3671">
               <p style="text-align: center;">Offer Summary</p>
             </td>
           </tr>
           <tr>
-            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
+            <td align="left" style="font-size: 15px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both; padding:10px; border-right:1px solid gray; border-left: 1px solid gray;" mc:edit="mailchimp5490">
               <p><b style="font-size: 16px;">Device(s): </b></p>
               <% @order.line_items.each do |item| %>
                    <%= raw(item.variant.product.name) %> <%= raw(item.variant.options_text) -%> Condition (<%=item.quantity%>) @ <%= item.single_money %> = <%= item.display_amount %>
@@ -356,20 +356,20 @@
             </td>
           </tr>
           <tr>
-            <td height="20px;"></td>
+            <td height="20px;" style="border-right: 1px solid gray; border-left: 1px solid gray"> &nbsp;</td>
           </tr>
           <tr>
-            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
+            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both; padding: 10px; border-right:1px solid gray; border-left: 1px solid gray;" mc:edit="mailchimp5490">
               <% @order.shipments.group_by { |s| s.selected_shipping_rate.try(:name) }.each do |name, shipments| %>
                   <b style="font-size: 16px;">Shipping Method:</b> <%= name %> 
               <% end %>
             </td>
           </tr>
           <tr>
-            <td height="10px;"></td>
+            <td height="10px;" style="border-right: 1px solid gray; border-left: 1px solid gray"> &nbsp;</td>
           </tr>
           <tr>
-            <td align="left" style="font-size: 16px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both;" mc:edit="mailchimp5490">
+            <td align="left" style="font-size: 14px; font-family: Myriad Pro, helvetica, Arial, sans-serif; color: #464646; line-height: 24px; font-weight: 400; clear: both; padding: 10px; border-right:1px solid gray; border-left: 1px solid gray; border-radius: 0 0 5px 5px; border-bottom: 1px solid gray;" mc:edit="mailchimp5490">
               <b>Total Offer: <%= @order.display_total %></b>
             </td>
           </tr>

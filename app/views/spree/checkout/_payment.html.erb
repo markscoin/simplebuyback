@@ -1,6 +1,6 @@
 <div class="panel panel-default" id="payment" data-hook>
   <div class="panel-heading">
-    <h3 class="panel-title">How would you like to be paid?</h3>
+    <h2 class="panel-title" style="font-weight: 600; font-size: 21px !important;">How would you like to be paid?</h2>
   </div>
   <div class="panel-body" data-hook="checkout_payment_step">
 
@@ -49,24 +49,31 @@
       <% @order.available_payment_methods.each do |method| %>
         <% if method.name.include?('PayPal') %>
               <li id="payment_method_<%= method.id %>" class="<%= 'last' if method == @order.available_payment_methods.last %>" data-hook>
-                <fieldset>
-                  <%= render :partial => "spree/checkout/payment/paypal", :locals => { :payment_method => method } %>
-                </fieldset>
+                <h2 style="font-weight: 600;">Send Payment To...</h2>
+                <p id="minstrs payment_well clearfix" data-hook>
+                  <b>PayPal Email Address</b><br />
+                  <%= text_field_tag "email" , nil,  :placeholder => "PayPal Email", size: "30", :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', oninvalid: "setCustomValidity('Not a valid email format')" %><br/><br />
+                  <b>Confirm PayPal Email Address</b><br />
+                  <%= form.text_field :special_instructions, size: "30", placeholder: "Confirm PayPal Email", :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}', oninvalid: "setCustomValidity('Not a valid email format')" %>
+                </p>
               </li>
         <% else %>
               <li id="payment_method_<%= method.id %>" class="<%= 'last' if method == @order.available_payment_methods.last %>" data-hook>
-                <fieldset>
-                  <%= render :partial => "spree/checkout/payment/#{method.method_type}", :locals => { :payment_method => method } %>
-                </fieldset>
+                <h2 style="font-weight: 600;">Make Check Payable to...</h2>
+                <p id="minstrs payment_well clearfix" data-hook>
+                  <b>Name on Check</b><br />
+                  <%= text_field_tag "email ", nil,  :placeholder => "Your Name", size: "30" %><br/><br />
+                  <b> Confirm Name on Check </b><br />
+                  <%= form.text_field :special_instructions, size: "30", placeholder: "Confirm Name" %>
+                </p>
+
               </li>
         <% end %>
       <% end %>
     </ul>
-
+    
+    <%= submit_tag "Complete Order!", class: 'btn btn-lg btn-success primary delivery_button', style: 'float:right; font-size: 25px; margin-top: 10px;' %>
+    <script>Spree.disableSaveOnClick();</script>
   </div>
 </div>
 
-<div class="well text-right form-buttons" data-hook="buttons">
-  <%= submit_tag "Complete Order!", class: 'btn btn-lg btn-success primary' %>
-  <script>Spree.disableSaveOnClick();</script>
-</div>

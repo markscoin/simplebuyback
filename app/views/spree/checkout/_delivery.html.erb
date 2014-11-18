@@ -26,15 +26,15 @@
               <% ship_form.object.manifest.each do |item| %>
                 <tr class="stock-item">
                   <td class="item-image"><%= mini_image(item.variant, class: "mobile_display_none") %></td>
-                  <td class="item-name center"><%= item.variant.name %></td>
-                  <td class="item-qty center"><%= item.quantity %></td>
-                  <td class="item-price center"><%= display_price(item.variant) %></td>
+                  <td class="item-name center" style="font-size: 15px;"><%= item.variant.name %></td>
+                  <td class="item-qty center" style="font-size: 15px;"><%= item.quantity %></td>
+                  <td class="item-price center" style="font-size: 15px;"><%= display_price(item.variant) %></td>
                 </tr>
               <% end %>
             </tbody>
           </table>
 
-          <h4 class="stock-shipping-method-title">How would you like to ship your device?</h4>
+          <h2 class="stock-shipping-method-title" style="font-weight: 600;">How would you like to ship your device?</h2>
           <ul class="list-group shipping-methods">
             <% ship_form.object.shipping_rates.each do |rate| %>
               <li class="list-group-item shipping-method">
@@ -45,6 +45,8 @@
               </li>
             <% end %>
           </ul>
+          <span style="float:right;"> <%= submit_tag Spree.t(:save_and_continue), :class => 'btn btn-lg btn-success animated bounceInDown delivery_button' %></span>
+
         </div>
 
       <% end %>
@@ -105,10 +107,5 @@
     <%= image_tag('postoffice.png', style: "max-width: 100px;x") %>
     <p>Drop off at the nearest US Post Office</p>
   </div>
-</div>
-</div>
-<div class="row">
-<div class="well text-right form-buttons col-xs-12" data-hook="buttons">
-  <%= submit_tag Spree.t(:save_and_continue), :class => 'btn btn-lg btn-success' %>
 </div>
 </div>
